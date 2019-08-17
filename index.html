@@ -7,7 +7,7 @@
 	<title>HOUSE</title>
 
 	<!-- Logo of page -->
-	<link rel="shortcut icon" href="img/logo2.PNG">
+	<link rel="shortcut icon" href="img/3d.png">
 
 	<!-- CSS files -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -35,92 +35,194 @@
 
 </head>
 <body>
-	
-	<!-- Header Home -->
-	<header id="home">
 
-		<!-- Menu -->
-		<div class="container-fluid" id="menu3D">
-			<nav class="navbar navbar-expand-sm navbar-dark">
-				<a class="navbar-brand" href="index.html#home"><span>3D</span> House</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				  	<ul class="navbar-nav mx-auto ">
-				  	  	<li class="nav-item">
-				  	  	  	<a class="nav-link" href="#">Проекты</a>
-				  	  	</li>
-				  	  	<li class="nav-item">
-				  	  	 	<a class="nav-link" href="#">Услуги</a>
-				  	  	</li>
-				  	  	<li class="nav-item">
-				  	  	 	<a class="nav-link" href="#">Акции</a>
-				  	  	</li>
-				  	</ul>
-				  	<form  class="form-inline my-2 my-lg-0">
-				  	  	<div class="input-group">
-						  	<input name="searchProjectMenu" type="text" class="form-control" placeholder="Поиск проекта" aria-label="Поиск проекта" aria-describedby="search">
-						  	<div class="input-group-append">
-						   	 	<button class="btn" type="submit" id="search">Search</button>
+	<!-- Menu of page -->
+	<nav id="menu3D" class="fixed-top">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-md navbar-light">
+			  	<a class="navbar-brand" href="#">
+			  		<img src="img/icons/logo.svg"  alt="">
+			  	</a>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSuppContent" aria-controls="menuSuppContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+				<div class="container">
+					<div class="row w-100">
+						<div class="col-xl-7 d-flex align-items-center">
+							<div class="collapse navbar-collapse" id="menuSuppContent">
+						  	  	<ul class="navbar-nav  text-uppercase">
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="#">Проекты <img src="img/icons/arrow.svg" alt=""></a>
+						  	  	  	</li>
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="#">Услуги <img src="img/icons/arrow.svg" alt=""></a>
+						  	  	  	</li>
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="#">Акции</a>
+						  	  	  	</li>
+						  	  	</ul>
 						  	</div>
 						</div>
-				  	</form>
-				  	<div class="phone  my-2 my-lg-0">
-				  		<i>Phone</i>
-				  		<span>+7 (900) 90-909-00</span>
-				  	</div>
-				  	<div class="prjMenuBtn my-2 my-lg-0">
-				  		<button type="button"><i>Btn</i></button>
-				  	</div>
+						<div class="col-xl-5 searchBtn d-flex align-items-center justify-content-center">
+							<form class="form-inline">
+					  	  	  	<div class="input-group">
+								  	<input name="searchMenuPj" type="search" class="form-control" placeholder="Поиск проекта" aria-label="Поиск проекта" aria-describedby="search">
+								 	<div class="input-group-append">
+								    	<button type="submit" class="input-group-text" id="search"><img src="img/icons/search.svg" alt=""></button>
+								  	</div>
+								</div>
+					  	  	</form>
+						</div>
+					</div>
 				</div>
+				<div class="minMenu3D d-flex align-items-stretch ">
+			  	  	<div class="row w-100">
+			  	  		<div class="col-xl-9 phBtn d-flex align-items-center justify-content-center">
+			  	  			<div class="text-right d-flex">
+				  				<span class="phone">
+				  					<img src="img/icons/phone.svg" alt="">
+				  				</span>
+				  				<span class="numb">+7 (900) 90-909-00</span>
+				  			</div>
+			  	  		</div>
+			  	  		<div class="col-xl-3 d-flex align-items-center justify-content-center">
+			  	  			<button type="button" class="prjMenuThree">
+			  	  				<img src="img/icons/treeLine.svg" alt="">
+			  	  			</div>
+			  	  		</div>
+			  	  	</div>
+			  	</div>
 			</nav>
 		</div>
+	</nav>
 
-		<!-- Gallery -->
-		<div class="gallery flex justify-content-center">
-			<div id="homeGallery" class="carousel slide" data-ride="carousel">
-			  	<ol class="carousel-indicators">
-			  	  	<li data-target="#homeGallery" data-slide-to="0" class="active"></li>
-			  	  	<li data-target="#homeGallery" data-slide-to="1"></li>
-			  	  	<li data-target="#homeGallery" data-slide-to="2"></li>
-			  	</ol>
+	<!-- Header of page -->
+	<header id="home3D">
+		<section class="container-fluid">
+			<div id="bigGalleryHome3d" class="carousel slide" data-ride="carousel">
 			  	<div class="carousel-inner">
 			  	  	<div class="carousel-item active">
 			  	  	  	<img src="img/homeSl1.png" class="d-block w-100" alt="...">
-			  	  	  	<div class="carousel-caption d-none">
-			  	  	  	  	<h5>First slide label</h5>
-			  	  	  	  	<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			  	  	  	<div class="carousel-caption">
+			  	  	  		<div class="container-fluid d-flex justify-content-center align-items-center">
+			  	  	  			<div class="container">
+			  	  	  				<div class="row">
+			  	  	  					<div class="col-12">
+					  	  	  				<h2>Проект</h2>
+					  	  	  				<h1>Дом 53-1</h1>		
+			  	  	  					</div>
+			  	  	  					<div class="col-12">
+			  	  	  						<table>
+			  	  	  							<tr>
+			  	  	  								<th>Площадь:</th>
+			  	  	  								<th>Комнат:</th>
+			  	  	  							</tr>
+			  	  	  							<tr>
+			  	  	  								<td><h4>200 м<sup>2</sup></h4></td>
+			  	  	  								<td><h4>5</h4></td>
+			  	  	  							</tr>
+			  	  	  						</table>
+			  	  	  					</div>
+			  	  	  				</div>
+			  	  	  			</div>
+			  	  	  		</div>
 			  	  	  	</div>
 			  	  	</div>
 			  	  	<div class="carousel-item">
 			  	  	  	<img src="img/homeSl2.png" class="d-block w-100" alt="...">
-			  	  	  	<div class="carousel-caption d-none">
-			  	  	  	  	<h5>Second slide label</h5>
-			  	  	  	  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			  	  	  	<div class="carousel-caption">
+			  	  	  		<div class="container-fluid d-flex justify-content-center align-items-center">
+			  	  	  			<div class="container">
+			  	  	  				<div class="row">
+			  	  	  					<div class="col-12">
+					  	  	  				<h2>Проект</h2>
+					  	  	  				<h1>Дом 53-1</h1>		
+			  	  	  					</div>
+			  	  	  					<div class="col-12">
+			  	  	  						<table>
+			  	  	  							<tr>
+			  	  	  								<th>Площадь:</th>
+			  	  	  								<th>Комнат:</th>
+			  	  	  							</tr>
+			  	  	  							<tr>
+			  	  	  								<td><h4>200 м<sup>2</sup></h4></td>
+			  	  	  								<td><h4>5</h4></td>
+			  	  	  							</tr>
+			  	  	  						</table>
+			  	  	  					</div>
+			  	  	  				</div>
+			  	  	  			</div>
+			  	  	  		</div>
 			  	  	  	</div>
 			  	  	</div>
 			  	  	<div class="carousel-item">
-			  	  	  	<img src="img/homeSl3.png" class="d-block w-100" alt="...">
-			  	  	  	<div class="carousel-caption d-none">
-			  	  	  	  	<h5>Third slide label</h5>
-			  	  	  	  	<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			  	  	  	<img src="img/homeSl1.png" class="d-block w-100" alt="...">
+			  	  	  	<div class="carousel-caption">
+			  	  	  		<div class="container-fluid d-flex justify-content-center align-items-center">
+			  	  	  			<div class="container">
+			  	  	  				<div class="row">
+			  	  	  					<div class="col-12">
+					  	  	  				<h2>Проект</h2>
+					  	  	  				<h1>Дом 53-1</h1>		
+			  	  	  					</div>
+			  	  	  					<div class="col-12">
+			  	  	  						<table>
+			  	  	  							<tr>
+			  	  	  								<th>Площадь:</th>
+			  	  	  								<th>Комнат:</th>
+			  	  	  							</tr>
+			  	  	  							<tr>
+			  	  	  								<td><h4>200 м<sup>2</sup></h4></td>
+			  	  	  								<td><h4>5</h4></td>
+			  	  	  							</tr>
+			  	  	  						</table>
+			  	  	  					</div>
+			  	  	  				</div>
+			  	  	  			</div>
+			  	  	  		</div>
 			  	  	  	</div>
 			  	  	</div>
 			  	</div>
+				
+				<div class="galleryShadow"></div>
+
+				<div class="galleryBtns">
+					<div class="container bg-white d-flex">
+						<div class="bookProj">
+							<button type="button" class="bookPjBtn">Заказать проект / 15 000 
+								<svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.39844 10.1953H3.88281V12H1.91406V10.1953H0.3125V8.60938H1.91406V7.77344H0.3125V6.1875H1.91406V0.625H6.26562C7.52083 0.625 8.52344 0.953125 9.27344 1.60938C10.0234 2.26042 10.3984 3.1276 10.3984 4.21094C10.3984 5.3151 10.0417 6.18229 9.32812 6.8125C8.61458 7.4375 7.6224 7.75781 6.35156 7.77344H3.88281V8.60938H6.39844V10.1953ZM3.88281 6.1875H6.23438C6.94271 6.1875 7.48438 6.02344 7.85938 5.69531C8.23438 5.36719 8.42188 4.8776 8.42188 4.22656C8.42188 3.64323 8.23698 3.16667 7.86719 2.79688C7.5026 2.42708 6.9974 2.23438 6.35156 2.21875H3.88281V6.1875Z" fill="white"/>
+								</svg>
+
+								<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 19L11 10.5L2 2" stroke="#349FBF" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+							</button>
+						</div>
+						<div class="arrowsGall d-flex justify-content-center align-items-center">
+							<a class="carousel-control-prev" href="#bigGalleryHome3d" role="button" data-slide="prev">
+								<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 2L3 10.5L12 19" stroke="#5FCAEA" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+						  	</a>
+						  	<ol class="carousel-indicators">
+						  	  	<li data-target="#bigGalleryHome3d" data-slide-to="0" class="active"></li>
+						  	  	<li data-target="#bigGalleryHome3d" data-slide-to="1"></li>
+						  	  	<li data-target="#bigGalleryHome3d" data-slide-to="2"></li>
+						  	</ol>
+						  	<a class="carousel-control-next" href="#bigGalleryHome3d" role="button" data-slide="next">
+						  	  	<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 19L11 10.5L2 2" stroke="#5FCAEA" stroke-width="3" stroke-linecap="round"/>
+								</svg>
+						  	</a>
+						</div>
+					</div>
+					
+				</div>
+
 			</div>
-			<a class="carousel-control-prev" href="#homeGallery" role="button" data-slide="prev">
-			  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			</a>
-			<a class="carousel-control-next" href="#homeGallery" role="button" data-slide="next">
-			 	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			</a>
-
-		</div>
-
+		</section>
 	</header>
-
 
 	<!-- Script files -->
 	<script src="js/jquery-3.4.1.min.js"></script>
