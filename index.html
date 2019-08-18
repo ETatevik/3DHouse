@@ -39,8 +39,8 @@
 	<!-- Menu of page -->
 	<nav id="menu3D" class="fixed-top">
 		<div class="container-fluid">
-			<nav class="navbar navbar-expand-md navbar-light">
-			  	<a class="navbar-brand" href="#">
+			<nav class="navbar navbar-expand-sm navbar-light">
+			  	<a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
 			  		<img src="img/icons/logo.svg"  alt="">
 			  	</a>
 			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSuppContent" aria-controls="menuSuppContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
 			  	</button>
 				<div class="container">
 					<div class="row w-100">
-						<div class="col-xl-7 d-flex align-items-center">
+						<div class="col-sm-12 col-md-6 col-lg-7 d-flex align-items-center">
 							<div class="collapse navbar-collapse" id="menuSuppContent">
 						  	  	<ul class="navbar-nav  text-uppercase">
 						  	  	  	<li class="nav-item">
@@ -63,7 +63,7 @@
 						  	  	</ul>
 						  	</div>
 						</div>
-						<div class="col-xl-5 searchBtn d-flex align-items-center justify-content-center">
+						<div class="d-none  col-sm-12 col-md-6 col-lg-5 searchBtn d-sm-flex align-items-center justify-content-center">
 							<form class="form-inline">
 					  	  	  	<div class="input-group">
 								  	<input name="searchMenuPj" type="search" class="form-control" placeholder="Поиск проекта" aria-label="Поиск проекта" aria-describedby="search">
@@ -77,16 +77,16 @@
 				</div>
 				<div class="minMenu3D d-flex align-items-stretch ">
 			  	  	<div class="row w-100">
-			  	  		<div class="col-xl-9 phBtn d-flex align-items-center justify-content-center">
-			  	  			<div class="text-right d-flex">
+			  	  		<div class="col-12 col-sm-9 col-lg-12 col-xl-9 phBtn d-flex align-items-center justify-content-center">
+			  	  			<div class="text-right d-flex py-3 py-xl-0">
 				  				<span class="phone">
 				  					<img src="img/icons/phone.svg" alt="">
 				  				</span>
 				  				<span class="numb">+7 (900) 90-909-00</span>
 				  			</div>
 			  	  		</div>
-			  	  		<div class="col-xl-3 d-flex align-items-center justify-content-center">
-			  	  			<button type="button" class="prjMenuThree" data-toggle="modal" data-target="#projMenuModal">
+			  	  		<div class="col-12 col-sm-3 col-lg-12 col-xl-3 d-flex align-items-center justify-content-center">
+			  	  			<button type="button" class="prjMenuThree py-3 py-xl-0" data-toggle="modal" data-target="#projMenuModal">
 			  	  				<img src="img/icons/treeLine.svg" alt="">
 			  	  			</div>
 			  	  		</div>
@@ -96,14 +96,85 @@
 		</div>
 	</nav>
 
-<!-- continue -->
 	<!-- Poject Menu Modal -->
 	<div class="modal fade" id="projMenuModal" tabindex="-1" role="dialog" aria-labelledby="projMenuModalLabel" aria-hidden="true">
 	  	<div class="modal-dialog" role="document">
 	  	  	<div class="modal-content">
-	  	  		<div class="contaier">
+	  	  		<div class="container">
 	  	   	  	  	<div class="modal-body">
-	  	  	  	  		...
+	  	  	  	  		<div class="row" id="projMiniMenuBody">
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По материалу:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из пеноблоков</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По стилю:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+									<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>	  	  	  	  					
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По назначению:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">ЛСТК проекты</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По этажности:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+									<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">ЛСТК проекты</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По размеру:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты домов до 100 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Проекты домов до 150 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Проекты домов до 200 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Одноэтажные до 100 м<sup>2</sup></a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  		</div>
 	  	  	  		</div>
 	  	  		</div>
 	  	  	</div>

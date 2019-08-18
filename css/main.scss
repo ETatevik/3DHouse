@@ -4,7 +4,7 @@ $color3: #DDE9EF;
 $color4: #494949;
 
 *{
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 }
 
 *:focus{
@@ -16,6 +16,14 @@ $color4: #494949;
 
 #menu3D{
 
+	&.fixed-top{
+		@media (max-width: 1200px) {
+			position: sticky;
+			top:0;
+		}
+	}
+
+
 	&>.container-fluid{
 		padding: 0;
 		background-color: $color1;
@@ -25,10 +33,35 @@ $color4: #494949;
 			border-bottom:  1px solid $color3;
 			align-items: stretch;
 
+			&.navbar-light .navbar-toggler{
+				border: 0;
+				border: 1px solid $color3;
+				padding: 20px;
+				border-radius: 0;
+
+				&:focus{
+					box-shadow: 0 0;
+					outline: 0;
+				}
+			}
+			
+			&.navbar-expand-sm{
+				@media (max-width: 1000px) {
+					flex-wrap: wrap !important;
+				}
+			}
 			&>.container{
 				padding-right: 0;
 				padding-left: 0;
 				align-items: stretch;
+
+				@media (min-width: 900px) {
+					margin: 0 auto;
+					max-width: 80%;
+				}
+				@media (max-width: 880px) {
+					max-width: 78%;
+				}
 
 				& .row{
 					margin-right: 0;
@@ -37,10 +70,25 @@ $color4: #494949;
  					& .searchBtn{
 						border-left: 1px solid $color3;
 						border-right: 1px solid $color3;
+
+						@media (max-width: 1000px) {
+							border-right: 0;
+						}
+
+						@media (max-width: 880px) {
+							padding-top: 15px;
+							padding-bottom: 15px;
+						}
+
+						@media (max-width: 770px) {
+							border-left: 0;
+							border-top: 1px solid $color3;
+
+						}
 					}
 
  					& .input-group{
-						width: 285px;
+						max-width: 285px;
 						height: 40px;
 
 						& .form-control{
@@ -82,6 +130,14 @@ $color4: #494949;
 
 				& .navbar-nav{
 
+					@media (max-width: 770px) {
+						    justify-content: space-between;
+						    width: 100%;
+						    padding-top: 15px;
+						    padding-bottom: 15px;
+						    text-align: center;
+					}
+
 					& .nav-link{
 						font-family: Noto Sans;
 						font-style: normal;
@@ -98,7 +154,10 @@ $color4: #494949;
 			&>.navbar-brand{
 				border-right: 1px solid $color3;
 				padding: 20px;
-
+				
+				@media (max-width: 770px) {
+					border-bottom: 1px solid $color3;
+				}
 				&> img{
 					width: 100%;
 				}	
@@ -106,7 +165,13 @@ $color4: #494949;
 
 			
 			&>.minMenu3D {
-				width: 380px;
+				width: 100%;
+				@media (min-width: 1001px){
+					width: 380px;
+				}
+				@media (max-width: 1200px) {
+					flex-wrap: wrap;
+				}
 				
 				&>.row{
 					margin-right: 0;
@@ -123,8 +188,18 @@ $color4: #494949;
  					}
 
  					&>.phBtn{
-						border-right: 1px solid $color3;
-
+ 						@media (min-width: 1090px) {
+							border-right: 1px solid $color3;
+ 						}
+ 						@media (max-width: 1200px) {
+ 							border-top:  1px solid $color3;
+ 						}
+						& + div.col-12{
+							@media (max-width: 1200px) {
+ 								border-top:  1px solid $color3;
+ 								border-left: 1px solid $color3;
+ 							}
+						}
 						& .phone{
 							background-color: #E9F1F5;
 							width: 30px;
@@ -150,8 +225,62 @@ $color4: #494949;
 }
 
 #projMenuModal{
-	// continue
 
+	&.modal { 
+   		background-color: transparent !important; 
+   		padding-left: 0 !important;
+   		padding-right: 0 !important;
+
+   		.modal-dialog {
+			min-width: 100% !important;
+			margin: 0;
+			padding: 50px;
+			background-color: $color1;
+			position: relative;
+			left: 0;
+			right: 0;
+
+			&>.modal-content{
+				border: 0;
+
+				&>.container .row{
+					padding: 0 !important;
+					
+					.col-xl,
+					.col-md-6,
+					.col-12{
+						padding: 0;
+					}
+
+					&#projMiniMenuBody h2,
+					&#projMiniMenuBody li > a{
+						font-family: Noto Sans !important;
+						font-style: normal !important;
+						font-weight: bold !important;
+						font-size: 14px !important;
+						letter-spacing: 1px !important;
+						text-transform: uppercase !important;
+						color: $color4 !important;
+					}
+
+					&#projMiniMenuBody h2{
+						margin-bottom: 20px;
+					}
+
+					&#projMiniMenuBody  li > a{
+						font-weight: normal !important;
+						line-height: 32px !important;
+						color: #88989D !important;
+					}
+				} 
+			}
+   		}
+
+	}
+}
+
+.modal-backdrop{
+	background-color: transparent !important; 
 }
 
 #home3D{
@@ -166,13 +295,23 @@ $color4: #494949;
 			max-width: 1942px;
 			height: 100vh;
 				
-			@media (min-width: 1942px) {
-					height: 916px;
+			@media (max-width: 1000px) {
+				height: 650px;
+			}
+
+			@media (max-width: 500px) {
+				height: 550px;
 			}
 
 			.carousel-inner{
 				max-width: 1942px;
 				height: inherit;
+
+				&>.carousel-item,
+				&>.carousel-item>img{
+					width: 100%;
+					height: 100%;
+				}
 
 				.carousel-caption{
 					position: absolute;
@@ -188,6 +327,10 @@ $color4: #494949;
 						.container > .row{
 							height: 450px;
 
+							@media (max-width: 500px){
+								height: 400px;
+							}
+
 							h2,
 							h1{
 								font-family: Oswald;
@@ -196,10 +339,19 @@ $color4: #494949;
 								font-size: 48px;
 								letter-spacing: 1px;
 								color: $color1;
+
+								@media (max-width: 500px){
+									font-size: 36px;
+								}
+								
 							}
+
 							h1{
 								font-size: 96px;
 								text-transform: uppercase;
+								@media (max-width: 500px){
+									font-size: 72px;
+								}
 							}
 
 							h4,
@@ -209,12 +361,21 @@ $color4: #494949;
 								font-weight: bold;
 								font-size: 14px;
 								color: $color1;
+								@media (max-width: 500px){
+									font-size: 11.5px;
+								}
 							}
 							h4{
 								font-size: 36px;
+								@media (max-width: 500px){
+									font-size: 30px;
+								}
 							}
 							td,th{
 								padding-right: 25px;
+								@media (max-width: 500px){
+									padding-right: 18.5px;
+								}
 							}
 						}
 					}
@@ -239,6 +400,11 @@ $color4: #494949;
 
 				.container{
 					padding: 0;
+
+					@media (max-width: 800px) {
+						margin: auto;
+						max-width: 95% !important;						
+					}
 				
 					.bookProj > .bookPjBtn{
 						background: $color2;
@@ -258,13 +424,21 @@ $color4: #494949;
 						& > svg {
 							margin-right: 15px;
 						}
+
+						@media (max-width: 800px) {
+							width: 100%;
+							font-size: 12px;
+						}
 					}
 
 					.arrowsGall{
 						background-color: #F5F8FA;
 						min-width: 229px;
 						height: 115px;
-
+						
+						@media (max-width: 800px) {
+							min-width: 50%;
+						}
 						.carousel-control-prev,
 						.carousel-indicators,
 						.carousel-control-next{
