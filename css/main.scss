@@ -14,12 +14,16 @@ $color4: #494949;
     box-shadow: 0 0 !important;
 }
 
+// Menu of page
 #menu3D{
 
 	&.fixed-top{
 		@media (max-width: 1200px) {
 			position: sticky;
 			top:0;
+		}
+		@media (max-width: 800px) {
+			position: static;
 		}
 	}
 
@@ -224,6 +228,7 @@ $color4: #494949;
 	}
 }
 
+// Poject Menu Modal
 #projMenuModal{
 
 	&.modal { 
@@ -261,6 +266,10 @@ $color4: #494949;
 						letter-spacing: 1px !important;
 						text-transform: uppercase !important;
 						color: $color4 !important;
+						&:hover{
+							text-decoration: none;
+							color: $color2 !important;
+						}
 					}
 
 					&#projMiniMenuBody h2{
@@ -278,11 +287,11 @@ $color4: #494949;
 
 	}
 }
-
 .modal-backdrop{
 	background-color: transparent !important; 
 }
 
+// Header of page // Gallery
 #home3D{
 
 	section.container-fluid{
@@ -326,6 +335,7 @@ $color4: #494949;
 
 						.container > .row{
 							height: 450px;
+							position: relative;
 
 							@media (max-width: 500px){
 								height: 400px;
@@ -375,6 +385,41 @@ $color4: #494949;
 								padding-right: 25px;
 								@media (max-width: 500px){
 									padding-right: 18.5px;
+								}
+							}
+
+							.popoverbigGalleryHome3d{
+								position: absolute;
+								background-color: $color1;
+								font-family: Noto Sans;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 16px;
+								line-height: 26px;
+								color: $color4;
+								max-width: 395px;
+								padding:20px;
+								left: 50%;
+								top: 30%;
+
+								&:before{
+									content: '';
+									position: absolute;
+									border: 10px solid transparent;
+									border-right-color: $color1;
+									top: calc(50% - 10px);
+									left: -20px;
+
+								}
+
+								p{
+									margin-bottom: 0;
+
+									&:last-child{
+										margin-top: 10px;
+										font-weight: bold;
+										font-size: 14px;
+									}
 								}
 							}
 						}
@@ -461,3 +506,281 @@ $color4: #494949;
 		}
 	}
 }
+
+// Filter Find of Projects
+#filterFindHome{
+
+	position: fixed;
+	z-index: 1040;
+	background-color: red;
+	right: 0;
+
+	.findBox{
+		position: relative;
+
+		.filterHomeBtn{
+			background: transparent url("../img/filterBtn.png") no-repeat;
+			border: 0;
+			width: 52px;
+			height: 240px;
+			position: absolute;
+			left: -49px;
+			top: 240px;
+
+			&:focus{
+				border: 0;
+				outline: 0;
+				box-shadow: 0 0;
+			}
+
+
+			&>span{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				letter-spacing: 1px;
+				color: $color1;
+				display: block;
+				width: 240px;
+				transform: rotateZ(-90deg) translateY(-100px);
+
+			}
+		}
+		.filterHomeBody{
+			background-color: $color1;
+			width: 	280px;
+			border: 1px solid $color3;
+			position: relative;
+
+			h2,
+			dl> dt{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 26px;
+				color: $color4;
+				padding: 23px;
+			}
+
+			dl{
+				margin-bottom: 0;
+			}
+
+			dl> dt{
+				font-size: 14px;
+				border-top: 1px solid $color3;
+				border-bottom: 1px solid $color3;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: no-wrap;
+				cursor: pointer;
+
+				>span:last-child{
+					color: $color2;
+					font-size: 20px;
+				}
+			}
+
+			dl > dd{
+				padding: 23px;
+			}
+
+			.btnHomeFilterSearch,
+			.resetFilterBtn{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 22px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color2;
+				background-color: transparent;
+				border: 2px solid $color2;
+				width: 90%;
+				margin: 20px auto;
+				display: block;
+				padding: 25px 30px;
+
+				& > svg {
+					margin-left: 15px;
+				}
+
+				&:focus{
+					outline: 0;
+					box-shadow: 0 0;
+				}
+			}
+
+			.btnHomeFilterSearch:focus{
+				border: 2px solid $color2;
+			}
+
+			.resetFilterBtn{
+				border: 0;
+				padding: 0;
+				margin: 5px auto 15px;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 26px;
+			}
+		}
+	}	
+}
+
+// Home New Pojectes Section
+#homeNewPojectes{
+	background-color: $color1;
+
+	&>.container{
+		padding: 100px 0;
+
+		&>.row{
+			h2{
+				font-family: Oswald;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 48px;
+				line-height: 71px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color4;
+				margin-bottom: 0;
+			}
+			button{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 22px;
+				text-align: center;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color2;
+				background-color: transparent;
+				border: 0;
+
+				&>svg{
+					margin-left: 15px;
+				}
+			}
+		}
+		
+	}
+}
+
+// Order an Individual Project Section
+#orderIndiviProj{
+	background-color: #F5F8FA;
+	
+	&>.container{
+		padding: 80px 0;
+
+		&>h2{
+			font-family: Oswald;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 48px;
+			line-height: 71px;
+			text-align: center;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $color4;
+			@media (min-width: 1000px) {
+				width: 55%;
+				margin: auto;
+			}
+		}
+
+		&>.row{
+			margin-top: 80px;
+			margin-bottom: 40px;
+			
+			.steps{
+				text-align: center;
+				margin-bottom: 25px;
+
+				p{
+					width: 78%;
+					margin: auto;
+					font-family: Noto Sans;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 26px;
+					color: #88989D;
+
+					@media (max-width: 1000px) {
+						width: 60%;
+						max-width: 500px;
+					}
+				}
+
+				&>.numStep{
+					position: relative;
+					width: 100px;
+					height: 120px;
+					margin: auto;
+
+					&>.bgNumber{
+						font-family: Oswald;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 96px;
+						line-height: 142px;
+						text-transform: uppercase;
+						color: #E9F1F5;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+					&>.step3D{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 36px;
+						line-height: 26px;
+						color: $color2;
+						position: absolute;
+						top: calc(50% - 4px);
+						left: calc(50% - 45px);
+					}
+					
+				}	
+			}
+		}
+
+		.orderIndPrBtn{
+			width: 349px;
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $color2;
+			background-color: transparent;
+			border: 2px solid $color2;
+			margin: 20px auto;
+			display: block;
+			padding: 25px 30px;
+
+			& > svg {
+				margin-left: 15px;
+			}
+
+			&:focus{
+				outline: 0;
+				box-shadow: 0 0;
+			}
+
+			@media (max-width: 349) {
+				width: 95%;
+			}
+		}
+	}
+}
+
