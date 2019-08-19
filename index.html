@@ -8,8 +8,14 @@
 
 	<!-- Logo of page -->
 	<link rel="shortcut icon" href="img/3d.png">
+	
 
 	<!-- CSS files -->
+	<!-- Owl Stylesheets -->
+	<link rel="stylesheet" href="css/docs.theme.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -47,7 +53,7 @@
 			    	<span class="navbar-toggler-icon"></span>
 			  	</button>
 				<div class="container">
-					<div class="row w-100">
+					<div class="row w-100 ">
 						<div class="col-sm-12 col-md-6 col-lg-7 d-flex align-items-center">
 							<div class="collapse navbar-collapse" id="menuSuppContent">
 						  	  	<ul class="navbar-nav  text-uppercase">
@@ -101,6 +107,15 @@
 	  	<div class="modal-dialog" role="document">
 	  	  	<div class="modal-content">
 	  	  		<div class="container">
+	  	  			<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          	<span aria-hidden="true">
+				          		<svg width="25" height="25" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L9 9M9 1L1 9" stroke="#5FCAEA" stroke-linecap="round"/>
+								</svg>
+				          	</span>
+				        </button>
+				    </div>
 	  	   	  	  	<div class="modal-body">
 	  	  	  	  		<div class="row" id="projMiniMenuBody">
 	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
@@ -331,32 +346,147 @@
 					<dl>
 						<dt>
 							<span>Общая площадь</span>
-							<span>+</span>
+							<span class="plus">+</span>
 						</dt>
 						<dd>Continue...</dd>
+						<dt>
+							<span>Тип объекта недвижимости</span>
+							<span class="plus">+</span>
+						</dt>
+						<dd>
+							<ul class="list-unstyled">
+								<li><label><input type="checkbox"><span class="checkmark"></span>Гостевой дом</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Дача</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Гостинница</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Шале</label></li>
+							</ul>
+						</dd>
 						<dt>
 							<span>Материал объекта</span>
-							<span>+</span>
+							<span class="plus">+</span>
 						</dt>
-						<dd>Continue...</dd>
+						<dd>
+							<ul class="list-unstyled">
+								<li><label><input type="checkbox"><span class="checkmark"></span>Деревянный</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Каменный</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Каркасный</label></li>
+							</ul>
+						</dd>
 						<dt>
 							<span>Материалы стен</span>
-							<span>+</span>
+							<span class="plus">+</span>
 						</dt>
-						<dd>Continue...</dd>
+						<dd>
+							<ul class="list-unstyled">
+								<li><label><input type="checkbox"><span class="checkmark"></span>Деревянный</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Каменный</label></li>
+							</ul>
+						</dd>
 						<dt>
 							<span>Количество этажей</span>
-							<span>+</span>
+							<span class="plus">+</span>
 						</dt>
-						<dd>Continue...</dd>
+						<dd>
+							<div class="table-responsive">
+								<table class="table table-borderless">
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>Одноэтажные</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>С Подвалом</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>Двухэтажные</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>Мансардные</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>С Цоколем</label></td>
+									</tr>
+								</table>
+							</div>	
+						</dd>
 						<dt>
 							<span>Гараж</span>
-							<span>+</span>
+							<span class="plus">+</span>
 						</dt>
-						<dd>Continue...</dd>
+						<dd>
+							<div class="table-responsive">
+								<table class="table table-borderless">
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>С гаражом</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>На 1 машину</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>Без Гаража</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>На 2 машины</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>Навес</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>На 3+ машины</label></td>
+									</tr>
+								</table>
+							</div>
+						</dd>
 						<dt>
 							<span>Крыша</span>
-							<span>+</span>
+							<span class="plus">+</span>
+						</dt>
+						<dd>
+							<div class="table-responsive">
+								<table class="table table-borderless">
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>1 - скатная</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>Сложная</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>2 - скатная</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>Плоская</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>4 - скатная</label></td>
+									</tr>
+								</table>
+							</div>
+						</dd>
+						<dt>
+							<span>Количество спален</span>
+							<span class="plus">+</span>
+						</dt>
+						<dd>
+							<div class="table-responsive">
+								<table class="table table-borderless">
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>1</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>5</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>2</label></td>
+										<td><label><input type="checkbox"><span class="checkmark"></span>6+</label></td>
+									</tr>
+									<tr>
+										<td><label><input type="checkbox"><span class="checkmark"></span>3</label></td>
+									</tr>
+								</table>
+							</div>
+						</dd>
+						<dt>
+							<span>Назначение</span>
+							<span class="plus">+</span>
+						</dt>
+						<dd>
+							<ul class="list-unstyled">
+								<li><label><input type="checkbox"><span class="checkmark"></span>Для большой семьи</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Бани</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Гаражи</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Для 1 семьи</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Для 2 семей</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Таун-хаусы</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Для сейсмоопасных регионов</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Для широких участков</label></li>
+								<li><label><input type="checkbox"><span class="checkmark"></span>Для узких участков</label></li>
+							</ul>
+						</dd>
+						<dt>
+							<span>Размеры дома</span>
+							<span class="plus">+</span>
 						</dt>
 						<dd>Continue...</dd>
 					</dl>
@@ -391,89 +521,605 @@
 				</div>
 			</div>
 			<div class="containerNewProjSlider mt-5">
-				<!--  is be change -->
-				<div class="row">
-					<div class="col-1 d-flex align-items-center">
-						<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M12 2L3 10.5L12 19" stroke="#5FCAEA" stroke-width="3" stroke-linecap="round"/>
-						</svg>
-					</div>
-					<div class="col-10">
-						<div class="row">
-							<div class="col-12 col-sm">
-								<div class="card mx-auto" style="width: 18rem;">
-									<div class="card-img-top">
-										<div class="stok">Акция</div>
-								  		<img src="img/newPj1.png" class="img-fluid" alt="...">
-										<div class="info">Дом для небольшой семьи</div>
-										<button class="heart" type="button">
-											<img src="img/icons/heart.svg" alt="">
-										</button>
-									</div>
-								  <div class="card-body">
-								    <h5 class="card-title">Проект Дома 55-2</h5>
-								    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
-								    <table>
-								    	<tr>
-								    		<td>Площадь: 200 м<sup>2</sup></td>
-								    		<td rowspan="2">
-								    			15 000 
-												<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
-												</svg>
-								    		</td>
-								    	</tr>
-								    	<tr>
-								    		<td >Этажи: 2</td>
-								    		
-								    	</tr>
-								    </table>
+				  <div class="container">
+				    <section id="demos">
+				      <div class="row">
+				        <div class="large-12 columns">
+				          <div class="owl-carousel owl-theme">
+				            <div class="item">
+				              <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Дом для небольшой семьи</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
 
-								    <div class="cardLinkBtns">
-								    	<div class="row">
-								    		<div class="col-6">
-								    			<a href="#">
-								    				<img src="img/icons/share.svg" alt="">
-								    			</a>
-								    			<a href="#">
-													<img src="img/icons/group.svg" alt="">
-								    			</a>
-								    		</div>
-								    		<div class="col-6">
-								    			<a href="#">Подробнее</a>
-								    		</div>
-								    	</div>
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Большой семейный дом</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
 
-								    </div>
-								  </div>
-								</div>
-							</div>
-							<div class="col-12 col-sm d-none d-xl-flex">
-								<div class="card" style="width: 18rem;">
-								  <img src="img/newPj1.png" class="card-img-top" alt="...">
-								  <div class="card-body">
-								    <h5 class="card-title">Проект Дома 55-2</h5>
-								    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
-								  </div>
-								</div>
-							</div>
-							<div class="col-12 col-sm d-none d-xl-flex">
-								<div class="card" style="width: 18rem;">
-								  <img src="img/newPj1.png" class="card-img-top" alt="...">
-								  <div class="card-body">
-								    <h5 class="card-title">Проект Дома 55-2</h5>
-								    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
-								  </div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-1 d-flex align-items-center">
-						<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M2 19L11 10.5L2 2" stroke="#5FCAEA" stroke-width="3" stroke-linecap="round"/>
-						</svg>
-					</div>
-				</div>
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Дом для небольшой семьи</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Большой семейный дом</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Дом для небольшой семьи</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Большой семейный дом</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Дом для небольшой семьи</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Большой семейный дом</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Дом для небольшой семьи</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                              <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Большой семейный дом</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Дом для небольшой семьи</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				            <div class="item">
+				                <div class="card mx-auto">
+				                  <div class="card-img-top">
+				                    <div class="stok">Акция</div>
+				                      <img src="img/newPj1.png" class="img-fluid" alt="...">
+				                    <div class="info">Большой семейный дом</div>
+				                    <button class="heart" type="button">
+				                      <img src="img/icons/heart.svg" alt="">
+				                    </button>
+				                  </div>
+				                  <div class="card-body">
+				                    <h5 class="card-title">Проект Дома 55-2</h5>
+				                    <p class="card-text">Проект дома — это документация, в которой указаны все параметры здания... </p>
+				                    <div class="table-responsive">
+				                      <table class="mx-0 table table-borderless">
+				                        <tr>
+				                          <td>Площадь: 200 м<sup>2</sup></td>
+				                          <td rowspan="2">
+				                            15 000 
+				                          <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				                          <path d="M9.59766 15.293H5.82422V18H2.87109V15.293H0.46875V12.9141H2.87109V11.6602H0.46875V9.28125H2.87109V0.9375H9.39844C11.2812 0.9375 12.7852 1.42969 13.9102 2.41406C15.0352 3.39062 15.5977 4.69141 15.5977 6.31641C15.5977 7.97266 15.0625 9.27344 13.9922 10.2188C12.9219 11.1562 11.4336 11.6367 9.52734 11.6602H5.82422V12.9141H9.59766V15.293ZM5.82422 9.28125H9.35156C10.4141 9.28125 11.2266 9.03516 11.7891 8.54297C12.3516 8.05078 12.6328 7.31641 12.6328 6.33984C12.6328 5.46484 12.3555 4.75 11.8008 4.19531C11.2539 3.64063 10.4961 3.35156 9.52734 3.32812H5.82422V9.28125Z" fill="#494949"/>
+				                          </svg>
+				                          </td>
+				                        </tr>
+				                        <tr>
+				                          <td >Этажи: 2</td>
+				                          
+				                        </tr>
+				                      </table>
+				                    </div>
+				                    <div class="cardLinkBtns">
+				                      <div class="row">
+				                        <div class="col-6">
+				                          <a href="#">
+				                            <img src="img/icons/share.svg" alt="">
+				                          </a>
+				                          <a href="#">
+				                          <img src="img/icons/group.svg" alt="">
+				                          </a>
+				                        </div>
+				                        <div class="col-6 text-right">
+				                          <a href="#">Подробнее</a>
+				                        </div>
+				                      </div>
+
+				                    </div>
+				                  </div>
+				                </div>
+				            </div>
+				          </div>
+				         
+				        </div>
+				      </div>
+				    </section>
+				  </div>
 			</div>
 		</div>
 	</section>
@@ -629,7 +1275,7 @@
 					<div class="col-12 col-sm-6">
 						<p class="mb-0">&copy; Copyright 2019 ООО «ПроектКом» </p>
 					</div>
-					<div class="col-12 col-sm-6 ">
+					<div class="col-12 col-sm-6 mt-2 mt-sm-0">
 						<div class="text-sm-right">
 							<a href="#">
 								Наш YouTube канал:
@@ -645,6 +1291,12 @@
 	<!-- Script files -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- containerNewProjSlider Scripts -->
+	<script src="js/owl.carousel.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/newProjectSlider.js"></script>
+
 	<script src="js/main.js"></script>
 
 </body>
