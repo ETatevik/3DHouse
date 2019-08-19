@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-
+	// Header of page // Gallery 
 	{
 		$('.popoverbigGalleryHome3d').fadeOut();
 		$('#bigGalleryHome3d').on(
@@ -19,14 +19,12 @@ jQuery(document).ready(function($) {
 
 	//  Filter Find of Projects
 	{
+		$("#filterFindHome").css('top', `${$('#menu3D').height()}px`);
 		if($(window).width() > 1000){
 			$(".filterHomeBody").width(`${$("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width()}px`);
-			$("#filterFindHome").css('top', `${$('#menu3D').height()}px`);
 		}else{
-			$(".filterHomeBody").width(`calc(98vw - ${$('.filterHomeBtn').width()}px)`);
-			$("#filterFindHome").css('top',0);
+			$(".filterHomeBody").width(`calc(${$("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width() - 2}px - ${$('.filterHomeBtn').width()}px)`);
 		}
-
 		$("#filterFindHome").css('right', `-${$(".filterHomeBody").width()}px`);
 		setTimeout(()=>{
 			$("#filterFindHome").css('transition', 'right .5s');

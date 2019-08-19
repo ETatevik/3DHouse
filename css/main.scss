@@ -14,9 +14,14 @@ $color4: #494949;
     box-shadow: 0 0 !important;
 }
 
+body,
+html{
+	overflow-x: hidden !important;
+}
+
 // Menu of page
 #menu3D{
-
+	z-index: 1040;
 	&.fixed-top{
 		@media (max-width: 1200px) {
 			position: sticky;
@@ -266,10 +271,6 @@ $color4: #494949;
 						letter-spacing: 1px !important;
 						text-transform: uppercase !important;
 						color: $color4 !important;
-						&:hover{
-							text-decoration: none;
-							color: $color2 !important;
-						}
 					}
 
 					&#projMiniMenuBody h2{
@@ -280,6 +281,10 @@ $color4: #494949;
 						font-weight: normal !important;
 						line-height: 32px !important;
 						color: #88989D !important;
+						&:hover{
+							text-decoration: none;
+							color: $color2 !important;
+						}
 					}
 				} 
 			}
@@ -402,6 +407,10 @@ $color4: #494949;
 								left: 50%;
 								top: 30%;
 
+								@media (min-width: 800px) {
+									font-size: 12px;
+								}
+
 								&:before{
 									content: '';
 									position: absolute;
@@ -419,6 +428,9 @@ $color4: #494949;
 										margin-top: 10px;
 										font-weight: bold;
 										font-size: 14px;
+										@media (min-width: 800px) {
+											font-size: 11.5px;
+										}
 									}
 								}
 							}
@@ -511,8 +523,8 @@ $color4: #494949;
 // Filter Find of Projects
 #filterFindHome{
 
-	position: fixed;
-	z-index: 1040;
+	position: absolute;
+	z-index: 1000;
 	background-color: red;
 	right: 0;
 
@@ -526,7 +538,11 @@ $color4: #494949;
 			height: 240px;
 			position: absolute;
 			left: -49px;
-			top: 240px;
+			top: calc(50% - 120px);
+
+			@media (max-height: 500px) {
+				top: 150px;
+			}
 
 			&:focus{
 				border: 0;
@@ -550,7 +566,6 @@ $color4: #494949;
 		}
 		.filterHomeBody{
 			background-color: $color1;
-			width: 	280px;
 			border: 1px solid $color3;
 			position: relative;
 
@@ -785,3 +800,289 @@ $color4: #494949;
 	}
 }
 
+// Free Projects Section
+#freeProjHome3D{
+	background-color: $color2;
+	position: relative;
+
+	&:before{
+		content: '';
+		position: absolute;
+		background-color: $color1;
+		width: 100%;
+		height: 50%;
+		top: 50%;
+		left: -60%;
+		z-index: 1;
+
+		@media (min-width: 1200px) {
+			left: -58%;
+		}
+
+		@media (max-width: 1000px) {
+			display: none;
+		}
+	}
+
+	&>.container{
+		padding: 60px 0;	
+		position: relative;
+		z-index: 200;
+
+		.freePrImg{
+			margin-bottom: 20px;
+		}
+
+		.freePrInfo{
+			padding: 15px 20px;
+
+			h2{
+				font-family: Oswald;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 36px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color1;
+			}
+
+			p{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 26px;
+				margin-top: 35px;
+				color: #FBFEFF;
+			}
+
+			button{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 22px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color1;
+				background-color: transparent;
+				border: 0;
+				margin-top: 35px;
+				margin-left: 0;
+				padding-left: 0;
+
+				&:focus{
+					box-shadow: 0 0;
+					border: 0;
+					outline: 0;
+				}
+				&> svg{
+					margin-left: 15px;
+				}
+			}
+		}
+
+	}
+
+}
+
+// Heading Seo Text Section
+#headSeoText{
+	background-color: $color1;
+
+	&>.container{
+		padding: 100px 50px 100px 100px;
+		@media (max-width: 1000px) {
+			padding: 100px 0;
+		}
+
+		.row{
+			padding: 60px;
+
+			h3{
+				font-family: Oswald;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 36px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color4;
+				margin-bottom: 0;
+			}
+			.seoText{
+				h4{
+					font-family: Noto Sans;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 26px;
+					color: $color4;
+					margin-top: 40px;
+				}
+				p{
+					font-family: Noto Sans;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 26px;
+					color: #88989D;
+					margin-top: 35px;
+				}
+
+			}
+
+			.seoNavbar{
+				border: 1px solid $color3;
+				padding: 25px;
+				margin-left: auto;
+
+				h5{
+					font-family: Noto Sans;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 26px;
+					color: $color4;
+					margin-bottom: 10px;
+				}
+				ul>li{
+					margin-bottom: 5px;
+
+					&>a{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 26px;
+						color: $color2;
+						border-bottom: 1px solid #E2F5FB;
+
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Footer
+#footer3D{
+	background-color: #F5F8FA;
+	padding: 50px 0 0;
+
+	&>.container{
+
+		.footerStLinks{
+			table{
+
+				td{
+					padding: 3px 15px;
+
+					&> a{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 26px;
+						color: $color4;
+
+						&:hover{
+							text-decoration: none;
+						}
+					}
+		
+				}	
+			} 
+		}
+
+		.footerLsLinks{
+			&>.row{
+				ul>li,
+				ul>li>a{
+					font-family: Noto Sans;
+					font-style: italic;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 26px;
+					color: #88989D;
+				}
+				ul>li>a{
+					color: $color2;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+
+				.homeFooterContact{
+					background-color: transparent;
+					border: 0;
+					margin: 0;
+					padding: 0;
+					display: flex;
+
+					&:focus{
+						border: 0;
+						outline: 0;
+						box-shadow: 0 0;
+					}
+
+					span{
+						min-height: 47px;
+						margin-right: 20px;
+						border: 2px solid $color2;
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 19px;
+						text-align: center;
+						color: $color2;
+						padding: 10px 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.footerCopyYouT{
+		padding: 25px 0  15px;			
+		border-top: 1px solid $color3;
+		margin-top: 35px;
+
+		p, a{
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 18px;
+			color: #C4CED5;
+		}
+		a{
+			vertical-align: top;
+			&:hover{
+				text-decoration: none;
+			}
+			span{
+				margin-left: 15px;
+				width: 30px;
+				height: 30px;
+				display: inline-block;
+				background-color: #E9F1F5;
+				border-radius: 50%;
+				position: relative;
+				top: -5px;
+
+				img{
+					position: absolute;
+					top: calc(50% - 5px);
+					left: calc(50% - 7px);
+				}
+			}
+		}
+	}
+
+}
