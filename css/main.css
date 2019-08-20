@@ -257,7 +257,7 @@ html {
       align-items: center;
       background-color: transparent; } }
   #home3D section.container-fluid #bigGalleryHome3d {
-    max-width: 1942px;
+    width: 100vw;
     height: 100vh; }
     @media (max-width: 1000px) {
       #home3D section.container-fluid #bigGalleryHome3d {
@@ -266,7 +266,6 @@ html {
       #home3D section.container-fluid #bigGalleryHome3d {
         height: auto; } }
     #home3D section.container-fluid #bigGalleryHome3d .carousel-inner {
-      max-width: 1942px;
       height: inherit; }
       #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item,
       #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item > img {

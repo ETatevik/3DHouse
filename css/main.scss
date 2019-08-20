@@ -336,7 +336,7 @@ html{
 
 
 		#bigGalleryHome3d{
-			max-width: 1942px;
+			width: 100vw;
 			height: 100vh;
 				
 			@media (max-width: 1000px) {
@@ -349,7 +349,7 @@ html{
 			}
 
 			.carousel-inner{
-				max-width: 1942px;
+				// max-width: 1942px;
 				height: inherit;
 
 				&>.carousel-item,
