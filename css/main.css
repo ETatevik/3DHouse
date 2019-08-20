@@ -254,7 +254,8 @@ html {
       height: 400px;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; } }
+      align-items: center;
+      background-color: transparent; } }
   #home3D section.container-fluid #bigGalleryHome3d {
     max-width: 1942px;
     height: 100vh; }
@@ -366,6 +367,9 @@ html {
       right: 0;
       bottom: 0;
       background-color: rgba(70, 70, 70, 0.35); }
+      @media (max-width: 500px) {
+        #home3D section.container-fluid #bigGalleryHome3d .galleryShadow {
+          display: none; } }
     #home3D section.container-fluid #bigGalleryHome3d .galleryBtns {
       position: absolute;
       z-index: 100;

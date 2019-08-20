@@ -330,6 +330,8 @@ html{
 		@media (max-width: 500px) {
 			height: 400px;
 			align-items: center;
+			background-color: transparent;
+
 		}
 
 
@@ -476,6 +478,10 @@ html{
 				right: 0;
 				bottom: 0;
 				background-color: rgba(70, 70, 70, .35);
+				@media (max-width: 500px) {
+					display: none;
+
+				}
 			}
 
 			.galleryBtns{
