@@ -320,10 +320,19 @@ html{
 
 // Header of page // Gallery
 #home3D{
+	display: flex;
+	position: relative;
+	height: 100vh;
+	// background-color: rgba(70, 70, 70, .8);
+
+
+	@media (max-width: 1000px) {
+		height: auto;
+		background-color: transparent !important;
+	}
 
 	section.container-fluid{
 		padding: 0;
-		background-color: rgba(70, 70, 70, .8);
 		display: flex;
 		justify-content: center;
 
@@ -334,10 +343,10 @@ html{
 
 		}
 
-
 		#bigGalleryHome3d{
 			width: 100vw;
 			height: 100vh;
+			// transition: .5s;
 				
 			@media (max-width: 1000px) {
 				height: 650px;
@@ -561,11 +570,8 @@ html{
 
 // Filter Find of Projects
 #filterFindHome{
-
-	position: absolute;
+	position: relative;
 	z-index: 1000;
-	background-color: red;
-	right: 0;
 
 	.findBox{
 		position: relative;
@@ -578,9 +584,13 @@ html{
 			position: absolute;
 			left: -49px;
 			top: calc(35% - 120px);
-
-			@media (max-height: 500px) {
-				top: 150px;
+			z-index: 100;
+			text-shadow: 1px 1px 0 $color2, 0 0 10px $color2;
+			@media (max-width: 800px)and(max-height: 700px){
+				top: calc(20% - 120px);
+			}
+			@media (max-width: 600px) {
+				top: calc(15% - 120px);	
 			}
 
 			&:focus{
@@ -728,6 +738,10 @@ html{
 				display: block;
 				padding: 25px 30px;
 
+				@media (min-width: 1000px) {
+					font-size: 14px;
+				}
+
 				& > svg {
 					margin-left: 15px;
 				}
@@ -749,6 +763,9 @@ html{
 				font-weight: normal;
 				font-size: 14px;
 				line-height: 26px;
+				@media (min-width: 1000px) {
+					font-size: 12px
+				}
 			}
 		}
 	}	
@@ -758,7 +775,7 @@ html{
 #homeNewPojectes{
 	background-color: $color1;
 
-	&>.container{
+	& .container{
 		padding: 100px 0;
 
 		&>.row{
@@ -1046,7 +1063,7 @@ html{
 #orderIndiviProj{
 	background-color: #F5F8FA;
 	
-	&>.container{
+	& .container{
 		padding: 80px 0;
 
 		&>h2{
@@ -1179,7 +1196,7 @@ html{
 		}
 	}
 
-	&>.container{
+	& .container{
 		padding: 60px 0;	
 		position: relative;
 		z-index: 200;
@@ -1246,7 +1263,7 @@ html{
 #headSeoText{
 	background-color: $color1;
 
-	&>.container{
+	& .container{
 		padding: 100px 50px 100px 100px;
 		@media (max-width: 1000px) {
 			padding: 100px 0;
@@ -1329,7 +1346,7 @@ html{
 	background-color: #F5F8FA;
 	padding: 50px 0 0;
 
-	&>.container{
+	& .container{
 
 		.footerStLinks{
 			table{
