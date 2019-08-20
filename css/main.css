@@ -13,6 +13,10 @@ body,
 html {
   overflow-x: hidden !important; }
 
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 #menu3D {
   z-index: 1040; }
   @media (max-width: 1200px) {
@@ -196,11 +200,19 @@ html {
     right: 0; }
     #projMenuModal.modal .modal-dialog > .modal-content {
       border: 0; }
+      #projMenuModal.modal .modal-dialog > .modal-content > .container {
+        padding: 0; }
       #projMenuModal.modal .modal-dialog > .modal-content .modal-header {
         border-bottom: 0;
         position: absolute;
-        top: 0px;
-        right: 0px; }
+        top: -30px;
+        right: -30px;
+        padding: 0;
+        width: auto; }
+      #projMenuModal.modal .modal-dialog > .modal-content > .container .modal-body {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0; }
       #projMenuModal.modal .modal-dialog > .modal-content > .container .row {
         padding: 0 !important; }
         #projMenuModal.modal .modal-dialog > .modal-content > .container .row .col-xl,
@@ -220,7 +232,6 @@ html {
           margin-bottom: 20px; }
         #projMenuModal.modal .modal-dialog > .modal-content > .container .row#projMiniMenuBody li > a {
           font-weight: normal !important;
-          line-height: 32px !important;
           color: #88989D !important; }
           #projMenuModal.modal .modal-dialog > .modal-content > .container .row#projMiniMenuBody li > a:hover {
             text-decoration: none;
@@ -238,6 +249,12 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media (max-width: 500px) {
+    #home3D section.container-fluid {
+      height: 400px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   #home3D section.container-fluid #bigGalleryHome3d {
     max-width: 1942px;
     height: 100vh; }
@@ -246,7 +263,7 @@ html {
         height: 650px; } }
     @media (max-width: 500px) {
       #home3D section.container-fluid #bigGalleryHome3d {
-        height: 550px; } }
+        height: auto; } }
     #home3D section.container-fluid #bigGalleryHome3d .carousel-inner {
       max-width: 1942px;
       height: inherit; }
@@ -269,7 +286,8 @@ html {
             position: relative; }
             @media (max-width: 500px) {
               #home3D section.container-fluid #bigGalleryHome3d .carousel-inner .carousel-caption .container-fluid .container > .row {
-                height: 400px; } }
+                height: 400px;
+                display: none; } }
             #home3D section.container-fluid #bigGalleryHome3d .carousel-inner .carousel-caption .container-fluid .container > .row h2,
             #home3D section.container-fluid #bigGalleryHome3d .carousel-inner .carousel-caption .container-fluid .container > .row h1 {
               font-family: Oswald;
@@ -354,6 +372,9 @@ html {
       bottom: 0;
       left: 0;
       right: 0; }
+      @media (max-width: 500px) {
+        #home3D section.container-fluid #bigGalleryHome3d .galleryBtns {
+          position: relative; } }
       #home3D section.container-fluid #bigGalleryHome3d .galleryBtns .container {
         padding: 0; }
         @media (max-width: 800px) {
@@ -588,9 +609,13 @@ html {
       border: 0; }
       #homeNewPojectes > .container > .row button > svg {
         margin-left: 15px; }
+    #homeNewPojectes > .container .containerNewProjSlider > .container {
+      padding: 0; }
     #homeNewPojectes > .container .containerNewProjSlider .card {
       border-radius: 0;
-      border: 1px solid #DDE9EF; }
+      border: 1px solid #DDE9EF !important;
+      outline: 0 !important;
+      background-color: transparent !important; }
       #homeNewPojectes > .container .containerNewProjSlider .card .card-img-top {
         border-radius: 0;
         position: relative; }
@@ -675,6 +700,9 @@ html {
           text-transform: uppercase;
           color: #494949;
           text-align: right; }
+          @media (min-width: 400px) and (max-width: 900px) {
+            #homeNewPojectes > .container .containerNewProjSlider .card .card-body table td[rowspan='2'] {
+              font-size: 18px; } }
       #homeNewPojectes > .container .containerNewProjSlider .card .card-body .cardLinkBtns {
         margin-top: 30px;
         margin-bottom: 15px; }
@@ -698,13 +726,21 @@ html {
           padding-bottom: 3px; }
     #homeNewPojectes > .container .containerNewProjSlider #demos .owl-carousel .item {
       height: auto !important;
-      background-color: transparent;
-      padding: 0; }
+      background-color: transparent !important;
+      padding: 0;
+      border: 0 !important;
+      outline: 0 !important; }
+    #homeNewPojectes > .container .containerNewProjSlider .owl-item .active {
+      border: 0 !important;
+      outline: 0 !important;
+      background-color: transparent !important; }
     #homeNewPojectes > .container .containerNewProjSlider .owl-theme .owl-dots {
       display: none; }
     #homeNewPojectes > .container .containerNewProjSlider #demos {
       margin: auto;
       padding: 0 15px; }
+      #homeNewPojectes > .container .containerNewProjSlider #demos .row {
+        margin: 0; }
     #homeNewPojectes > .container .containerNewProjSlider .owl-carousel .owl-theme .owl-loaded .owl-drag {
       position: relative; }
     #homeNewPojectes > .container .containerNewProjSlider .owl-carousel .owl-stage-outer {
@@ -865,7 +901,7 @@ html {
     @media (min-width: 1200px) {
       #freeProjHome3D:before {
         left: -58%; } }
-    @media (max-width: 1000px) {
+    @media (max-width: 999px) {
       #freeProjHome3D:before {
         display: none; } }
   #freeProjHome3D > .container {

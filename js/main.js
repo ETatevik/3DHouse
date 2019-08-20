@@ -5,19 +5,6 @@ jQuery(document).ready(function($) {
 
 		if($(window).width() < 900){
 			$('.popoverbigGalleryHome3d').css('display', 'none');
-		}else{
-			$('.popoverbigGalleryHome3d').fadeOut();
-				$('#bigGalleryHome3d').on(
-				{
-					'mouseenter':function(event) {
-						event.preventDefault();
-						$('.popoverbigGalleryHome3d').fadeIn('500');
-					},
-					'mouseleave': function(event){
-						event.preventDefault();
-						$('.popoverbigGalleryHome3d').fadeOut('200');
-					}
-				});
 		}
 
 	}
@@ -73,6 +60,11 @@ jQuery(document).ready(function($) {
 				}
 			}
 		});
+	}
+
+	// 
+	{
+		// 
 	}
 
 	

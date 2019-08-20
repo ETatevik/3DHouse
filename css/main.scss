@@ -19,6 +19,10 @@ html{
 	overflow-x: hidden !important;
 }
 
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
 // Menu of page
 #menu3D{
 	z-index: 1040;
@@ -253,11 +257,23 @@ html{
 			&>.modal-content{
 				border: 0;
 
+				&>.container{
+					padding: 0;
+				}
+
 				.modal-header{
 					border-bottom: 0;
 					position: absolute;
-					top: 0px;
-					right: 0px;
+					top: -30px;
+					right: -30px;
+					padding: 0;
+					width: auto;
+				}
+
+				&>.container .modal-body{
+					padding: 0;
+					margin-left: 0;
+					margin-right: 0;
 				}
 
 				&>.container .row{
@@ -286,7 +302,6 @@ html{
 
 					&#projMiniMenuBody  li > a{
 						font-weight: normal !important;
-						line-height: 32px !important;
 						color: #88989D !important;
 						&:hover{
 							text-decoration: none;
@@ -312,6 +327,12 @@ html{
 		display: flex;
 		justify-content: center;
 
+		@media (max-width: 500px) {
+			height: 400px;
+			align-items: center;
+		}
+
+
 		#bigGalleryHome3d{
 			max-width: 1942px;
 			height: 100vh;
@@ -321,7 +342,8 @@ html{
 			}
 
 			@media (max-width: 500px) {
-				height: 550px;
+				height: auto;
+
 			}
 
 			.carousel-inner{
@@ -351,6 +373,7 @@ html{
 
 							@media (max-width: 500px){
 								height: 400px;
+								display: none;
 							}
 
 							h2,
@@ -461,6 +484,9 @@ html{
 				bottom: 0;
 				left: 0;
 				right: 0;
+				@media (max-width: 500px){
+						position: relative;
+				}
 
 				.container{
 					padding: 0;
@@ -761,9 +787,15 @@ html{
 		}
 
 		.containerNewProjSlider{
+			&>.container{
+				padding: 0;
+			}
 			.card{
 				border-radius: 0;
-				border: 1px solid $color3;
+				border: 1px solid $color3 !important;;
+				outline: 0 !important;
+		        background-color: transparent !important;
+
 
 				.card-img-top{
 					border-radius: 0;
@@ -865,6 +897,9 @@ html{
 							text-transform: uppercase;
 							color: #494949;
 							text-align: right;
+							@media (min-width: 400px) and (max-width: 900px) {
+								font-size: 18px;
+							}
 						}
 					}
 
@@ -901,8 +936,17 @@ html{
 			}
 			#demos .owl-carousel .item{
 		        height: auto !important;
-		        background-color: transparent;
+		        background-color: transparent !important;
 		        padding: 0;
+				border:0 !important;
+				outline: 0 !important;
+
+		    }
+		    .owl-item .active{
+				border:0 !important;
+				outline: 0 !important; 
+		        background-color: transparent !important;
+
 		    }
 		    .owl-theme .owl-dots{
 		        display: none;
@@ -911,6 +955,9 @@ html{
 		    #demos{
 		        margin: auto;
 		        padding: 0 15px;
+		        .row{
+		        	margin: 0;
+		        }
 		    }
 
 		    .owl-carousel .owl-theme .owl-loaded .owl-drag{
@@ -1121,7 +1168,7 @@ html{
 			left: -58%;
 		}
 
-		@media (max-width: 1000px) {
+		@media (max-width: 999px) {
 			display: none;
 		}
 	}
