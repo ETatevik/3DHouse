@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="css/docs.theme.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- multirange Stylesheets -->
+    <link rel="stylesheet" href="css/multirange.css">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -41,6 +43,11 @@
 
 </head>
 <body>
+
+	<!-- Loading 3D -->
+	<div id="loading">
+		<img src="img/loading.webp" alt="" class="img-fluid">
+	</div>
 
 	<!-- Menu of page -->
 	<nav id="menu3D" class="fixed-top">
@@ -302,14 +309,14 @@
 					<div class="galleryBtns">
 						<div class="container bg-white d-flex">
 							<div class="bookProj">
-								<button type="button" class="bookPjBtn">Заказать проект / 15 000 
+								<button type="button" class="bookPjBtn d-flex flex-wrap d-md-inline justify-content-center"><span>Заказать проект</span><span> / 15 000 
 									<svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M6.39844 10.1953H3.88281V12H1.91406V10.1953H0.3125V8.60938H1.91406V7.77344H0.3125V6.1875H1.91406V0.625H6.26562C7.52083 0.625 8.52344 0.953125 9.27344 1.60938C10.0234 2.26042 10.3984 3.1276 10.3984 4.21094C10.3984 5.3151 10.0417 6.18229 9.32812 6.8125C8.61458 7.4375 7.6224 7.75781 6.35156 7.77344H3.88281V8.60938H6.39844V10.1953ZM3.88281 6.1875H6.23438C6.94271 6.1875 7.48438 6.02344 7.85938 5.69531C8.23438 5.36719 8.42188 4.8776 8.42188 4.22656C8.42188 3.64323 8.23698 3.16667 7.86719 2.79688C7.5026 2.42708 6.9974 2.23438 6.35156 2.21875H3.88281V6.1875Z" fill="white"/>
 									</svg>
 
 									<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M2 19L11 10.5L2 2" stroke="#349FBF" stroke-width="3" stroke-linecap="round"/>
-									</svg>
+									</svg></span>
 								</button>
 							</div>
 							<div class="arrowsGall d-flex justify-content-center align-items-center">
@@ -342,13 +349,28 @@
 				<button class="filterHomeBtn text-uppercase"><span>Открыть фильтр</span></button>
 				<section class="filterHomeBody">
 					<h2>Поиск по параметрам:</h2>
-					<form>
+					<form name="filterFindHome3D">
 						<dl>
 							<dt>
 								<span>Общая площадь</span>
 								<span class="plus">+</span>
 							</dt>
-							<dd>Continue...</dd>
+							<dd>
+								<div class="range3Dmultirange" id="multirangeTotalArea">
+									<div class="spans">
+										<span id="minRange">20</span>
+										<span id="maxRange">500+</span>
+										<input type="hidden" name="minTotalArea">
+										<input type="hidden" name="maxTotalArea">
+									</div>
+									<input type="range" multiple step="10" min=20 max="500" value="260,500"   />
+									<div class="footerSpans">
+										<span>20</span>
+										<span>260</span>
+										<span>500+</span>
+									</div>
+								</div>
+							</dd>
 							<dt>
 								<span>Тип объекта недвижимости</span>
 								<span class="plus">+</span>
@@ -488,8 +510,46 @@
 								<span>Размеры дома</span>
 								<span class="plus">+</span>
 							</dt>
-							<dd>Continue...</dd>
+							<dd>
+								<ul class="list-unstyled">
+									<li>
+										<div class="range3Dmultirange" id="multirangeBreadth3D">
+											<h5>Ширина: (м)</h5>
+											<div class="spans">
+												<span id="minRange2">от</span>
+												<span id="maxRange2">до</span>
+												<input type="hidden" name="minBreadth3D">
+												<input type="hidden" name="maxBreadth3D">
+											</div>
+											<input type="range" multiple step="10" min=20 max="500" value="20,500"  />
+											<div class="footerSpans">
+												<span>20</span>
+												<span>260</span>
+												<span>500+</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="range3Dmultirange" id="multirangeLength3D">
+											<h5>Длина: (м)</h5>
+											<div class="spans">
+												<span id="minRange3">50</span>
+												<span id="maxRange3">320</span>
+												<input type="hidden" name="minLength3D">
+												<input type="hidden" name="maxLength3D">
+											</div>
+											<input type="range" multiple step="10" min=20 max="500" value="50,320"  />
+											<div class="footerSpans">
+												<span>20</span>
+												<span>260</span>
+												<span>500+</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</dd>
 						</dl>
+						<hr class="my-0" style="border-color: #DDE9EF">
 						<button type="submit" class="text-uppercase btnHomeFilterSearch">Найти проект 
 							<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M2 19L11 10.5L2 2" stroke="#5FCAEA" stroke-width="3" stroke-linecap="round"/>
@@ -1310,6 +1370,8 @@
     <script src="js/highlight.js"></script>
     <script src="js/app.js"></script>
     <script src="js/newProjectSlider.js"></script>
+    <!-- multirange Script -->
+	<script src="js/multirange.js"></script>
 
 	<script src="js/main.js"></script>
 

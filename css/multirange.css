@@ -1,0 +1,145 @@
+@supports (--css: variables) {
+	input[type="range"]:focus{
+		outline: 0;
+	}
+	input[type="range"].multirange {
+		padding: 0;
+		margin: 0;
+		/*display: inline-block;
+		vertical-align: top;*/
+
+	}
+
+
+	input[type="range"].multirange.original {
+		position: absolute;
+		-webkit-appearance: none;
+		background-color:  transparent !important;
+	}
+
+	input[type="range"].multirange.original:before{
+			content: '';
+			background: #DDE9EF;
+			height: 5px;
+			width: 98%;
+			position: absolute;
+			top: calc(50% - 2.5px);
+			left: 1%;
+			z-index: 0;
+		}
+
+		input[type="range"].multirange.original::-webkit-slider-thumb {
+			position: relative;
+			z-index: 4;
+			 -webkit-appearance: none;
+		    width: 16px;
+		    height: 16px;
+		    border-radius: 50%;
+		    background: #5FCAEA;
+		    border: 3px solid #F5F8FA;
+			box-shadow: 0px 2px 7px rgba(46, 159, 192, 0.23);
+		}
+
+		input[type="range"].multirange.original::-moz-range-thumb {
+			transform: scale(1); /* FF doesn't apply position it seems */
+			z-index: 3;
+		}
+
+		input[type="range"].multirange::-moz-range-track {
+			border-color: transparent; /* needed to switch FF to "styleable" control */
+		}
+
+	input[type="range"].multirange.ghost {
+		position: relative;
+		-webkit-appearance: none;
+		background: var(--track-background);
+		--track-background: linear-gradient(to right,
+				transparent var(--low), var(--range-color) 0,
+				var(--range-color) var(--high), transparent 0
+			) no-repeat 0 45% / 100% 40%;
+		--range-color:#5FCAEA;
+	}
+
+
+		input[type="range"].multirange.ghost::-webkit-slider-runnable-track {
+			background: var(--track-background);
+		}
+
+		input[type="range"].multirange.ghost::-webkit-slider-thumb{
+			 -webkit-appearance: none;
+		    width: 16px;
+		    height: 16px;
+		    border-radius: 50%;
+		   	background: #5FCAEA;
+		    border: 3px solid #F5F8FA;
+			box-shadow: 0px 2px 7px rgba(46, 159, 192, 0.23);
+		}
+
+		input[type="range"].multirange.ghost::-moz-range-track {
+			background: var(--track-background);
+		}
+
+}
+
+.range3Dmultirange{
+	display: block;
+	position: relative;
+}
+	input[type="range"]{
+		width: inherit;
+		display: block;
+		cursor: pointer;
+	}
+.range3Dmultirange .spans,
+.range3Dmultirange .footerSpans{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	position:relative;
+	top: 6px;
+	width: 98%;
+	left:1%;
+}
+
+.range3Dmultirange h5{
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: #494949;
+}
+.range3Dmultirange .footerSpans{
+	top: -5px;
+}
+
+.range3Dmultirange .spans span,
+.range3Dmultirange .footerSpans span{
+	width: 100%;
+	display: block;
+	text-align: center;
+	border:1px solid #DAE4EA;
+	border-bottom: 0;
+	padding: 10px 5px;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: #494949;
+}
+.range3Dmultirange .footerSpans span{
+	color: #C4CED5;
+	border:0;
+	padding: 4px;
+}
+.range3Dmultirange .footerSpans span:first-child{
+	text-align: left;
+}
+.range3Dmultirange .footerSpans span:last-child{
+	text-align: right;
+}
+.range3Dmultirange .spans #maxRange{
+	border-left: 0;
+}

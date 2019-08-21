@@ -17,6 +17,30 @@ html {
   margin-left: 0;
   margin-right: 0; }
 
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F2FAFE;
+  z-index: 2000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #loading img {
+    border: 0; }
+    @media (min-width: 1100px) {
+      #loading img {
+        width: 50%;
+        max-width: 400px; } }
+
 #menu3D {
   z-index: 1040; }
   @media (max-width: 1200px) {
@@ -413,8 +437,7 @@ html {
               margin-right: 15px; }
             @media (max-width: 800px) {
               #home3D section.container-fluid #bigGalleryHome3d .galleryBtns .container .bookProj > .bookPjBtn {
-                width: 100%;
-                font-size: 12px; } }
+                width: 100%; } }
           #home3D section.container-fluid #bigGalleryHome3d .galleryBtns .container .arrowsGall {
             background-color: #F5F8FA;
             min-width: 229px;
@@ -677,16 +700,18 @@ html {
           right: 15px;
           z-index: 30; }
           #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart > img {
-            width: 30px;
+            width: 50px;
             position: relative;
-            left: -1px;
-            top: -2px; }
+            margin: 5px auto;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s; }
           #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart:focus {
             background-color: #5FCAEA;
             -webkit-box-shadow: 0 0;
             box-shadow: 0 0;
             outline: 0;
-            border-color: #fff; }
+            border-color: #fff !important; }
       #homeNewPojectes .container .containerNewProjSlider .card .card-body .card-title {
         font-family: Noto Sans;
         font-style: normal;

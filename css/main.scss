@@ -23,6 +23,28 @@ html{
 	margin-left: 0;
 	margin-right: 0;
 }
+
+//loading
+#loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #F2FAFE;
+	z-index: 2000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		border: 0;
+		@media (min-width: 1100px) {
+			width: 50%;
+			max-width: 400px;
+		}
+	}
+}
+
 // Menu of page
 #menu3D{
 	z-index: 1040;
@@ -533,7 +555,6 @@ html{
 
 						@media (max-width: 800px) {
 							width: 100%;
-							font-size: 12px;
 						}
 					}
 
@@ -865,17 +886,17 @@ html{
 						z-index: 30;
 
 						&>img{
-							width: 30px;
+							width: 50px;
 							position: relative;
-							left: -1px;
-							top:-2px;
+							margin: 5px auto;
+							transition: .5s;
 						}
 
 						&:focus{
 							background-color: $color2;
 							box-shadow: 0 0;
 							outline: 0;
-							border-color: $color1;
+							border-color: $color1 !important;
 						}
 					}
 				}

@@ -1,4 +1,22 @@
+//Loading Page 
+window.onload = function (){
+	setTimeout(()=>{
+		$('#loading').fadeOut(800, function() {
+			$(this).css('display', 'none');
+		});		
+	}, 500);
+
+}
+
 jQuery(document).ready(function($) {
+	//Load Page if change Width Window
+	{
+		let startWid = $(window).width();
+
+		$(window).resize(function(event) {
+			if(startWid != $(this).width()) location.reload();
+		});
+	}
 
 	// Header of page // Gallery 
 	{
@@ -16,7 +34,7 @@ jQuery(document).ready(function($) {
 		if($(window).width() > 1200) $('#filterFindHome').css('top', `${$('#menu3D').height()}px`);
 
 		if($(window).width() > 1100){
-			galleryW =$('#bigGalleryHome3d').width() - $('#filterFindHome').width();
+			galleryW = ($('#bigGalleryHome3d').width() - $('#filterFindHome').width()- 22);
 			$(".filterHomeBody").width(`${$("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width()}px`);
 			$('.filt3Dhei').width(`${galleryW}px`).css({marginLeft : '0', marginRight : 'auto'});
 			$('#bigGalleryHome3d').width(`${galleryW}px`);
@@ -81,6 +99,7 @@ jQuery(document).ready(function($) {
 				}else
 				// else if($(window).width() < 800)
 				{
+					$('#home3D').height('auto');
 					$('#bigGalleryHome3d').width(`${0}px`).css('overflow', 'hidden');
 					$(".filterHomeBody").width(galleryW).css('overflow', 'visibility');
 				}
@@ -93,10 +112,13 @@ jQuery(document).ready(function($) {
 				$(".filterHomeBody").width(0).css('overflow', 'hidden');
 				if($(window).width() > 1100){
 					$('.filt3Dhei').width(`100%`).css({marginLeft : 'auto', marginRight : 'auto'});
+				}else{
+					$('#home3D').height(`${$('#home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item, #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item > img').eq(0).height()}px`);
 				}
 				if($(window).width() < 800){
 					$('#bigGalleryHome3d').css('overflow', 'visibility');
-
+					$('#home3D').height(`${$('#home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item, #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item > img').eq(0).height() + $('#home3D section.container-fluid #bigGalleryHome3d .galleryBtns .container').height()}px`);
+					// $('#home3D section.container-fluid #bigGalleryHome3d .galleryBtns .container').css('flexWrap', 'wrap');
 				}
 			}
 		});
@@ -119,7 +141,61 @@ jQuery(document).ready(function($) {
 		});
 	}
 
-	
+	// range3Dmultirange section
+	{
+		$('input[type="range"]').width(`${$('.range3Dmultirange').width()}px`);
 
-	
+		$('#multirangeTotalArea.range3Dmultirange input[type="range"].multirange').change(function(event) {
+			let text = parseInt($(this).val());
+
+			if($(this).hasClass('ghost')){
+				if (text == 500 ){
+					$('input[name="maxTotalArea"]').val(text+'+');
+					$('#maxRange').text(text+'+')
+				}else{
+					$('#maxRange').text(text);
+					$('input[name="maxTotalArea"]').val(text);
+				} 
+			}else{
+				$('#minRange').text(text);	
+				$('input[name="minTotalArea"]').val(text);
+			}
+		
+		});
+		$('#multirangeBreadth3D.range3Dmultirange input[type="range"].multirange').change(function(event) {
+			let text = parseInt($(this).val());
+
+			if($(this).hasClass('ghost')){
+				if (text == 500 ){
+					$('input[name="maxBreadth3D"]').val(text+'+');
+					$('#maxRange2').text(text+'+')
+				}else{
+					$('#maxRange2').text(text);
+					$('input[name="maxBreadth3D"]').val(text);
+				} 
+			}else{
+				$('#minRange2').text(text);	
+				$('input[name="minBreadth3D"]').val(text);
+			}
+		
+		});
+		$('#multirangeLength3D.range3Dmultirange input[type="range"].multirange').change(function(event) {
+			let text = parseInt($(this).val());
+
+			if($(this).hasClass('ghost')){
+				if (text == 500 ){
+					$('input[name="maxLength3D"]').val(text+'+');
+					$('#maxRange3').text(text+'+')
+				}else{
+					$('#maxRange3').text(text);
+					$('input[name="maxLength3D"]').val(text);
+				} 
+			}else{
+				$('#minRange3').text(text);	
+				$('input[name="minLength3D"]').val(text);
+			}
+		
+		});
+	}
+		
 });
