@@ -957,6 +957,38 @@ html {
     z-index: 200; }
     #freeProjHome3D .container .freePrImg {
       margin-bottom: 20px; }
+      #freeProjHome3D .container .freePrImg .container-video {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        width: 100%; }
+        #freeProjHome3D .container .freePrImg .container-video video {
+          width: inherit; }
+        #freeProjHome3D .container .freePrImg .container-video > .play {
+          display: block;
+          background: rgba(70, 70, 70, 0.35);
+          position: absolute;
+          width: inherit;
+          height: 98%;
+          z-index: 3; }
+          #freeProjHome3D .container .freePrImg .container-video > .play img {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+            z-index: 5;
+            background: #5FCAEA; }
+          #freeProjHome3D .container .freePrImg .container-video > .play > span {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: calc(50% - 40px);
+            left: calc(50% - 40px);
+            border-radius: 50%;
+            background: #5FCAEA;
+            z-index: 4; }
     #freeProjHome3D .container .freePrInfo {
       padding: 15px 20px; }
       #freeProjHome3D .container .freePrInfo h2 {
@@ -1137,3 +1169,230 @@ html {
           position: absolute;
           top: calc(50% - 5px);
           left: calc(50% - 7px); }
+
+#projecthome3D {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  @media (max-width: 1000px) {
+    #projecthome3D {
+      height: auto;
+      background-color: transparent !important; } }
+  #projecthome3D section.container {
+    padding: 120px 0 100px; }
+    @media (max-width: 1200px) {
+      #projecthome3D section.container {
+        position: -webkit-sticky;
+        position: sticky;
+        padding: 60px 0 100px; } }
+    #projecthome3D section.container #projecMain3d h1 {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #494949;
+      margin-bottom: 20px; }
+    #projecthome3D section.container #projecMain3d .projectsBtn3D {
+      /*style the arrow inside the select element:*/
+      /*point the arrow upwards when the select box is open (active):*/
+      /*style the items (options), including the selected item:*/
+      /*style items (options):*/
+      /*hide the items when the select box is closed:*/ }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 {
+        padding: 0; }
+        #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 .project3DFilterSelect {
+          margin-right: 20px; }
+        #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav {
+          padding-left: 50px; }
+          #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav ul {
+            margin-bottom: 0; }
+          #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li {
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: #494949;
+            margin-left: 5px; }
+            #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li:first-child {
+              margin: 0 10px 0 0; }
+            #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards {
+              padding: 0;
+              margin: 0;
+              background-color: transparent;
+              border: 0;
+              color: #5FCAEA; }
+              #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards:focus {
+                border: 0;
+                outline: 0;
+                -webkit-box-shadow: 0 0;
+                box-shadow: 0 0; }
+              #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards.pageActive {
+                color: #C4CED4; }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .project3DFilterSelect {
+        position: relative;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #494949; }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .project3DFilterSelect select {
+        display: none;
+        /*hide original SELECT element:*/ }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .select-selected {
+        background-color: #fff;
+        border-bottom: 1px solid #DDE9EF; }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .select-selected:after {
+        position: absolute;
+        content: "";
+        top: calc(50% - 5px);
+        right: 35px;
+        width: 15px;
+        height: 10px;
+        background: url("../img/arrow-bottom.png") no-repeat center;
+        background-size: cover; }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .select-selected.select-arrow-active:after {
+        border-bottom: 1px solid transparent;
+        -webkit-transform: rotateZ(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotateZ(180deg); }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .select-items div, #projecthome3D section.container #projecMain3d .projectsBtn3D .select-selected {
+        color: #494949;
+        padding: 15px 25px;
+        border-bottom: 1px solid trasnparent;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .select-items {
+        position: absolute;
+        background-color: #fff;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        border-bottom: 1px solid transparent; }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .select-hide {
+        display: none; }
+      #projecthome3D section.container #projecMain3d .projectsBtn3D .select-items div:hover, #projecthome3D section.container #projecMain3d .projectsBtn3D .same-as-selected {
+        background-color: #DDE9EF; }
+    #projecthome3D section.container #projecMain3d > .row .card {
+      border-radius: 0;
+      border: 1px solid #DDE9EF !important;
+      outline: 0 !important;
+      background-color: transparent !important;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+      #projecthome3D section.container #projecMain3d > .row .card .card-img-top {
+        border-radius: 0;
+        position: relative; }
+        #projecthome3D section.container #projecMain3d > .row .card .card-img-top .stok {
+          position: absolute;
+          background: #5ACB80;
+          top: 15px;
+          left: 15px;
+          padding: 10px;
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          color: #fff; }
+        #projecthome3D section.container #projecMain3d > .row .card .card-img-top .info {
+          position: absolute;
+          bottom: 25px;
+          left: 15px;
+          padding: 6px 10px;
+          background-color: #5FCAEA;
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          color: #fff;
+          max-width: 90%; }
+        #projecthome3D section.container #projecMain3d > .row .card .card-img-top .heart {
+          position: absolute;
+          background-color: #E9F1F5;
+          border: 4px solid #fff;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          bottom: -20px;
+          right: 15px;
+          z-index: 30; }
+          #projecthome3D section.container #projecMain3d > .row .card .card-img-top .heart > img {
+            width: 50px;
+            position: relative;
+            margin: 5px auto;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s; }
+          #projecthome3D section.container #projecMain3d > .row .card .card-img-top .heart:focus {
+            background-color: #5FCAEA;
+            -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+            outline: 0;
+            border-color: #fff !important; }
+      #projecthome3D section.container #projecMain3d > .row .card .card-body .card-title {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        color: #494949;
+        margin-bottom: 20px;
+        margin-top: 20px; }
+      #projecthome3D section.container #projecMain3d > .row .card .card-body .card-text {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: justify;
+        color: #88989D; }
+      #projecthome3D section.container #projecMain3d > .row .card .card-body table td {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        color: #494949;
+        padding: 0px 5px; }
+        #projecthome3D section.container #projecMain3d > .row .card .card-body table td[rowspan='2'] {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 33px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #494949;
+          text-align: right; }
+          @media (min-width: 400px) and (max-width: 900px) {
+            #projecthome3D section.container #projecMain3d > .row .card .card-body table td[rowspan='2'] {
+              font-size: 18px; } }
+      #projecthome3D section.container #projecMain3d > .row .card .card-body .cardLinkBtns {
+        margin-top: 30px;
+        margin-bottom: 15px; }
+        #projecthome3D section.container #projecMain3d > .row .card .card-body .cardLinkBtns a img {
+          width: 30px;
+          height: 30px; }
+        #projecthome3D section.container #projecMain3d > .row .card .card-body .cardLinkBtns a:focus, #projecthome3D section.container #projecMain3d > .row .card .card-body .cardLinkBtns a:hover {
+          border: 0;
+          outline: 0;
+          -webkit-box-shadow: 0 0;
+          box-shadow: 0 0;
+          text-decoration: none; }
+        #projecthome3D section.container #projecMain3d > .row .card .card-body .cardLinkBtns .text-right > a {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 26px;
+          color: #5FCAEA;
+          border-bottom: 1px solid #E2F5FB;
+          padding-bottom: 3px; }

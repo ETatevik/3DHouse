@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>HOUSE</title>
+
+	<!-- Logo of page -->
+	<link rel="shortcut icon" href="img/3d.png">
+	
+
+	<!-- CSS files -->
+	<!-- Owl Stylesheets -->
+	<link rel="stylesheet" href="css/docs.theme.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- multirange Stylesheets -->
+    <link rel="stylesheet" href="css/multirange.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+<!--
+<pre> 
+	    |===============
+	    ||===========
+	    |||=======
+	    |||
+	    |||
+===================
+   ============= 
+      =======
+	    |||
+	    |||
+	    |||=======
+	    ||===========
+	    |===============   
+</pre> -->
+
+</head>
+<body>
+
+	<!-- Loading 3D -->
+	<div id="loading">
+		<img src="img/loading.webp" alt="" class="img-fluid">
+	</div>
+
+	<!-- Menu of page -->
+	<nav id="menu3D" class="fixed-top">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-sm navbar-light">
+			  	<a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
+			  		<img src="img/icons/logo.svg"  alt="">
+			  	</a>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSuppContent" aria-controls="menuSuppContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+				<div class="container">
+					<div class="row w-100 ">
+						<div class="col-sm-12 col-md-6 col-lg-7 d-flex align-items-center">
+							<div class="collapse navbar-collapse" id="menuSuppContent">
+						  	  	<ul class="navbar-nav  text-uppercase">
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="projects.html">Проекты <img src="img/icons/arrow.svg" alt=""></a>
+						  	  	  	</li>
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="#">Услуги <img src="img/icons/arrow.svg" alt=""></a>
+						  	  	  	</li>
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="#">Акции</a>
+						  	  	  	</li>
+						  	  	</ul>
+						  	</div>
+						</div>
+						<div class="d-none  col-sm-12 col-md-6 col-lg-5 searchBtn d-sm-flex align-items-center justify-content-center">
+							<form class="form-inline">
+					  	  	  	<div class="input-group">
+								  	<input name="searchMenuPj" type="search" class="form-control" placeholder="Поиск проекта" aria-label="Поиск проекта" aria-describedby="search">
+								 	<div class="input-group-append">
+								    	<button type="submit" class="input-group-text" id="search"><img src="img/icons/search.svg" alt=""></button>
+								  	</div>
+								</div>
+					  	  	</form>
+						</div>
+					</div>
+				</div>
+				<div class="minMenu3D d-flex align-items-stretch ">
+			  	  	<div class="row w-100">
+			  	  		<div class="col-12 col-sm-9 col-lg-12 col-xl-9 phBtn d-flex align-items-center justify-content-center">
+			  	  			<div class="text-right d-flex py-3 py-xl-0">
+				  				<span class="phone">
+				  					<img src="img/icons/phone.svg" alt="">
+				  				</span>
+				  				<span class="numb">+7 (900) 90-909-00</span>
+				  			</div>
+			  	  		</div>
+			  	  		<div class="col-12 col-sm-3 col-lg-12 col-xl-3 d-flex align-items-center justify-content-center">
+			  	  			<button type="button" class="prjMenuThree py-3 py-xl-0" data-toggle="modal" data-target="#projMenuModal">
+			  	  				<img src="img/icons/treeLine.svg" alt="">
+			  	  			</div>
+			  	  		</div>
+			  	  	</div>
+			  	</div>
+			</nav>
+		</div>
+	</nav>
+
+	<!-- Poject Menu Modal -->
+	<div class="modal fade" id="projMenuModal" tabindex="-1" role="dialog" aria-labelledby="projMenuModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog" role="document">
+	  	  	<div class="modal-content">
+	  	  		<div class="container">
+	  	  			<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          	<span aria-hidden="true">
+				          		<svg width="25" height="25" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L9 9M9 1L1 9" stroke="#5FCAEA" stroke-linecap="round"/>
+								</svg>
+				          	</span>
+				        </button>
+				    </div>
+	  	   	  	  	<div class="modal-body">
+	  	  	  	  		<div class="row" id="projMiniMenuBody">
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По материалу:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из пеноблоков</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По стилю:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+									<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>	  	  	  	  					
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По назначению:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">ЛСТК проекты</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По этажности:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+									<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">ЛСТК проекты</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По размеру:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты домов до 100 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Проекты домов до 150 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Проекты домов до 200 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Одноэтажные до 100 м<sup>2</sup></a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  		</div>
+	  	  	  		</div>
+	  	  		</div>
+	  	  	</div>
+	  	</div>
+	</div>
+
+	<!-- Header of page // Projects-->
+	<header id="projecthome3D">
+		<section class="container">
+			<div class="filt3Dhei">
+				<div id="projecMain3d">
+					<h1>Проекты</h1>
+					<div class="projectsBtn3D">
+						<form>
+							<div class="row align-items-center">
+								<div class="col col-md-5 col-lg-4">
+									<div class="project3DFilterSelect">
+									  	<select>
+									  	  	<option>По популярности</option>
+									  	  	<option>По популярности</option>
+									  	  	<option>По популярности 2</option>
+									  	  	<option>По популярности 3</option>
+									  	</select>
+									</div>
+								</div>
+								<div class="col col-md-5 col-lg-4 mt-3 mt-md-0">
+									<nav aria-label="Project navigation">
+									  	<ul class="pagination d-flex align-items-center ">
+									  		<li>Показано:</li>
+									  	  	<li class="page-item"><button type="button" class="projectsShowPageCards pageActive">12</button></li>
+									  	  	<li class="page-item"><button type="button" class="projectsShowPageCards">24</button></li>
+									  	  	<li class="page-item"><button type="button" class="projectsShowPageCards">36</button></li>
+									  	</ul>
+									</nav>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="row" id="projectsCardsMainBody3D"></div>
+						  	
+				</div>
+			</div>
+		</section>
+			<!-- Filter Find of Projects -->
+		<aside id="filterFindHome">
+			<div class="findBox">
+				<button class="filterHomeBtn text-uppercase"><span>Открыть фильтр</span></button>
+				<section class="filterHomeBody">
+					<h2>Поиск по параметрам:</h2>
+					<form name="filterFindHome3D">
+						<dl>
+							<dt>
+								<span>Общая площадь</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<div class="range3Dmultirange" id="multirangeTotalArea">
+									<div class="spans">
+										<span id="minRange">20</span>
+										<span id="maxRange">500+</span>
+										<input type="hidden" name="minTotalArea">
+										<input type="hidden" name="maxTotalArea">
+									</div>
+									<input type="range" multiple step="10" min=20 max="500" value="260,500"   />
+									<div class="footerSpans">
+										<span>20</span>
+										<span>260</span>
+										<span>500+</span>
+									</div>
+								</div>
+							</dd>
+							<dt>
+								<span>Тип объекта недвижимости</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<ul class="list-unstyled">
+									<li><label><input type="checkbox"><span class="checkmark"></span>Гостевой дом</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Дача</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Гостинница</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Шале</label></li>
+								</ul>
+							</dd>
+							<dt>
+								<span>Материал объекта</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<ul class="list-unstyled">
+									<li><label><input type="checkbox"><span class="checkmark"></span>Деревянный</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Каменный</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Каркасный</label></li>
+								</ul>
+							</dd>
+							<dt>
+								<span>Материалы стен</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<ul class="list-unstyled">
+									<li><label><input type="checkbox"><span class="checkmark"></span>Деревянный</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Каменный</label></li>
+								</ul>
+							</dd>
+							<dt>
+								<span>Количество этажей</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<div class="table-responsive">
+									<table class="table table-borderless">
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>Одноэтажные</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>С Подвалом</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>Двухэтажные</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>Мансардные</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>С Цоколем</label></td>
+										</tr>
+									</table>
+								</div>	
+							</dd>
+							<dt>
+								<span>Гараж</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<div class="table-responsive">
+									<table class="table table-borderless">
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>С гаражом</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>На 1 машину</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>Без Гаража</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>На 2 машины</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>Навес</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>На 3+ машины</label></td>
+										</tr>
+									</table>
+								</div>
+							</dd>
+							<dt>
+								<span>Крыша</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<div class="table-responsive">
+									<table class="table table-borderless">
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>1 - скатная</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>Сложная</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>2 - скатная</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>Плоская</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>4 - скатная</label></td>
+										</tr>
+									</table>
+								</div>
+							</dd>
+							<dt>
+								<span>Количество спален</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<div class="table-responsive">
+									<table class="table table-borderless">
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>1</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>5</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>2</label></td>
+											<td><label><input type="checkbox"><span class="checkmark"></span>6+</label></td>
+										</tr>
+										<tr>
+											<td><label><input type="checkbox"><span class="checkmark"></span>3</label></td>
+										</tr>
+									</table>
+								</div>
+							</dd>
+							<dt>
+								<span>Назначение</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<ul class="list-unstyled">
+									<li><label><input type="checkbox"><span class="checkmark"></span>Для большой семьи</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Бани</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Гаражи</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Для 1 семьи</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Для 2 семей</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Таун-хаусы</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Для сейсмоопасных регионов</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Для широких участков</label></li>
+									<li><label><input type="checkbox"><span class="checkmark"></span>Для узких участков</label></li>
+								</ul>
+							</dd>
+							<dt>
+								<span>Размеры дома</span>
+								<span class="plus">+</span>
+							</dt>
+							<dd>
+								<ul class="list-unstyled">
+									<li>
+										<div class="range3Dmultirange" id="multirangeBreadth3D">
+											<h5>Ширина: (м)</h5>
+											<div class="spans">
+												<span id="minRange2">от</span>
+												<span id="maxRange2">до</span>
+												<input type="hidden" name="minBreadth3D">
+												<input type="hidden" name="maxBreadth3D">
+											</div>
+											<input type="range" multiple step="10" min=20 max="500" value="20,500"  />
+											<div class="footerSpans">
+												<span>20</span>
+												<span>260</span>
+												<span>500+</span>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="range3Dmultirange" id="multirangeLength3D">
+											<h5>Длина: (м)</h5>
+											<div class="spans">
+												<span id="minRange3">50</span>
+												<span id="maxRange3">320</span>
+												<input type="hidden" name="minLength3D">
+												<input type="hidden" name="maxLength3D">
+											</div>
+											<input type="range" multiple step="10" min=20 max="500" value="50,320"  />
+											<div class="footerSpans">
+												<span>20</span>
+												<span>260</span>
+												<span>500+</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<hr class="my-0" style="border-color: #DDE9EF">
+						<button type="submit" class="text-uppercase btnHomeFilterSearch">Найти проект 
+							<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 19L11 10.5L2 2" stroke="#5FCAEA" stroke-width="3" stroke-linecap="round"/>
+							</svg>
+						</button>
+						<button type="reset" class="resetFilterBtn">Сбросить фильтры
+							<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1L9 9M9 1L1 9" stroke="#5FCAEA" stroke-linecap="round"/>
+							</svg>
+						</button>
+					</form>
+				</section>
+			</div>
+		</aside>
+	</header>
+
+	<!-- Video Projects Section	 -->
+	<section id="freeProjHome3D">
+		<div class="filt3Dhei">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="freePrImg">
+							<div class="container-video" >
+						        <div class="play"><span><img src="video/play.png" alt=""></span></div>
+						        <video src="video/video.mp4"  poster="video/pattern.png"></video>
+						    </div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="freePrInfo">
+							<h2>Заголовок видео</h2>
+							<p>Если вы пересмотрели весь каталог проектов с планами, но не нашли подходящий вариант дома или коттеджа, мы готовы специально для вас создать индивидуальный проект.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<!-- Heading Seo Text Section -->
+	<section id="headSeoText">
+		<div class="filt3Dhei">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3>заголовок для seo текста</h3>
+					</div>
+					<div class="col-12 col-xl-8">
+						<div class="seoText">
+							<h4>Подзаголовок текста</h4>
+							<p>Позволит избежать ошибок на стадии строительства. Часто эти ошибки влекут за собой конфликты со строителями, увеличение сроков и стоимости строительства, а многие невозможно увидеть до ввода дома в эксплуатацию. </p>
+							<p>Все это можно предотвратить, воспользовавшись услугой авторского надзора.</p>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4">
+						<div class="seoNavbar mt-3 mt-lg-0">
+							<h5>Полезнык ссылки:</h5>
+							<ul class="list-unstyled">
+								<li><a href="">Новости</a></li>
+								<li><a href="">Как выбрать проект дома?</a></li>
+								<li><a href="">Что содержится в проекте</a></li>
+								<li><a href="">Гарантия и безопасность</a></li>
+								<li><a href="">С чего начать стройку</a></li>
+								<li><a href="">Частые вопросы и ответы</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer3D">
+		<div class="filt3Dhei">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg  footerStLinks mb-3 mb-lg-0">
+						<div class="row ">
+							<div class="col-12 col-md-3"><img src="img/icons/logo.svg" alt=""></div>
+							<div class="col-12 col-md-8">
+								<table class="ml-md-auto mt-3 mt-md-0">
+									<tr>
+										<td><a href="#">Каталог</a></td>
+										<td><a href="#">Новости</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">О компании</a></td>
+										<td><a href="#">Контакты</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Акции</a></td>
+										<td><a href="#"></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg  mt-3 mt-md-0  footerLsLinks">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<ul class="list-unstyled">
+									<li>+7 (900) 90-909-00</li>
+									<li>Самара, ул. Ташкентская, 234 Г</li>
+									<li><a href="#">proektkom205@mail.ru</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-6 mb-4 mb-md-0">
+								<button type="button" class="homeFooterContact">
+									<span>Связаться с нами</span>
+									<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="47" height="47" fill="#5FCAEA"/>
+										<path d="M32 27L23.5 18L15 27" stroke="white" stroke-width="3" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid footerCopyYouT">
+			<div class="container">
+				<div class="row ">
+					<div class="col-12 col-sm-6">
+						<p class="mb-0">&copy; Copyright 2019 ООО «ПроектКом» </p>
+					</div>
+					<div class="col-12 col-sm-6 mt-2 mt-sm-0">
+						<div class="text-sm-right">
+							<a href="#">
+								Наш YouTube канал:
+								<span><img src="img/icons/youtube.svg" alt=""></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Script files -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- containerNewProjSlider Scripts -->
+	<script src="js/owl.carousel.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/newProjectSlider.js"></script>
+    <!-- multirange Script -->
+	<script src="js/multirange.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
