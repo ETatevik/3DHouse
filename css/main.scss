@@ -589,7 +589,8 @@ html{
 	}
 }
 
-// Filter Find of Projects
+// Filter Find of Projects && 
+///--------------------------------Project ID html-----------------------------------------
 #filterFindHome{
 	position: relative;
 	z-index: 1000;
@@ -793,7 +794,9 @@ html{
 }
 
 // Home New Pojectes Section
-#homeNewPojectes{
+#homeNewPojectes,
+#sameProjects,
+#layoutPrj3dId{
 	background-color: $color1;
 
 	& .container{
@@ -876,27 +879,24 @@ html{
 
 					.heart{
 						position: absolute;
-						background-color: #E9F1F5;
-						border: 4px solid $color1;
 						border-radius: 50%;
-						width: 40px;
-						height: 40px;
+						width: 50px;
+						height: 50px;
 						bottom: -20px;
 						right: 15px;
 						z-index: 30;
+						border: 0;
+						padding: 0;
 
 						&>img{
-							width: 50px;
-							position: relative;
-							margin: 5px auto;
-							transition: .5s;
+							width: 100%;
+							height: inherit;
 						}
 
 						&:focus{
-							background-color: $color2;
 							box-shadow: 0 0;
 							outline: 0;
-							border-color: $color1 !important;
+							border:0;
 						}
 					}
 				}
@@ -978,12 +978,20 @@ html{
 					}
 				}
 			}
-			#demos .owl-carousel .item{
+			#demos .owl-carousel .item,
+			#demos2 .owl-carousel .item{
 		        height: auto !important;
 		        background-color: transparent !important;
 		        padding: 0;
 				border:0 !important;
 				outline: 0 !important;
+
+		    }
+		    #demos2 .owl-carousel .item{
+		    	background: $color1 !important;
+				border: 1px solid $color3 !important;
+		        padding: 5px;
+		        margin: 0 5px 0;
 
 		    }
 		    .owl-item .active{
@@ -996,7 +1004,8 @@ html{
 		        display: none;
 		    }
 
-		    #demos{
+		    #demos,
+		    #demos2{
 		        margin: auto;
 		        padding: 0 15px;
 		        .row{
@@ -1709,27 +1718,24 @@ html{
 
 						.heart{
 							position: absolute;
-							background-color: #E9F1F5;
-							border: 4px solid $color1;
 							border-radius: 50%;
-							width: 40px;
-							height: 40px;
+							width: 50px;
+							height: 50px;
 							bottom: -20px;
 							right: 15px;
 							z-index: 30;
+							border: 0;
+							padding: 0;
 
 							&>img{
 								width: 50px;
-								position: relative;
-								margin: 5px auto;
-								transition: .5s;
+								height: inherit;
 							}
 
 							&:focus{
-								background-color: $color2;
 								box-shadow: 0 0;
 								outline: 0;
-								border-color: $color1 !important;
+								border:0;
 							}
 						}
 					}
@@ -1815,4 +1821,352 @@ html{
 			}
 		}
 	}	
+}
+
+///--------------------------------Project ID html-----------------------------------------
+#projectDescription3D{
+	.container{
+		padding: 0;
+	}
+	.jumbotron{
+		background-color: #F5F8FA !important;
+		border-radius: 0 !important;
+		border: 0;
+		padding: 55px 60px;
+
+		&>h2{
+			font-family: Oswald;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $color4;
+			margin-bottom: 40px;
+		}
+		& p{
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			color: #88989D;
+			& > span{
+				color: $color2;
+				cursor: pointer;
+			}
+		}
+
+		.closeElement{
+
+			h3{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				color: $color4;
+				margin: 60px 0 40px;
+			}
+			button{
+				box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+				background: $color2;
+				border: 0;
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				padding: 25px 55px;
+
+				&:focus{
+					border: 0;
+					outline: 0;
+					box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+				}
+				&>svg{
+					margin-left: 25px;
+				}
+			}
+		}
+
+	}
+}
+
+
+#characteristicsPrj3D{
+	&>.container{
+		&>.row{
+
+			.col-12 h2{
+				font-family: Oswald;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 48px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color4;
+			}
+			.table.table-striped{
+				& tr{
+					border: 1px solid $color3;
+					
+
+					&:nth-child(even){
+				   		background-color: #F4F9FC;
+					}
+					&:nth-child(odd){
+						background-color: $color1;
+					}
+					
+					th{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						color: $color4;
+						padding: 20px;
+					}
+					td{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						text-align: right;
+						color: #88989D;
+						padding: 20px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+#projecthome3D.projectIdhead3D{
+
+	.row{
+		padding: 0;
+
+		h2{
+			font-family: Oswald;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 48px;
+			letter-spacing: 1px;
+			color: $color4;
+		}
+	
+		&:last-child{
+			.boxIdPrj{
+				background: $color1;
+				border: 1px solid $color3;
+				padding: 13px;
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				color: $color4;
+				margin: 15px 0;
+				&>p{
+					font-size: 36px;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.projectIdBtns{
+			button{
+				background: transparent;
+				border: 0;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				padding: 0;
+				&>img{
+					width: 100%;
+				}
+				&:focus{
+					border: 0;
+					outline: 0;
+					box-shadow:  0 0;
+				}
+				&:first-child{
+					width: 43px;
+					height: 43px;
+					margin-right: 15px;
+				}
+			}
+		}
+
+		#projecthome3DSlider{
+			.carousel-control-prev,
+			.carousel-control-next{
+				background: transparent;
+				@media (min-width: 1100px) {
+					width: 10%;
+				}
+			}
+		}
+
+		.carousel-indicators{
+			position: static;
+			margin: 0;
+			padding: 0;
+			li{
+				width: 100%;
+				position: relative;
+				height: auto;
+				text-indent:0;
+				padding: 0;
+				margin: 0;
+				border: 0;
+				opacity: 1;
+
+				&:before{
+					position: absolute;
+					content: '';
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background: rgba(201, 221, 235, 0.39);
+					z-index: 5;
+					opacity: 1;
+				}
+				&:after{
+					position: absolute;
+					z-index: 6;
+					content: '';
+					background: rgba(201, 221, 235, 0.89) url('../img/whSearch.png') no-repeat center;
+					background-size: 25px;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					opacity: 0;
+					transition: .2s;
+				}
+				&:hover{
+					&:after{
+						opacity: 1;
+					}
+					&:before{
+						opacity: 0;
+					}
+				}
+			}
+		}
+
+		.startPrj3d{
+			p{
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				color: $color4;
+				margin-bottom: 0;
+			}
+			h3{	
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;			
+				font-size: 36px;
+				letter-spacing: 1px;
+				color: $color4;
+				margin-top: 0;
+				display: flex;
+				align-items: center;
+				& > svg{
+					margin-left: 15px;
+				}
+			}
+			button{
+				background-color: $color2;
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $color1;
+				border: 0;
+				box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+				padding: 25px 35px;
+				margin: 30px 0;
+				width: 100%;
+				display: block;
+
+				&:focus{
+					outline: 0;
+					border: 0;
+					box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+				}
+				& > svg{
+					margin-left: 25px;
+				}
+			}
+		}
+
+		.centerPrjBtns{
+			button{
+				background: $color1;
+				box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+				font-family: Noto Sans;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				color: $color4;
+				border: 0;
+				padding: 20px 25px;
+				width: 100%;
+				text-align: left;
+				margin-top: 25px;
+
+				&:hover{
+					color: $color2;
+				}
+				&:focus{
+					border: 0;
+					outline: 0;
+					box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09) !important;
+				}
+				&>img{
+					width: 20px;
+					height: 20px;
+					margin-right: 15px;
+				}
+			}
+		}
+
+		.socPageLinks{
+			a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				background-color: $color3;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-right: 15px;
+				
+
+				&>img{
+					width: 25px;
+				}
+				&:first-child>img{
+					width: 30px;
+				}
+				&:last-child>img{
+					width: 35px;
+				}
+
+				&:hover{
+					background-color: $color2;
+				}
+			}
+		}
+	}
+
 }

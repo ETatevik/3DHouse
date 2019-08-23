@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  	let owl = $('.owl-carousel');
+  	let owl = $('#demos .owl-carousel');
   	owl.owlCarousel({
     	margin: 10,
     	nav: true,
@@ -16,4 +16,19 @@ $(document).ready(function() {
     		}
     	}
   	})
+    let owl1 = $('#demos2 .owl-carousel');
+    owl1.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            
+            1000: {
+                items: 2
+            }
+        }
+    })
 })

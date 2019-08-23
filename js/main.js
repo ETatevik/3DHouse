@@ -287,6 +287,23 @@ jQuery(document).ready(function($) {
 							      	  	</div>
 							      	</div>
 						    	</div>`;
+		let scriptForHeart = `<script>
+							jQuery(document).ready(function($){
+								$('.heart').css('backgroundColor','#E9F1F5');
+								$('.heart').on({
+									'click': function(event) {
+										event.preventDefault();
+										if($(this).css('backgroundColor') != 'rgb(95, 202, 234)'){
+											$(this).css('backgroundColor','rgb(95, 202, 234)');
+											$(this).children('img').attr('src','img/icons/heart - anticon.svg');
+										}else{
+											$(this).css('backgroundColor','#E9F1F5');
+											$(this).children('img').attr('src','img/icons/heart.svg');
+										}
+									}
+								});
+							});
+							</script>`
 
 		for (let i = 0; i < parseInt($('#projecMain3d .projectsShowPageCards.pageActive').text()); i++) {
 			let newElementCard = $('<div class="col col-md-6 col-xl-4"></div>').html(cardsOfProjects);
@@ -312,7 +329,7 @@ jQuery(document).ready(function($) {
 					$('#projectsCardsMainBody3D').append(newElementCard);	
 				}
 			}
-
+			$('#projectsCardsMainBody3D').append(scriptForHeart)
 			
 		});
 		
@@ -325,24 +342,39 @@ jQuery(document).ready(function($) {
             $(this).children('.play').fadeOut(200);   
         });
 	}
-
-
 	
-	// 	Home New Pojectes Section 
+	// 	Home New Pojectes Section  Heart
 	{
-		$('.card .heart').css('backgroundColor','#E9F1F5');
-		$('.card .heart').on({
+		$('.heart').css('backgroundColor','#E9F1F5');
+		$('.heart').on({
 			'click': function(event) {
 				event.preventDefault();
 				if($(this).css('backgroundColor') != 'rgb(95, 202, 234)'){
 					$(this).css('backgroundColor','rgb(95, 202, 234)');
-					$(this).children('img').attr('src','../img/icons/heart - anticon.svg');
+					$(this).children('img').attr('src','img/icons/heart - anticon.svg');
 				}else{
 					$(this).css('backgroundColor','#E9F1F5');
-					$(this).children('img').attr('src','../img/icons/heart.svg');
+					$(this).children('img').attr('src','img/icons/heart.svg');
 				}
 			}
 		});
 	}
-		
+	
+
+	// --------------Project ID html-----------------------
+
+	{
+		$('#projectDescription3D .closeElement').slideUp(0);
+		$('#projectDescription3D p > span').click(function(event) {
+			$('#projectDescription3D p > span').not('this').css('display', 'inline');
+			
+			if($(this).hasClass('openJumbotron')){
+				$(this).css('display', 'none');
+				$('#projectDescription3D .closeElement').slideDown(500);
+			}else if($(this).hasClass('closeJumbotron')){
+				$(this).css('display', 'none');
+				$('#projectDescription3D .closeElement').slideUp(300);
+			}
+		});
+	}
 });

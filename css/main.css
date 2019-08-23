@@ -626,11 +626,17 @@ html {
           #filterFindHome .findBox .filterHomeBody .resetFilterBtn {
             font-size: 12px; } }
 
-#homeNewPojectes {
+#homeNewPojectes,
+#sameProjects,
+#layoutPrj3dId {
   background-color: #fff; }
-  #homeNewPojectes .container {
+  #homeNewPojectes .container,
+  #sameProjects .container,
+  #layoutPrj3dId .container {
     padding: 100px 0; }
-    #homeNewPojectes .container > .row h2 {
+    #homeNewPojectes .container > .row h2,
+    #sameProjects .container > .row h2,
+    #layoutPrj3dId .container > .row h2 {
       font-family: Oswald;
       font-style: normal;
       font-weight: bold;
@@ -640,7 +646,9 @@ html {
       text-transform: uppercase;
       color: #494949;
       margin-bottom: 0; }
-    #homeNewPojectes .container > .row button {
+    #homeNewPojectes .container > .row button,
+    #sameProjects .container > .row button,
+    #layoutPrj3dId .container > .row button {
       font-family: Noto Sans;
       font-style: normal;
       font-weight: bold;
@@ -652,19 +660,29 @@ html {
       color: #5FCAEA;
       background-color: transparent;
       border: 0; }
-      #homeNewPojectes .container > .row button > svg {
+      #homeNewPojectes .container > .row button > svg,
+      #sameProjects .container > .row button > svg,
+      #layoutPrj3dId .container > .row button > svg {
         margin-left: 15px; }
-    #homeNewPojectes .container .containerNewProjSlider > .container {
+    #homeNewPojectes .container .containerNewProjSlider > .container,
+    #sameProjects .container .containerNewProjSlider > .container,
+    #layoutPrj3dId .container .containerNewProjSlider > .container {
       padding: 0; }
-    #homeNewPojectes .container .containerNewProjSlider .card {
+    #homeNewPojectes .container .containerNewProjSlider .card,
+    #sameProjects .container .containerNewProjSlider .card,
+    #layoutPrj3dId .container .containerNewProjSlider .card {
       border-radius: 0;
       border: 1px solid #DDE9EF !important;
       outline: 0 !important;
       background-color: transparent !important; }
-      #homeNewPojectes .container .containerNewProjSlider .card .card-img-top {
+      #homeNewPojectes .container .containerNewProjSlider .card .card-img-top,
+      #sameProjects .container .containerNewProjSlider .card .card-img-top,
+      #layoutPrj3dId .container .containerNewProjSlider .card .card-img-top {
         border-radius: 0;
         position: relative; }
-        #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .stok {
+        #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .stok,
+        #sameProjects .container .containerNewProjSlider .card .card-img-top .stok,
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-img-top .stok {
           position: absolute;
           background: #5ACB80;
           top: 15px;
@@ -676,7 +694,9 @@ html {
           font-size: 14px;
           line-height: 19px;
           color: #fff; }
-        #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .info {
+        #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .info,
+        #sameProjects .container .containerNewProjSlider .card .card-img-top .info,
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-img-top .info {
           position: absolute;
           bottom: 25px;
           left: 15px;
@@ -689,30 +709,33 @@ html {
           line-height: 19px;
           color: #fff;
           max-width: 90%; }
-        #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart {
+        #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart,
+        #sameProjects .container .containerNewProjSlider .card .card-img-top .heart,
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-img-top .heart {
           position: absolute;
-          background-color: #E9F1F5;
-          border: 4px solid #fff;
           border-radius: 50%;
-          width: 40px;
-          height: 40px;
+          width: 50px;
+          height: 50px;
           bottom: -20px;
           right: 15px;
-          z-index: 30; }
-          #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart > img {
-            width: 50px;
-            position: relative;
-            margin: 5px auto;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s; }
-          #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart:focus {
-            background-color: #5FCAEA;
+          z-index: 30;
+          border: 0;
+          padding: 0; }
+          #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart > img,
+          #sameProjects .container .containerNewProjSlider .card .card-img-top .heart > img,
+          #layoutPrj3dId .container .containerNewProjSlider .card .card-img-top .heart > img {
+            width: 100%;
+            height: inherit; }
+          #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart:focus,
+          #sameProjects .container .containerNewProjSlider .card .card-img-top .heart:focus,
+          #layoutPrj3dId .container .containerNewProjSlider .card .card-img-top .heart:focus {
             -webkit-box-shadow: 0 0;
             box-shadow: 0 0;
             outline: 0;
-            border-color: #fff !important; }
-      #homeNewPojectes .container .containerNewProjSlider .card .card-body .card-title {
+            border: 0; }
+      #homeNewPojectes .container .containerNewProjSlider .card .card-body .card-title,
+      #sameProjects .container .containerNewProjSlider .card .card-body .card-title,
+      #layoutPrj3dId .container .containerNewProjSlider .card .card-body .card-title {
         font-family: Noto Sans;
         font-style: normal;
         font-weight: bold;
@@ -721,7 +744,9 @@ html {
         color: #494949;
         margin-bottom: 20px;
         margin-top: 20px; }
-      #homeNewPojectes .container .containerNewProjSlider .card .card-body .card-text {
+      #homeNewPojectes .container .containerNewProjSlider .card .card-body .card-text,
+      #sameProjects .container .containerNewProjSlider .card .card-body .card-text,
+      #layoutPrj3dId .container .containerNewProjSlider .card .card-body .card-text {
         font-family: Noto Sans;
         font-style: normal;
         font-weight: normal;
@@ -729,7 +754,9 @@ html {
         line-height: 26px;
         text-align: justify;
         color: #88989D; }
-      #homeNewPojectes .container .containerNewProjSlider .card .card-body table td {
+      #homeNewPojectes .container .containerNewProjSlider .card .card-body table td,
+      #sameProjects .container .containerNewProjSlider .card .card-body table td,
+      #layoutPrj3dId .container .containerNewProjSlider .card .card-body table td {
         font-family: Noto Sans;
         font-style: normal;
         font-weight: bold;
@@ -737,7 +764,9 @@ html {
         line-height: 26px;
         color: #494949;
         padding: 0px 5px; }
-        #homeNewPojectes .container .containerNewProjSlider .card .card-body table td[rowspan='2'] {
+        #homeNewPojectes .container .containerNewProjSlider .card .card-body table td[rowspan='2'],
+        #sameProjects .container .containerNewProjSlider .card .card-body table td[rowspan='2'],
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-body table td[rowspan='2'] {
           font-family: Noto Sans;
           font-style: normal;
           font-weight: bold;
@@ -748,21 +777,33 @@ html {
           color: #494949;
           text-align: right; }
           @media (min-width: 400px) and (max-width: 900px) {
-            #homeNewPojectes .container .containerNewProjSlider .card .card-body table td[rowspan='2'] {
+            #homeNewPojectes .container .containerNewProjSlider .card .card-body table td[rowspan='2'],
+            #sameProjects .container .containerNewProjSlider .card .card-body table td[rowspan='2'],
+            #layoutPrj3dId .container .containerNewProjSlider .card .card-body table td[rowspan='2'] {
               font-size: 18px; } }
-      #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns {
+      #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns,
+      #sameProjects .container .containerNewProjSlider .card .card-body .cardLinkBtns,
+      #layoutPrj3dId .container .containerNewProjSlider .card .card-body .cardLinkBtns {
         margin-top: 30px;
         margin-bottom: 15px; }
-        #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns a img {
+        #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns a img,
+        #sameProjects .container .containerNewProjSlider .card .card-body .cardLinkBtns a img,
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-body .cardLinkBtns a img {
           width: 30px;
           height: 30px; }
-        #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns a:focus, #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns a:hover {
+        #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns a:focus, #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns a:hover,
+        #sameProjects .container .containerNewProjSlider .card .card-body .cardLinkBtns a:focus,
+        #sameProjects .container .containerNewProjSlider .card .card-body .cardLinkBtns a:hover,
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-body .cardLinkBtns a:focus,
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-body .cardLinkBtns a:hover {
           border: 0;
           outline: 0;
           -webkit-box-shadow: 0 0;
           box-shadow: 0 0;
           text-decoration: none; }
-        #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns .text-right > a {
+        #homeNewPojectes .container .containerNewProjSlider .card .card-body .cardLinkBtns .text-right > a,
+        #sameProjects .container .containerNewProjSlider .card .card-body .cardLinkBtns .text-right > a,
+        #layoutPrj3dId .container .containerNewProjSlider .card .card-body .cardLinkBtns .text-right > a {
           font-family: Noto Sans;
           font-style: normal;
           font-weight: normal;
@@ -771,78 +812,136 @@ html {
           color: #5FCAEA;
           border-bottom: 1px solid #E2F5FB;
           padding-bottom: 3px; }
-    #homeNewPojectes .container .containerNewProjSlider #demos .owl-carousel .item {
+    #homeNewPojectes .container .containerNewProjSlider #demos .owl-carousel .item,
+    #homeNewPojectes .container .containerNewProjSlider #demos2 .owl-carousel .item,
+    #sameProjects .container .containerNewProjSlider #demos .owl-carousel .item,
+    #sameProjects .container .containerNewProjSlider #demos2 .owl-carousel .item,
+    #layoutPrj3dId .container .containerNewProjSlider #demos .owl-carousel .item,
+    #layoutPrj3dId .container .containerNewProjSlider #demos2 .owl-carousel .item {
       height: auto !important;
       background-color: transparent !important;
       padding: 0;
       border: 0 !important;
       outline: 0 !important; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-item .active {
+    #homeNewPojectes .container .containerNewProjSlider #demos2 .owl-carousel .item,
+    #sameProjects .container .containerNewProjSlider #demos2 .owl-carousel .item,
+    #layoutPrj3dId .container .containerNewProjSlider #demos2 .owl-carousel .item {
+      background: #fff !important;
+      border: 1px solid #DDE9EF !important;
+      padding: 5px;
+      margin: 0 5px 0; }
+    #homeNewPojectes .container .containerNewProjSlider .owl-item .active,
+    #sameProjects .container .containerNewProjSlider .owl-item .active,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-item .active {
       border: 0 !important;
       outline: 0 !important;
       background-color: transparent !important; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-theme .owl-dots {
+    #homeNewPojectes .container .containerNewProjSlider .owl-theme .owl-dots,
+    #sameProjects .container .containerNewProjSlider .owl-theme .owl-dots,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-theme .owl-dots {
       display: none; }
-    #homeNewPojectes .container .containerNewProjSlider #demos {
+    #homeNewPojectes .container .containerNewProjSlider #demos,
+    #homeNewPojectes .container .containerNewProjSlider #demos2,
+    #sameProjects .container .containerNewProjSlider #demos,
+    #sameProjects .container .containerNewProjSlider #demos2,
+    #layoutPrj3dId .container .containerNewProjSlider #demos,
+    #layoutPrj3dId .container .containerNewProjSlider #demos2 {
       margin: auto;
       padding: 0 15px; }
-      #homeNewPojectes .container .containerNewProjSlider #demos .row {
+      #homeNewPojectes .container .containerNewProjSlider #demos .row,
+      #homeNewPojectes .container .containerNewProjSlider #demos2 .row,
+      #sameProjects .container .containerNewProjSlider #demos .row,
+      #sameProjects .container .containerNewProjSlider #demos2 .row,
+      #layoutPrj3dId .container .containerNewProjSlider #demos .row,
+      #layoutPrj3dId .container .containerNewProjSlider #demos2 .row {
         margin: 0; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-theme .owl-loaded .owl-drag {
+    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-theme .owl-loaded .owl-drag,
+    #sameProjects .container .containerNewProjSlider .owl-carousel .owl-theme .owl-loaded .owl-drag,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-theme .owl-loaded .owl-drag {
       position: relative; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-stage-outer {
+    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-stage-outer,
+    #sameProjects .container .containerNewProjSlider .owl-carousel .owl-stage-outer,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-stage-outer {
       z-index: 20; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-theme .owl-nav {
+    #homeNewPojectes .container .containerNewProjSlider .owl-theme .owl-nav,
+    #sameProjects .container .containerNewProjSlider .owl-theme .owl-nav,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-theme .owl-nav {
       margin: 0;
       position: absolute;
       width: 100%;
       top: 50%;
       z-index: 10; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next {
+    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next,
+    #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next {
       position: absolute;
       right: -65px;
       width: 30px;
       height: 30px;
       background: url("../img/icons/arrow-rigth.svg") center no-repeat; }
-      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next span {
+      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next span,
+      #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next span,
+      #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next span {
         display: none; }
       @media (min-width: 700px) and (max-width: 1000px) {
-        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next {
+        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next,
+        #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next,
+        #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next {
           right: -40px; } }
       @media (max-width: 700px) {
-        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next {
+        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next,
+        #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next,
+        #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next {
           display: none; } }
-      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:hover {
+      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:hover,
+      #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:hover,
+      #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:hover {
         background-color: transparent;
         color: transparent; }
-      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:focus {
+      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:focus,
+      #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:focus,
+      #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-next:focus {
         outline: 0;
         border: 0;
         -webkit-box-shadow: 0 0;
         box-shadow: 0 0; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev {
+    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev,
+    #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev {
       position: absolute;
       left: -65px;
       width: 30px;
       height: 30px;
       background: url("../img/icons/arrow-left.svg") center no-repeat; }
-      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev span {
+      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev span,
+      #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev span,
+      #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev span {
         display: none; }
       @media (min-width: 700px) and (max-width: 1000px) {
-        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev {
+        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev,
+        #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev,
+        #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev {
           left: -40px; } }
       @media (max-width: 700px) {
-        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev {
+        #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev,
+        #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev,
+        #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev {
           display: none; } }
-      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:hover {
+      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:hover,
+      #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:hover,
+      #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:hover {
         background-color: transparent;
         color: transparent; }
-      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:focus {
+      #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:focus,
+      #sameProjects .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:focus,
+      #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-nav button.owl-prev:focus {
         outline: 0;
         border: 0;
         -webkit-box-shadow: 0 0;
         box-shadow: 0 0; }
-    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-item img {
+    #homeNewPojectes .container .containerNewProjSlider .owl-carousel .owl-item img,
+    #sameProjects .container .containerNewProjSlider .owl-carousel .owl-item img,
+    #layoutPrj3dId .container .containerNewProjSlider .owl-carousel .owl-item img {
       display: inline; }
 
 #orderIndiviProj {
@@ -1316,27 +1415,22 @@ html {
           max-width: 90%; }
         #projecthome3D section.container #projecMain3d > .row .card .card-img-top .heart {
           position: absolute;
-          background-color: #E9F1F5;
-          border: 4px solid #fff;
           border-radius: 50%;
-          width: 40px;
-          height: 40px;
+          width: 50px;
+          height: 50px;
           bottom: -20px;
           right: 15px;
-          z-index: 30; }
+          z-index: 30;
+          border: 0;
+          padding: 0; }
           #projecthome3D section.container #projecMain3d > .row .card .card-img-top .heart > img {
             width: 50px;
-            position: relative;
-            margin: 5px auto;
-            -webkit-transition: .5s;
-            -o-transition: .5s;
-            transition: .5s; }
+            height: inherit; }
           #projecthome3D section.container #projecMain3d > .row .card .card-img-top .heart:focus {
-            background-color: #5FCAEA;
             -webkit-box-shadow: 0 0;
             box-shadow: 0 0;
             outline: 0;
-            border-color: #fff !important; }
+            border: 0; }
       #projecthome3D section.container #projecMain3d > .row .card .card-body .card-title {
         font-family: Noto Sans;
         font-style: normal;
@@ -1396,3 +1490,272 @@ html {
           color: #5FCAEA;
           border-bottom: 1px solid #E2F5FB;
           padding-bottom: 3px; }
+
+#projectDescription3D .container {
+  padding: 0; }
+
+#projectDescription3D .jumbotron {
+  background-color: #F5F8FA !important;
+  border-radius: 0 !important;
+  border: 0;
+  padding: 55px 60px; }
+  #projectDescription3D .jumbotron > h2 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #494949;
+    margin-bottom: 40px; }
+  #projectDescription3D .jumbotron p {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #88989D; }
+    #projectDescription3D .jumbotron p > span {
+      color: #5FCAEA;
+      cursor: pointer; }
+  #projectDescription3D .jumbotron .closeElement h3 {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #494949;
+    margin: 60px 0 40px; }
+  #projectDescription3D .jumbotron .closeElement button {
+    -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+    box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+    background: #5FCAEA;
+    border: 0;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 25px 55px; }
+    #projectDescription3D .jumbotron .closeElement button:focus {
+      border: 0;
+      outline: 0;
+      -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+      box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32); }
+    #projectDescription3D .jumbotron .closeElement button > svg {
+      margin-left: 25px; }
+
+#characteristicsPrj3D > .container > .row .col-12 h2 {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #494949; }
+
+#characteristicsPrj3D > .container > .row .table.table-striped tr {
+  border: 1px solid #DDE9EF; }
+  #characteristicsPrj3D > .container > .row .table.table-striped tr:nth-child(even) {
+    background-color: #F4F9FC; }
+  #characteristicsPrj3D > .container > .row .table.table-striped tr:nth-child(odd) {
+    background-color: #fff; }
+  #characteristicsPrj3D > .container > .row .table.table-striped tr th {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #494949;
+    padding: 20px; }
+  #characteristicsPrj3D > .container > .row .table.table-striped tr td {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: right;
+    color: #88989D;
+    padding: 20px; }
+
+#projecthome3D.projectIdhead3D .row {
+  padding: 0; }
+  #projecthome3D.projectIdhead3D .row h2 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #494949; }
+  #projecthome3D.projectIdhead3D .row:last-child .boxIdPrj {
+    background: #fff;
+    border: 1px solid #DDE9EF;
+    padding: 13px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #494949;
+    margin: 15px 0; }
+    #projecthome3D.projectIdhead3D .row:last-child .boxIdPrj > p {
+      font-size: 36px;
+      margin-bottom: 0; }
+  #projecthome3D.projectIdhead3D .row .projectIdBtns button {
+    background: transparent;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0; }
+    #projecthome3D.projectIdhead3D .row .projectIdBtns button > img {
+      width: 100%; }
+    #projecthome3D.projectIdhead3D .row .projectIdBtns button:focus {
+      border: 0;
+      outline: 0;
+      -webkit-box-shadow: 0 0;
+      box-shadow: 0 0; }
+    #projecthome3D.projectIdhead3D .row .projectIdBtns button:first-child {
+      width: 43px;
+      height: 43px;
+      margin-right: 15px; }
+  #projecthome3D.projectIdhead3D .row #projecthome3DSlider .carousel-control-prev,
+  #projecthome3D.projectIdhead3D .row #projecthome3DSlider .carousel-control-next {
+    background: transparent; }
+    @media (min-width: 1100px) {
+      #projecthome3D.projectIdhead3D .row #projecthome3DSlider .carousel-control-prev,
+      #projecthome3D.projectIdhead3D .row #projecthome3DSlider .carousel-control-next {
+        width: 10%; } }
+  #projecthome3D.projectIdhead3D .row .carousel-indicators {
+    position: static;
+    margin: 0;
+    padding: 0; }
+    #projecthome3D.projectIdhead3D .row .carousel-indicators li {
+      width: 100%;
+      position: relative;
+      height: auto;
+      text-indent: 0;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      opacity: 1; }
+      #projecthome3D.projectIdhead3D .row .carousel-indicators li:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(201, 221, 235, 0.39);
+        z-index: 5;
+        opacity: 1; }
+      #projecthome3D.projectIdhead3D .row .carousel-indicators li:after {
+        position: absolute;
+        z-index: 6;
+        content: '';
+        background: rgba(201, 221, 235, 0.89) url("../img/whSearch.png") no-repeat center;
+        background-size: 25px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+      #projecthome3D.projectIdhead3D .row .carousel-indicators li:hover:after {
+        opacity: 1; }
+      #projecthome3D.projectIdhead3D .row .carousel-indicators li:hover:before {
+        opacity: 0; }
+  #projecthome3D.projectIdhead3D .row .startPrj3d p {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #494949;
+    margin-bottom: 0; }
+  #projecthome3D.projectIdhead3D .row .startPrj3d h3 {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #494949;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #projecthome3D.projectIdhead3D .row .startPrj3d h3 > svg {
+      margin-left: 15px; }
+  #projecthome3D.projectIdhead3D .row .startPrj3d button {
+    background-color: #5FCAEA;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+    box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+    padding: 25px 35px;
+    margin: 30px 0;
+    width: 100%;
+    display: block; }
+    #projecthome3D.projectIdhead3D .row .startPrj3d button:focus {
+      outline: 0;
+      border: 0;
+      -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+      box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32); }
+    #projecthome3D.projectIdhead3D .row .startPrj3d button > svg {
+      margin-left: 25px; }
+  #projecthome3D.projectIdhead3D .row .centerPrjBtns button {
+    background: #fff;
+    -webkit-box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+    box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #494949;
+    border: 0;
+    padding: 20px 25px;
+    width: 100%;
+    text-align: left;
+    margin-top: 25px; }
+    #projecthome3D.projectIdhead3D .row .centerPrjBtns button:hover {
+      color: #5FCAEA; }
+    #projecthome3D.projectIdhead3D .row .centerPrjBtns button:focus {
+      border: 0;
+      outline: 0;
+      -webkit-box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09) !important;
+      box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09) !important; }
+    #projecthome3D.projectIdhead3D .row .centerPrjBtns button > img {
+      width: 20px;
+      height: 20px;
+      margin-right: 15px; }
+  #projecthome3D.projectIdhead3D .row .socPageLinks a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #DDE9EF;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px; }
+    #projecthome3D.projectIdhead3D .row .socPageLinks a > img {
+      width: 25px; }
+    #projecthome3D.projectIdhead3D .row .socPageLinks a:first-child > img {
+      width: 30px; }
+    #projecthome3D.projectIdhead3D .row .socPageLinks a:last-child > img {
+      width: 35px; }
+    #projecthome3D.projectIdhead3D .row .socPageLinks a:hover {
+      background-color: #5FCAEA; }
