@@ -1759,3 +1759,97 @@ html {
       width: 35px; }
     #projecthome3D.projectIdhead3D .row .socPageLinks a:hover {
       background-color: #5FCAEA; }
+
+#contactHead3D {
+  padding: 120px 0 100px; }
+  @media (max-width: 1200px) {
+    #contactHead3D {
+      position: -webkit-sticky;
+      position: sticky;
+      padding: 100px 0; } }
+  @media (min-width: 1200px) {
+    #contactHead3D {
+      margin-top: 80px; } }
+  #contactHead3D section h1 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #494949; }
+  #contactHead3D #map {
+    min-height: 400px; }
+    #contactHead3D #map iframe {
+      border: 0;
+      width: 100%;
+      min-height: inherit; }
+  #contactHead3D .infoContactBlock3D {
+    position: relative;
+    top: -50px;
+    -webkit-box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+    box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09); }
+    #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite {
+      font-family: Noto Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      color: #88989D;
+      background: #fff;
+      padding: 35px 25px; }
+      #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12 {
+        padding: 0; }
+        #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12.mt5 p {
+          font-size: 14px; }
+        #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12 .col-12 {
+          padding: 0 15px; }
+        #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12 .col-12.col-sm-6 {
+          padding: 0 15px; }
+          #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12 .col-12.col-sm-6 p {
+            color: #494949; }
+          #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12 .col-12.col-sm-6 a {
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #5FCAEA; }
+            #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12 .col-12.col-sm-6 a:hover {
+              text-decoration: none; }
+            #contactHead3D .infoContactBlock3D .contactBoxArea3dWhite .col-12 .col-12.col-sm-6 a img {
+              background: #fff;
+              -webkit-box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+              box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-left: 15px; }
+    #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack {
+      background: #F5F8FA; }
+      #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 {
+        border: 1px solid #DDE9EF;
+        padding: 30px 25px; }
+        #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 ul li img {
+          width: 30px;
+          height: 30px;
+          margin-bottom: 10px; }
+        #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 :last-child ul li img {
+          width: 35px;
+          height: 35px; }
+        #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:first-child {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          color: #494949; }
+          #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:first-child > li:last-child {
+            font-size: 36px;
+            margin-bottom: 30px; }
+        #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:last-child {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          color: #494949; }
+          #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:last-child > li:last-child {
+            color: #88989D;
+            margin-top: 8px; }

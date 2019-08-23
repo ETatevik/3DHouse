@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>HOUSE</title>
+
+	<!-- Logo of page -->
+	<link rel="shortcut icon" href="img/3d.png">
+	
+
+	<!-- CSS files -->
+	<!-- Owl Stylesheets -->
+	<link rel="stylesheet" href="css/docs.theme.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- multirange Stylesheets -->
+    <link rel="stylesheet" href="css/multirange.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+<!--
+<pre> 
+	    |===============
+	    ||===========
+	    |||=======
+	    |||
+	    |||
+===================
+   ============= 
+      =======
+	    |||
+	    |||
+	    |||=======
+	    ||===========
+	    |===============   
+</pre> -->
+
+</head>
+<body>
+
+	<!-- Loading 3D -->
+	<!-- <div id="loading">
+		<img src="img/loading.webp" alt="" class="img-fluid">
+	</div> -->
+
+	<!-- Menu of page -->
+	<nav id="menu3D" class="fixed-top">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-sm navbar-light">
+			  	<a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
+			  		<img src="img/icons/logo.svg"  alt="">
+			  	</a>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSuppContent" aria-controls="menuSuppContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+				<div class="container">
+					<div class="row w-100 ">
+						<div class="col-sm-12 col-md-6 col-lg-7 d-flex align-items-center">
+							<div class="collapse navbar-collapse" id="menuSuppContent">
+						  	  	<ul class="navbar-nav  text-uppercase">
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="projects.html">Проекты <img src="img/icons/arrow.svg" alt=""></a>
+						  	  	  	</li>
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="#">Услуги <img src="img/icons/arrow.svg" alt=""></a>
+						  	  	  	</li>
+						  	  	  	<li class="nav-item">
+						  	  	   	 	<a class="nav-link" href="#">Акции</a>
+						  	  	  	</li>
+						  	  	</ul>
+						  	</div>
+						</div>
+						<div class="d-none  col-sm-12 col-md-6 col-lg-5 searchBtn d-sm-flex align-items-center justify-content-center">
+							<form class="form-inline">
+					  	  	  	<div class="input-group">
+								  	<input name="searchMenuPj" type="search" class="form-control" placeholder="Поиск проекта" aria-label="Поиск проекта" aria-describedby="search">
+								 	<div class="input-group-append">
+								    	<button type="submit" class="input-group-text" id="search"><img src="img/icons/search.svg" alt=""></button>
+								  	</div>
+								</div>
+					  	  	</form>
+						</div>
+					</div>
+				</div>
+				<div class="minMenu3D d-flex align-items-stretch ">
+			  	  	<div class="row w-100">
+			  	  		<div class="col-12 col-sm-9 col-lg-12 col-xl-9 phBtn d-flex align-items-center justify-content-center">
+			  	  			<div class="text-right d-flex py-3 py-xl-0">
+				  				<span class="phone">
+				  					<img src="img/icons/phone.svg" alt="">
+				  				</span>
+				  				<span class="numb">+7 (900) 90-909-00</span>
+				  			</div>
+			  	  		</div>
+			  	  		<div class="col-12 col-sm-3 col-lg-12 col-xl-3 d-flex align-items-center justify-content-center">
+			  	  			<button type="button" class="prjMenuThree py-3 py-xl-0" data-toggle="modal" data-target="#projMenuModal">
+			  	  				<img src="img/icons/treeLine.svg" alt="">
+			  	  			</div>
+			  	  		</div>
+			  	  	</div>
+			  	</div>
+			</nav>
+		</div>
+	</nav>
+
+	<!-- Poject Menu Modal -->
+	<div class="modal fade" id="projMenuModal" tabindex="-1" role="dialog" aria-labelledby="projMenuModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog" role="document">
+	  	  	<div class="modal-content">
+	  	  		<div class="container">
+	  	  			<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          	<span aria-hidden="true">
+				          		<svg width="25" height="25" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L9 9M9 1L1 9" stroke="#5FCAEA" stroke-linecap="round"/>
+								</svg>
+				          	</span>
+				        </button>
+				    </div>
+	  	   	  	  	<div class="modal-body">
+	  	  	  	  		<div class="row" id="projMiniMenuBody">
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По материалу:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из пеноблоков</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По стилю:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+									<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>	  	  	  	  					
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По назначению:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из газобетона</a></li>
+	  	  	  	  					<li><a href="index.html">Кирпичные дома </a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">ЛСТК проекты</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По этажности:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+									<li><a href="index.html">Проекты из бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из проф бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Из клееного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Каркасные дома</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из СИП </a></li>
+	  	  	  	  					<li><a href="index.html">ЛСТК проекты</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из арболита</a></li>
+	  	  	  	  					<li><a href="index.html">Из двойного бруса</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Проекты из бревна</a></li>
+	  	  	  	  					<li><a href="index.html">Из оцилиндр. бревна</a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  			<div class="mb-md-5 col-xl col-md-6 col-12">
+	  	  	  	  				<h2 class="text-uppercase">По размеру:</h2>
+	  	  	  	  				<ul class="list-unstyled">
+	  	  	  	  					<li><a href="index.html">Проекты домов до 100 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Проекты домов до 150 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Проекты домов до 200 м<sup>2</sup></a></li>
+	  	  	  	  					<li><a href="index.html">Одноэтажные до 100 м<sup>2</sup></a></li>
+	  	  	  	  				</ul>
+	  	  	  	  			</div>
+	  	  	  	  		</div>
+	  	  	  		</div>
+	  	  		</div>
+	  	  	</div>
+	  	</div>
+	</div>
+
+	<!-- Header of page // Contact 3d-->
+	<header id="contactHead3D">
+		<section class="container pb-5">
+			<h1>КОНТАКТЫ</h1>
+		</section>
+		<div class="container-fluid mx-0 px-0">
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7360.498387045713!2d50.23094099278952!3d53.26541344937263!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416619aa26e78979%3A0x5bd2b9229017bca5!2z0YPQuy4g0KLQsNGI0LrQtdC90YLRgdC60LDRjywgMTcxLCDQodCw0LzQsNGA0LAsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDQ0MzEyMg!5e0!3m2!1sru!2s!4v1566589378985!5m2!1sru!2s" frameborder="0" allowfullscreen=""></iframe>
+			</div>
+		</div>
+		<section class="container px-0 infoContactBlock3D">
+			<div class="contactBoxArea3dWhite">		
+				<div class="row">
+					<div class="col-12">
+						<h2><img src="img/logo-Contact.png" alt=""></h2>
+					</div>
+					<div class="col-12 mt-5">
+						<p class="mb-0">ОГРН 1026301700039</p>
+					</div>
+					<div class="col-12">
+						<div class="row align-items-center">
+							<div class="col-12 col-sm-6">
+								<p class="mb-0">Россия, 443125, Самара, ул. Ташкентская 171</p>
+							</div>
+							<div class="col-12 col-sm-6 text-left text-sm-right">
+								<a href="#">Смотреть на карте <img src="img/map-cheack.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contactBoxArea3dBlack">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<ul class="list-unstyled">
+							<li><img src="img/icons/phone.svg" alt=""></li>
+							<li>Звоните:</li>
+							<li>8 (902) 187-48-16</li>
+						</ul>
+						<ul class="list-unstyled">
+							<li>Будем рады вам:</li>
+							<li><span>Пн - Вт, 8:00 - 19:00</span></li>
+						</ul>
+					</div>
+					<div class="col-12 col-lg-6">
+						<ul class="list-unstyled">
+							<li><img src="img/message.svg" alt=""></li>
+							<li>Пишите::</li>
+							<li>3dhouse306@mail.ru</li>
+						</ul>
+						<ul class="list-unstyled">
+							<li>Будем рады вам:</li>
+							<li><span>в любое время дня и ночи</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<!-- Footer -->
+	<footer id="footer3D">
+		<div class="filt3Dhei">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg  footerStLinks mb-3 mb-lg-0">
+						<div class="row ">
+							<div class="col-12 col-md-3"><img src="img/icons/logo.svg" alt=""></div>
+							<div class="col-12 col-md-8">
+								<table class="ml-md-auto mt-3 mt-md-0">
+									<tr>
+										<td><a href="#">Каталог</a></td>
+										<td><a href="#">Новости</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">О компании</a></td>
+										<td><a href="#">Контакты</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Акции</a></td>
+										<td><a href="#"></a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg  mt-3 mt-md-0  footerLsLinks">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<ul class="list-unstyled">
+									<li>+7 (900) 90-909-00</li>
+									<li>Самара, ул. Ташкентская, 234 Г</li>
+									<li><a href="#">proektkom205@mail.ru</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-6 mb-4 mb-md-0">
+								<button type="button" class="homeFooterContact">
+									<span>Связаться с нами</span>
+									<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="47" height="47" fill="#5FCAEA"/>
+										<path d="M32 27L23.5 18L15 27" stroke="white" stroke-width="3" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid footerCopyYouT">
+			<div class="container">
+				<div class="row ">
+					<div class="col-12 col-sm-6">
+						<p class="mb-0">&copy; Copyright 2019 ООО «ПроектКом» </p>
+					</div>
+					<div class="col-12 col-sm-6 mt-2 mt-sm-0">
+						<div class="text-sm-right">
+							<a href="#">
+								Наш YouTube канал:
+								<span><img src="img/icons/youtube.svg" alt=""></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Script files -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- containerNewProjSlider Scripts -->
+	<script src="js/owl.carousel.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/newProjectSlider.js"></script>
+    <!-- multirange Script -->
+	<script src="js/multirange.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>

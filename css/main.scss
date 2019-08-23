@@ -2170,3 +2170,133 @@ html{
 	}
 
 }
+
+//-------------------------Contact HMTL--------------------------------------
+
+#contactHead3D{
+	padding: 120px 0 100px;
+	@media (max-width: 1200px) {
+		position: sticky;
+		padding: 100px 0; 
+	}
+	@media (min-width: 1200px) {
+		margin-top: 80px;
+	}
+
+	section h1{
+		font-family: Oswald;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+		color: $color4;
+	}
+
+	#map{
+		min-height: 400px;
+		iframe{
+			border: 0;
+			width: 100%;
+			min-height: inherit;
+		}
+	}
+	
+	.infoContactBlock3D{
+		position: relative;
+		top:-50px;
+		box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+
+		.contactBoxArea3dWhite{
+			font-family: Noto Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			color: #88989D;
+			background: $color1;
+			padding:35px 25px;
+			.col-12{
+				padding: 0;
+				&.mt5 p{
+					font-size: 14px;
+				}
+				.col-12{
+					padding: 0 15px;
+				}
+				.col-12.col-sm-6{
+					padding: 0 15px;
+					p{
+						color: $color4;
+					}
+					a{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						color: $color2;
+						&:hover{
+							text-decoration: none;
+						}
+						img{
+							background: $color1;
+							box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							margin-left: 15px;
+						}
+					}
+				}
+			}
+		}
+		.contactBoxArea3dBlack{
+			background: #F5F8FA;
+			.row{
+				.col-12.col-lg-6{
+					border: 1px solid $color3;
+					padding:30px 25px;
+					ul li {
+						img{
+							width: 30px;
+							height: 30px;
+							margin-bottom: 10px;
+						}
+					}
+					:last-child{
+						ul li {
+							img{
+								width: 35px;
+								height: 35px;
+							}
+						}
+					}
+					&> ul:first-child{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 14px;
+						color: $color4;	
+						& > li:last-child{
+							font-size: 36px;
+							margin-bottom: 30px;
+						}
+					}
+					& > ul:last-child{
+						font-family: Noto Sans;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						color: $color4;
+						&>li:last-child{
+							color: #88989D;
+							margin-top: 8px;
+						}
+					} 
+				}
+			}
+		}
+
+	}
+
+
+}

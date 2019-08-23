@@ -377,4 +377,11 @@ jQuery(document).ready(function($) {
 			}
 		});
 	}
+
+	// ----------homeFooterContact----------------
+	{
+		$('.homeFooterContact').click(function(event) {
+			window.location.replace("contact.html");
+		});
+	}
 });
