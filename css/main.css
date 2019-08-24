@@ -1854,6 +1854,788 @@ html {
             color: #88989D;
             margin-top: 8px; }
 
-#servicesHead3D {
-  height: 400px;
-  padding: 100px; }
+#servicesHead3D > .container-fluid {
+  background: url("../img/homeSl1.png") no-repeat center;
+  background-size: cover;
+  padding: 100px 50px 50px;
+  position: relative; }
+  #servicesHead3D > .container-fluid:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(70, 70, 70, 0.35); }
+  #servicesHead3D > .container-fluid > .container {
+    padding-top: 50px;
+    position: relative;
+    z-index: 5; }
+    #servicesHead3D > .container-fluid > .container > .row {
+      font-family: Oswald;
+      font-style: normal;
+      letter-spacing: 1px;
+      color: #fff; }
+      #servicesHead3D > .container-fluid > .container > .row h2 {
+        font-size: 48px;
+        font-weight: bold; }
+      #servicesHead3D > .container-fluid > .container > .row h1 {
+        font-size: 96px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      #servicesHead3D > .container-fluid > .container > .row ul li {
+        font-family: Noto Sans;
+        font-weight: normal;
+        font-size: 24px;
+        position: relative;
+        padding-left: 30px; }
+        #servicesHead3D > .container-fluid > .container > .row ul li:before {
+          content: '';
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          border: 2px solid #5FCAEA;
+          position: absolute;
+          top: 10px;
+          left: 0px; }
+      #servicesHead3D > .container-fluid > .container > .row .col-12 {
+        padding-left: 0;
+        padding-right: 0; }
+    #servicesHead3D > .container-fluid > .container form {
+      position: relative;
+      top: 110px; }
+      #servicesHead3D > .container-fluid > .container form > .row > .col-12 {
+        padding-left: 0;
+        padding-right: 0;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 26px;
+        color: #fff;
+        margin-bottom: 20px; }
+      #servicesHead3D > .container-fluid > .container form .form-container {
+        width: 100%;
+        -webkit-box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+        box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09); }
+        #servicesHead3D > .container-fluid > .container form .form-container .row {
+          background: #fff; }
+          @media (min-width: 700px) {
+            #servicesHead3D > .container-fluid > .container form .form-container .row > .col-12.col-md-6.col-lg-4:first-child {
+              padding-left: 35px; } }
+          @media (min-width: 700px) {
+            #servicesHead3D > .container-fluid > .container form .form-container .row > .col-12.col-md-6.col-lg-4:nth-child(2) {
+              padding-right: 35px; } }
+          #servicesHead3D > .container-fluid > .container form .form-container .row .input-group {
+            background: #fff;
+            border: 1px solid #DDE9EF;
+            border-radius: 0;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 15px; }
+            #servicesHead3D > .container-fluid > .container form .form-container .row .input-group .input-group-prepend,
+            #servicesHead3D > .container-fluid > .container form .form-container .row .input-group .form-control {
+              border: 0;
+              background: #fff;
+              border-radius: 0; }
+            #servicesHead3D > .container-fluid > .container form .form-container .row .input-group .input-group-prepend > .input-group-text {
+              border: 0;
+              border-radius: 0;
+              background-color: inherit; }
+            #servicesHead3D > .container-fluid > .container form .form-container .row .input-group .form-control {
+              height: auto; }
+          #servicesHead3D > .container-fluid > .container form .form-container .row > .col-12.col-md-12.col-lg-4 {
+            padding-left: 0;
+            padding-right: 0; }
+            #servicesHead3D > .container-fluid > .container form .form-container .row > .col-12.col-md-12.col-lg-4 button {
+              font-family: Noto Sans;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 16px;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              color: #fff;
+              background: #5FCAEA;
+              border: 0;
+              display: block;
+              width: 100%;
+              height: 100%;
+              min-height: 100px; }
+              #servicesHead3D > .container-fluid > .container form .form-container .row > .col-12.col-md-12.col-lg-4 button:focus {
+                outline: 0;
+                border: 0;
+                -webkit-box-shadow: 0 0;
+                box-shadow: 0 0; }
+              #servicesHead3D > .container-fluid > .container form .form-container .row > .col-12.col-md-12.col-lg-4 button > svg {
+                margin-left: 20px; }
+
+#bigBodyOfServices {
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  #bigBodyOfServices #asideCalculator {
+    padding-right: 0; }
+    #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D {
+      background: #fff; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:first-child {
+        background: #F5F8FA;
+        border: 1px solid #DDE9EF;
+        border-radius: 16px 0px 0px 0px;
+        padding: 24px 28px; }
+        #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:first-child h2 {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          color: #353A3E;
+          margin-top: 15px; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(2), #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4),
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div > ul > li {
+        border: 1px solid #DDE9EF;
+        padding: 10px 30px;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: #494949; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li > label {
+          position: relative;
+          cursor: pointer;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding-left: 35px;
+          margin-bottom: 0; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li > label > input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li > label > .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 16px;
+            width: 16px;
+            background-color: #fff;
+            border: 1px solid #DAE4EA; }
+            #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li > label > .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 4.5px;
+              top: 1.5px;
+              width: 5px;
+              height: 10px;
+              border: 1.5px solid #5FCAEA;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li > label input:checked ~ .checkmark {
+            background-color: #fff;
+            border-color: #5FCAEA; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li > label input:checked ~ .checkmark:after {
+            display: block; }
+        #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li label,
+        #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div ul > li label input[type="checkbox"] {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          color: #494949; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(2) input {
+        background: #fff;
+        border: 1px solid #DAE4EA;
+        padding: 10px 20px;
+        text-align: center;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #494949; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label {
+        margin-bottom: 0;
+        margin-top: 12px; }
+        #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group {
+          background: #fff;
+          border: 1px solid #DDE9EF;
+          border-radius: 0;
+          margin-top: 15px;
+          margin-bottom: 12px;
+          padding: 10px; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .input-group-prepend,
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .form-control {
+            border: 0;
+            background: #fff;
+            border-radius: 0; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .input-group-prepend > .input-group-text {
+            border: 0;
+            border-radius: 0;
+            background-color: inherit; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .form-control {
+            height: auto;
+            padding-left: 0;
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #494949; }
+            #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .form-control::-webkit-input-placeholder {
+              color: #88989D; }
+            #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .form-control:-ms-input-placeholder {
+              color: #88989D; }
+            #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .form-control::-ms-input-placeholder {
+              color: #88989D; }
+            #bigBodyOfServices #asideCalculator .calcProjAndNewProject .calcServ3D > div:nth-child(4) label .input-group .form-control::placeholder {
+              color: #88989D; }
+    #bigBodyOfServices #asideCalculator .calcProjAndNewProject > form > button {
+      -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+      box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+      font-family: Noto Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #5FCAEA;
+      border: 0;
+      width: 100%;
+      padding: 20px;
+      margin-top: 25px;
+      margin-bottom: 35px; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject > form > button > svg {
+        margin-left: 10px; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject > form > button:focus {
+        border: 0;
+        outline: 0;
+        -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32) !important;
+        box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32) !important; }
+    #bigBodyOfServices #asideCalculator .calcProjAndNewProject > .calcResault > h1 {
+      font-family: Noto Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 38px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #494949;
+      text-align: center; }
+    #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices {
+      margin-top: 100px; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices h2 {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: #494949; }
+      #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices .cardNewProj {
+        padding: 24px 16px; }
+        #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices .cardNewProj .row {
+          background: #fff;
+          border: 1px solid #DDE9EF; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices .cardNewProj .row h4 {
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            color: #494949;
+            margin-bottom: 10px;
+            /*-webkit-line-clamp: 2;
+						    -webkit-box-orient: vertical;
+						    overflow: hidden;
+						    text-overflow: ellipsis;*/ }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices .cardNewProj .row span {
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #88989D; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices .cardNewProj .row .col-6 {
+            padding-left: 0;
+            padding-right: 0; }
+            #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices .cardNewProj .row .col-6.col-md-8 {
+              padding: 15px 20px; }
+          #bigBodyOfServices #asideCalculator .calcProjAndNewProject .newProjectsOfServices .cardNewProj .row img {
+            min-height: 100%; }
+  #bigBodyOfServices section.ordIndivProject {
+    padding: 50px;
+    background: #fff;
+    margin-bottom: 65px; }
+    #bigBodyOfServices section.ordIndivProject h2 {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #494949;
+      margin-bottom: 50px; }
+    #bigBodyOfServices section.ordIndivProject .boxOrdIndPr {
+      border: 1px solid #DDE9EF;
+      padding: 20px 40px 20px 15px;
+      margin-top: 15px; }
+      #bigBodyOfServices section.ordIndivProject .boxOrdIndPr h4 {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: #494949;
+        margin-top: 20px;
+        margin-bottom: 15px; }
+      #bigBodyOfServices section.ordIndivProject .boxOrdIndPr p {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #88989D;
+        line-height: 26px;
+        margin-bottom: 0;
+        text-align: justify; }
+  #bigBodyOfServices section.ourWorks3d {
+    background: #F5F8FA;
+    position: relative; }
+    #bigBodyOfServices section.ourWorks3d:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #F5F8FA;
+      width: 100vw;
+      left: -100vw; }
+    #bigBodyOfServices section.ourWorks3d > .container-fluid {
+      padding: 120px 50px; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid h1 {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #494949;
+        margin-bottom: 45px; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid #demos .owl-carousel .item,
+      #bigBodyOfServices section.ourWorks3d > .container-fluid #demos2 .owl-carousel .item {
+        height: auto !important;
+        background-color: transparent !important;
+        padding: 0;
+        border: 0 !important;
+        outline: 0 !important; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid #demos2 .owl-carousel .item {
+        background: #fff !important;
+        border: 1px solid #DDE9EF !important;
+        padding: 5px;
+        margin: 0 5px 0; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-item .active {
+        border: 0 !important;
+        outline: 0 !important;
+        background-color: transparent !important; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-theme .owl-dots {
+        position: relative;
+        width: auto;
+        display: inline-block;
+        width: 150px;
+        height: 20px;
+        overflow: hidden;
+        left: -182.5px;
+        top: 26.5px; }
+        @media (max-width: 700px) {
+          #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-theme .owl-dots {
+            display: none; } }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-theme .owl-dots .owl-dot span {
+        background: transparent;
+        border: 2px solid #E0EAF0; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-theme .owl-dots .owl-dot span:hover {
+          border: 2px solid #5FCAEA; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-theme .owl-dots .owl-dot:focus {
+        outline: 0;
+        -webkit-box-shadow: 0 0;
+        box-shadow: 0 0;
+        border: 0; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-theme .owl-dots .owl-dot.active > span {
+        border: 2px solid #5FCAEA !important; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid #demos3 {
+        margin: auto;
+        padding: 0 15px; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid #demos3 .row {
+          margin: 0; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-theme .owl-loaded .owl-drag {
+        position: relative; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-stage-outer {
+        z-index: 20; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-theme .owl-nav {
+        margin-top: 50px;
+        display: inline-block;
+        position: relative;
+        width: 220px; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-next {
+        width: 25px;
+        height: 25px;
+        background: url("../img/icons/arrow-rigth.svg") center no-repeat;
+        position: absolute;
+        right: 0; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-next span {
+          display: none; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-next:hover {
+          background-color: transparent;
+          color: transparent; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-next:focus {
+          outline: 0;
+          border: 0;
+          -webkit-box-shadow: 0 0;
+          box-shadow: 0 0; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-prev {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 0;
+        background: url("../img/icons/arrow-left.svg") center no-repeat; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-prev span {
+          display: none; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-prev:hover {
+          background-color: transparent;
+          color: transparent; }
+        #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-nav button.owl-prev:focus {
+          outline: 0;
+          border: 0;
+          -webkit-box-shadow: 0 0;
+          box-shadow: 0 0; }
+      #bigBodyOfServices section.ourWorks3d > .container-fluid .owl-carousel .owl-item img {
+        display: inline; }
+  #bigBodyOfServices section#casesToOrder3d {
+    padding: 100px 50px;
+    background: #fff; }
+    #bigBodyOfServices section#casesToOrder3d h2 {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #494949; }
+    #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj {
+      background: #FFFFFF;
+      border: 1px solid #DDE9EF;
+      margin-top: 50px; }
+      #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj img {
+        height: 100%; }
+      #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts {
+        padding: 50px 150px 50px 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-line-pack: justify;
+        align-content: space-between; }
+        @media (max-width: 600px) {
+          #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts {
+            padding-right: 30px; } }
+        #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts h3 {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          color: #494949;
+          line-height: 26px; }
+        #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts p {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          color: #88989D; }
+        #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts .price {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #6999B1;
+          width: 100%;
+          padding: 25px;
+          background-color: #F5F8FA; }
+          #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts .price span {
+            margin-left: 5px; }
+            @media (max-width: 600px) {
+              #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts .price span {
+                margin-left: 1px; } }
+          @media (max-width: 600px) {
+            #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts .price {
+              font-size: 10px; } }
+  #bigBodyOfServices #haveQuestions3d {
+    background: #F5F8FA url("../img/icons/wh.svg") no-repeat 95% center;
+    background-size: 100px;
+    position: relative; }
+    #bigBodyOfServices #haveQuestions3d:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #F5F8FA;
+      width: 100vw;
+      left: -100vw; }
+    #bigBodyOfServices #haveQuestions3d > .container-fluid {
+      padding: 80px 80px 90px 50px; }
+      #bigBodyOfServices #haveQuestions3d > .container-fluid h1 {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #494949; }
+      #bigBodyOfServices #haveQuestions3d > .container-fluid p {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 26px;
+        color: #494949; }
+      #bigBodyOfServices #haveQuestions3d > .container-fluid form {
+        margin-top: 60px; }
+        #bigBodyOfServices #haveQuestions3d > .container-fluid form .input-group {
+          background: #fff;
+          border: 1px solid #DDE9EF;
+          border-radius: 0;
+          margin-top: 25px;
+          margin-bottom: 25px;
+          padding: 15px; }
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form .input-group .input-group-prepend,
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form .input-group .form-control {
+            border: 0;
+            background: #fff;
+            border-radius: 0; }
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form .input-group .input-group-prepend > .input-group-text {
+            border: 0;
+            border-radius: 0;
+            background-color: inherit; }
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form .input-group .form-control {
+            height: auto; }
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form .input-group.inputTextarea3D textarea {
+            height: 200px;
+            resize: none; }
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form .input-group.inputTextarea3D .input-group-text {
+            display: inline-block;
+            padding-left: 5px; }
+        #bigBodyOfServices #haveQuestions3d > .container-fluid form button {
+          -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+          box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32);
+          background: #5FCAEA;
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #fff;
+          border: 0;
+          padding: 25px 35px;
+          margin-top: 25px; }
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form button > svg {
+            margin-left: 15px; }
+          #bigBodyOfServices #haveQuestions3d > .container-fluid form button:focus {
+            border: 0;
+            outline: 0;
+            -webkit-box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32) !important;
+            box-shadow: 0px 14px 44px rgba(95, 202, 234, 0.32) !important; }
+  #bigBodyOfServices #workStages3d {
+    padding: 50px;
+    background: #fff;
+    margin-bottom: 65px; }
+    #bigBodyOfServices #workStages3d h2 {
+      margin-bottom: 60px;
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #494949; }
+    #bigBodyOfServices #workStages3d .steps {
+      margin-bottom: 25px;
+      width: 87%; }
+      @media (max-width: 800px) {
+        #bigBodyOfServices #workStages3d .steps {
+          width: 70%; } }
+      @media (max-width: 500px) {
+        #bigBodyOfServices #workStages3d .steps {
+          width: 100%; } }
+      #bigBodyOfServices #workStages3d .steps p {
+        margin: auto;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #88989D;
+        margin-top: 25px;
+        text-align: justify; }
+      #bigBodyOfServices #workStages3d .steps > .numStep {
+        position: relative;
+        height: 120px;
+        margin: auto; }
+        #bigBodyOfServices #workStages3d .steps > .numStep > .bgNumber {
+          font-family: Oswald;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 96px;
+          line-height: 142px;
+          text-transform: uppercase;
+          color: #E9F1F5;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        #bigBodyOfServices #workStages3d .steps > .numStep > .step3D {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 26px;
+          color: #5FCAEA;
+          position: absolute;
+          top: calc(50% - 4px);
+          left: 6px; }
+  #bigBodyOfServices #document3dServ {
+    background: #5FCAEA;
+    position: relative; }
+    @media (min-width: 992px) {
+      #bigBodyOfServices #document3dServ {
+        margin-top: 90px;
+        margin-bottom: 90px; } }
+    #bigBodyOfServices #document3dServ:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #5FCAEA;
+      width: 100vw;
+      left: -100vw;
+      height: 50%; }
+    #bigBodyOfServices #document3dServ > .container-fluid {
+      padding: 80px 50px;
+      position: relative;
+      z-index: 10; }
+      #bigBodyOfServices #document3dServ > .container-fluid .documentPrImg {
+        position: relative; }
+        @media (min-width: 992px) {
+          #bigBodyOfServices #document3dServ > .container-fluid .documentPrImg img {
+            position: absolute;
+            top: -160px;
+            z-index: 12; } }
+      #bigBodyOfServices #document3dServ > .container-fluid .documentPrInfo h2 {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 25px; }
+      #bigBodyOfServices #document3dServ > .container-fluid .documentPrInfo span svg {
+        width: 35px; }
+      @media (min-width: 992px) {
+        #bigBodyOfServices #document3dServ > .container-fluid .documentPrInfo:before {
+          position: absolute;
+          content: '';
+          background-color: #fff;
+          height: 100%;
+          width: 100%;
+          top: 50%;
+          left: -130%; } }
+  #bigBodyOfServices #acceptOrder {
+    padding: 100px 50px;
+    margin-top: 200px; }
+    #bigBodyOfServices #acceptOrder h3 {
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #494949; }
+      @media (min-width: 1200px) {
+        #bigBodyOfServices #acceptOrder h3 {
+          width: 75%;
+          margin-left: 70px;
+          margin-top: 30px; } }
+    #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack {
+      background: #fff; }
+      #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 {
+        border: 1px solid #DDE9EF;
+        padding: 30px 25px; }
+        #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 ul li img {
+          width: 30px;
+          height: 30px;
+          margin-bottom: 10px; }
+        #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 :last-child ul li img {
+          width: 35px;
+          height: 35px; }
+        #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:first-child {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          color: #494949; }
+          #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:first-child > li:last-child {
+            font-size: 36px;
+            margin-bottom: 30px; }
+        #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:last-child {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          color: #494949; }
+          #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:last-child > li:last-child {
+            color: #88989D;
+            margin-top: 8px; }
+        #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 ul li:last-child {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 26px;
+          color: #494949; }
+          @media (max-width: 600px) {
+            #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 ul li:last-child {
+              font-size: 28px; } }
+      #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 26px;
+        color: #494949; }
+        #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a:hover {
+          color: #5FCAEA;
+          text-decoration: none; }
+        @media (max-width: 600px) {
+          #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a {
+            font-size: 28px; } }
+      #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail:hover {
+        -webkit-box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
+        box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09); }

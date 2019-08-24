@@ -384,4 +384,19 @@ jQuery(document).ready(function($) {
 			window.location.replace("contact.html");
 		});
 	}
+
+	//-----------------------Services Html----------------------------------
+	{
+		if($(window).width() >= 1200){
+			$('#servicesHead3D').css('marginTop', `${$('#menu3D').height()}px`);
+			$("#asideCalculator").css('maxWidth', `${$("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width()+50}px`);
+		}else{
+			$('#servicesHead3D').css('marginTop', `0`);
+		}
+
+		if($(window).width() <= 1350 && $(window).width() >= 1000){
+			$('#bigBodyOfServices #bigContainer.container').css('maxWidth', `${1140 - $("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width()+50}px`);
+		}
+
+	}
 });

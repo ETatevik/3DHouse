@@ -15,10 +15,27 @@ $(document).ready(function() {
     	    	items: 3
     		}
     	}
-  	})
+  	});
+
     let owl1 = $('#demos2 .owl-carousel');
     owl1.owlCarousel({
         margin: 10,
+        nav: true,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            
+            1000: {
+                items: 2
+            }
+        }
+    });
+
+    let owl2 = $('#demos3 .owl-carousel');
+    owl2.owlCarousel({
+        margin: 20,
         nav: true,
         loop: true,
         responsive: {
