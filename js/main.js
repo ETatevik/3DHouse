@@ -9,6 +9,8 @@ window.onload = function (){
 }
 
 jQuery(document).ready(function($) {
+
+	console.log($(window).width())
 	//Load Page if change Width Window
 	{
 		let startWid = $(window).width();
@@ -21,22 +23,28 @@ jQuery(document).ready(function($) {
 	// Header of page // Gallery 
 	{
 
-		if($(window).width() < 900){
+		if($(window).width() < 1000){
 			$('.popoverbigGalleryHome3d').css('display', 'none');
 		}
+
+		$('.homeUp3D').click(function(event) {
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+		});
 
 	}
 
 	//  Filter Find of Projects
 	{
 		let galleryW;
-		if($(window).width() > 1200) $('#filterFindHome').css('top', `${$('#menu3D').height()}px`);
+		// if($(window).width() > 1200) $('#filterFindHome').css('top', `${$('#menu3D').height()}px`);
 
 		if($(window).width() > 1100){
 			galleryW = ($('#bigGalleryHome3d').width() - $('#filterFindHome').width()- 22);
 			$(".filterHomeBody").width(`${$("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width()}px`);
 			$('.filt3Dhei').width(`${galleryW}px`).css({marginLeft : '0', marginRight : 'auto'});
 			$('#bigGalleryHome3d').width(`${galleryW}px`);
+
+			$('#home3D').height(`${$(window).height() - $('#menu3D').height()}px`);
 		}
 		else{
 			galleryW = $('#bigGalleryHome3d').width() - $('.filterHomeBtn').width()*1.1;
@@ -47,6 +55,9 @@ jQuery(document).ready(function($) {
 			$('#projecthome3D .filterHomeBody').width(`${$(window).width() - $('.filterHomeBtn').width()*2}px`);
 			$('#projecthome3D>.container').css('order', '2');
 			$('#projecthome3D>#filterFindHome').css('order', '1');
+
+			$('#home3D').height('auto');
+
 
 		}
 
@@ -72,13 +83,17 @@ jQuery(document).ready(function($) {
 					$('#bigGalleryHome3d').width(`${galleryW}px`);
 					$(".filterHomeBody").width(`${$("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width()}px`).css('overflow', 'visibility');
 				}else{
-					$('#home3D').height('auto');
 					$('#bigGalleryHome3d').width(`${0}px`).css('overflow', 'hidden');
 					$(".filterHomeBody").width(galleryW).css('overflow', 'visibility');
 					$('#projecthome3D').css({flexWrap:'wrap', justifyContent:'center'});
 					$('#projecthome3D .filterHomeBody').width(`${$(window).width() - $('.filterHomeBtn').width()*2}px`).css('overflow', 'visibility');
 					$('#projecthome3D>.container').css('order', '2');
 					$('#projecthome3D>#filterFindHome').css('order', '1');
+					$('#home3D').height('auto');						
+				}
+
+				if($(window).width() < 498){
+					$('#homeNewPojectes .container').removeClass('pt-0');
 				}
 
 			}else{
@@ -89,15 +104,27 @@ jQuery(document).ready(function($) {
 				if($(window).width() > 1100){
 					$('.filt3Dhei').width(`100%`).css({marginLeft : 'auto', marginRight : 'auto'});
 				}else{
-					$('#home3D').height(`${$('#home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item, #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item > img').eq(0).height()}px`);
+					// $('#home3D').height(`${$('#home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item, #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item > img').eq(0).height()}px`);
 					$('#projecthome3D').css({flexWrap:'nowrap', justifyContent:'space-between'});
 					$('#projecthome3D .filterHomeBody').width(`0`).css('overflow', 'hidden');;
 					$('#projecthome3D>.container').css('order', '1');
 					$('#projecthome3D>#filterFindHome').css('order', '2');
+					// $('#home3D').height(`${$('#home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item').eq(0).height()}px`);
+					
 				}
 				if($(window).width() < 800){
 					$('#bigGalleryHome3d').css('overflow', 'visibility');
-					$('#home3D').height(`${$('#home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item, #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item > img').eq(0).height() + $('#home3D section.container-fluid #bigGalleryHome3d .galleryBtns .container').height()}px`);
+					// $('#home3D').height(`${$('#home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item, #home3D section.container-fluid #bigGalleryHome3d .carousel-inner > .carousel-item > img').eq(0).height() + $('#home3D section.container-fluid #bigGalleryHome3d .galleryBtns .container').height()}px`);
+				}
+
+				if($(window).width() > 600 && $(window).width() < 1000){
+					$('#home3D').height('600px');
+				}else if($(window).width() < 600){
+					$('#home3D').height('480px');
+				}
+
+				if($(window).width() < 498){
+					$('#homeNewPojectes .container').addClass('pt-0');
 				}
 			}
 		});
@@ -306,7 +333,7 @@ jQuery(document).ready(function($) {
 							</script>`
 
 		for (let i = 0; i < parseInt($('#projecMain3d .projectsShowPageCards.pageActive').text()); i++) {
-			let newElementCard = $('<div class="col col-md-6 col-xl-4"></div>').html(cardsOfProjects);
+			let newElementCard = $('<div class="col-12 col-lg-6 col-xl-4"></div>').html(cardsOfProjects);
 			$('#projectsCardsMainBody3D').append(newElementCard);	
 		}
 
@@ -320,12 +347,12 @@ jQuery(document).ready(function($) {
 			if($(this).text() == '12'){
 						
 				for (let i = 0; i < parseInt($(this).text()); i++) {
-					let newElementCard = $('<div class="col col-md-6 col-xl-4"></div>').html(cardsOfProjects);
+					let newElementCard = $('<div class="col-12 col-lg-6 col-xl-4"></div>').html(cardsOfProjects);
 					$('#projectsCardsMainBody3D').append(newElementCard);	
 				}
 			}else{
 				for (let i = 0; i < parseInt($(this).text()); i++) {
-					let newElementCard = $('<div class="col col-md-6 col-xl-3"></div>').html(cardsOfProjects);
+					let newElementCard = $('<div class="col-12 col-lg-6 col-xl-3"></div>').html(cardsOfProjects);
 					$('#projectsCardsMainBody3D').append(newElementCard);	
 				}
 			}
@@ -388,7 +415,6 @@ jQuery(document).ready(function($) {
 	//-----------------------Services Html----------------------------------
 	{
 		if($(window).width() >= 1200){
-			$('#servicesHead3D').css('marginTop', `${$('#menu3D').height()}px`);
 			$("#asideCalculator").css('maxWidth', `${$("#menu3D > .container-fluid > .navbar > .minMenu3D > .row").width()+50}px`);
 		}else{
 			$('#servicesHead3D').css('marginTop', `0`);

@@ -43,14 +43,9 @@ html {
 
 #menu3D {
   z-index: 1040; }
-  @media (max-width: 1200px) {
-    #menu3D.fixed-top {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0; } }
-  @media (max-width: 800px) {
-    #menu3D.fixed-top {
-      position: static; } }
+  @media (max-width: 1100px) {
+    #menu3D.sticky-top {
+      position: static !important; } }
   #menu3D > .container-fluid {
     padding: 0;
     background-color: #fff; }
@@ -250,7 +245,6 @@ html {
           font-weight: bold !important;
           font-size: 14px !important;
           letter-spacing: 1px !important;
-          text-transform: uppercase !important;
           color: #494949 !important; }
         #projMenuModal.modal .modal-dialog > .modal-content > .container .row#projMiniMenuBody h2 {
           margin-bottom: 20px; }
@@ -268,12 +262,14 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  height: 100vh; }
+  position: relative; }
   @media (max-width: 1000px) {
     #home3D {
-      height: auto;
+      height: 600px;
       background-color: transparent !important; } }
+  @media (max-width: 600px) {
+    #home3D {
+      height: 500px; } }
   #home3D section.container-fluid {
     padding: 0;
     display: -webkit-box;
@@ -284,17 +280,14 @@ html {
     justify-content: center; }
     @media (max-width: 500px) {
       #home3D section.container-fluid {
-        height: 400px;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+        min-height: 200px;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
         background-color: transparent; } }
     #home3D section.container-fluid #bigGalleryHome3d {
       width: 100vw;
-      height: 100vh; }
-      @media (max-width: 1000px) {
-        #home3D section.container-fluid #bigGalleryHome3d {
-          height: 650px; } }
+      height: 100%; }
       @media (max-width: 500px) {
         #home3D section.container-fluid #bigGalleryHome3d {
           height: auto; } }
@@ -367,7 +360,6 @@ html {
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
-                line-height: 26px;
                 color: #494949;
                 max-width: 395px;
                 padding: 20px;
@@ -505,7 +497,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
-        line-height: 26px;
         color: #494949;
         padding: 23px; }
       #filterFindHome .findBox .filterHomeBody dl {
@@ -591,7 +582,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        line-height: 22px;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #5FCAEA;
@@ -620,8 +610,7 @@ html {
         padding: 0;
         margin: 5px auto 15px;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 26px; }
+        font-size: 14px; }
         @media (min-width: 1000px) {
           #filterFindHome .findBox .filterHomeBody .resetFilterBtn {
             font-size: 12px; } }
@@ -641,7 +630,6 @@ html {
       font-style: normal;
       font-weight: bold;
       font-size: 48px;
-      line-height: 71px;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #494949;
@@ -653,7 +641,6 @@ html {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
-      line-height: 22px;
       text-align: center;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -692,7 +679,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 14px;
-          line-height: 19px;
           color: #fff; }
         #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .info,
         #sameProjects .container .containerNewProjSlider .card .card-img-top .info,
@@ -706,7 +692,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 14px;
-          line-height: 19px;
           color: #fff;
           max-width: 90%; }
         #homeNewPojectes .container .containerNewProjSlider .card .card-img-top .heart,
@@ -740,7 +725,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
-        line-height: 26px;
         color: #494949;
         margin-bottom: 20px;
         margin-top: 20px; }
@@ -751,7 +735,6 @@ html {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 26px;
         text-align: justify;
         color: #88989D; }
       #homeNewPojectes .container .containerNewProjSlider .card .card-body table td,
@@ -761,7 +744,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        line-height: 26px;
         color: #494949;
         padding: 0px 5px; }
         #homeNewPojectes .container .containerNewProjSlider .card .card-body table td[rowspan='2'],
@@ -771,7 +753,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 24px;
-          line-height: 33px;
           letter-spacing: 1px;
           text-transform: uppercase;
           color: #494949;
@@ -808,7 +789,6 @@ html {
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
-          line-height: 26px;
           color: #5FCAEA;
           border-bottom: 1px solid #E2F5FB;
           padding-bottom: 3px; }
@@ -953,7 +933,6 @@ html {
       font-style: normal;
       font-weight: bold;
       font-size: 48px;
-      line-height: 71px;
       text-align: center;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -975,7 +954,6 @@ html {
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
-          line-height: 26px;
           color: #88989D; }
           @media (max-width: 1000px) {
             #orderIndiviProj .container > .row .steps p {
@@ -991,7 +969,6 @@ html {
             font-style: normal;
             font-weight: bold;
             font-size: 96px;
-            line-height: 142px;
             text-transform: uppercase;
             color: #E9F1F5;
             position: absolute;
@@ -1002,7 +979,6 @@ html {
             font-style: normal;
             font-weight: bold;
             font-size: 36px;
-            line-height: 26px;
             color: #5FCAEA;
             position: absolute;
             top: calc(50% - 4px);
@@ -1013,7 +989,6 @@ html {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
-      line-height: 22px;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #5FCAEA;
@@ -1095,7 +1070,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
-        line-height: 36px;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #fff; }
@@ -1104,7 +1078,6 @@ html {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 26px;
         margin-top: 35px;
         color: #FBFEFF; }
       #freeProjHome3D .container .freePrInfo button {
@@ -1112,7 +1085,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        line-height: 22px;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #fff;
@@ -1143,7 +1115,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
-        line-height: 36px;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #494949;
@@ -1153,7 +1124,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
-        line-height: 26px;
         color: #494949;
         margin-top: 40px; }
       #headSeoText .container .row .seoText p {
@@ -1161,7 +1131,6 @@ html {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 26px;
         color: #88989D;
         margin-top: 35px; }
       #headSeoText .container .row .seoNavbar {
@@ -1173,7 +1142,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 14px;
-          line-height: 26px;
           color: #494949;
           margin-bottom: 10px; }
         #headSeoText .container .row .seoNavbar ul > li {
@@ -1183,7 +1151,6 @@ html {
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
-            line-height: 26px;
             color: #5FCAEA;
             border-bottom: 1px solid #E2F5FB; }
             #headSeoText .container .row .seoNavbar ul > li > a:hover {
@@ -1199,7 +1166,6 @@ html {
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
-      line-height: 26px;
       color: #494949; }
       #footer3D .container .footerStLinks table td > a:hover {
         text-decoration: none; }
@@ -1209,26 +1175,25 @@ html {
     font-style: italic;
     font-weight: normal;
     font-size: 14px;
-    line-height: 26px;
     color: #88989D; }
   #footer3D .container .footerLsLinks > .row ul > li > a {
     color: #5FCAEA; }
     #footer3D .container .footerLsLinks > .row ul > li > a:hover {
       text-decoration: none; }
-  #footer3D .container .footerLsLinks > .row .homeFooterContact {
+  #footer3D .container .footerLsLinks > .row .homeFooterContact,
+  #footer3D .container .footerLsLinks > .row .homeUp3D {
     background-color: transparent;
     border: 0;
     margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    #footer3D .container .footerLsLinks > .row .homeFooterContact:focus {
+    padding: 0; }
+    #footer3D .container .footerLsLinks > .row .homeFooterContact:focus,
+    #footer3D .container .footerLsLinks > .row .homeUp3D:focus {
       border: 0;
       outline: 0;
       -webkit-box-shadow: 0 0;
       box-shadow: 0 0; }
-    #footer3D .container .footerLsLinks > .row .homeFooterContact span {
+    #footer3D .container .footerLsLinks > .row .homeFooterContact span,
+    #footer3D .container .footerLsLinks > .row .homeUp3D span {
       min-height: 47px;
       margin-right: 15px;
       border: 2px solid #5FCAEA;
@@ -1236,7 +1201,6 @@ html {
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
-      line-height: 19px;
       text-align: center;
       color: #5FCAEA;
       padding: 10px  12px; }
@@ -1249,7 +1213,6 @@ html {
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
-      line-height: 18px;
       color: #C4CED5; }
     #footer3D .footerCopyYouT a {
       vertical-align: top; }
@@ -1279,7 +1242,7 @@ html {
       height: auto;
       background-color: transparent !important; } }
   #projecthome3D section.container {
-    padding: 120px 0 100px; }
+    padding: 100px 0 100px; }
     @media (max-width: 1200px) {
       #projecthome3D section.container {
         position: -webkit-sticky;
@@ -1398,7 +1361,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 14px;
-          line-height: 19px;
           color: #fff; }
         #projecthome3D section.container #projecMain3d > .row .card .card-img-top .info {
           position: absolute;
@@ -1410,7 +1372,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 14px;
-          line-height: 19px;
           color: #fff;
           max-width: 90%; }
         #projecthome3D section.container #projecMain3d > .row .card .card-img-top .heart {
@@ -1436,7 +1397,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
-        line-height: 26px;
         color: #494949;
         margin-bottom: 20px;
         margin-top: 20px; }
@@ -1445,7 +1405,6 @@ html {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 26px;
         text-align: justify;
         color: #88989D; }
       #projecthome3D section.container #projecMain3d > .row .card .card-body table td {
@@ -1453,7 +1412,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        line-height: 26px;
         color: #494949;
         padding: 0px 5px; }
         #projecthome3D section.container #projecMain3d > .row .card .card-body table td[rowspan='2'] {
@@ -1461,7 +1419,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 24px;
-          line-height: 33px;
           letter-spacing: 1px;
           text-transform: uppercase;
           color: #494949;
@@ -1486,7 +1443,6 @@ html {
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
-          line-height: 26px;
           color: #5FCAEA;
           border-bottom: 1px solid #E2F5FB;
           padding-bottom: 3px; }
@@ -1761,15 +1717,12 @@ html {
       background-color: #5FCAEA; }
 
 #contactHead3D {
-  padding: 120px 0 100px; }
+  padding: 0px 0px 50px;
+  margin-top: 80px; }
   @media (max-width: 1200px) {
     #contactHead3D {
       position: -webkit-sticky;
-      position: sticky;
-      padding: 100px 0; } }
-  @media (min-width: 1200px) {
-    #contactHead3D {
-      margin-top: 80px; } }
+      position: sticky; } }
   #contactHead3D section h1 {
     font-family: Oswald;
     font-style: normal;
@@ -1844,6 +1797,12 @@ html {
           #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:first-child > li:last-child {
             font-size: 36px;
             margin-bottom: 30px; }
+            @media (max-width: 800px) {
+              #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:first-child > li:last-child {
+                font-size: 20px; } }
+            @media (max-width: 400px) {
+              #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:first-child > li:last-child {
+                font-size: 16px; } }
         #contactHead3D .infoContactBlock3D .contactBoxArea3dBlack .row .col-12.col-lg-6 > ul:last-child {
           font-family: Noto Sans;
           font-style: normal;
@@ -1911,7 +1870,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
-        line-height: 26px;
         color: #fff;
         margin-bottom: 20px; }
       #servicesHead3D > .container-fluid > .container form .form-container {
@@ -2146,7 +2104,6 @@ html {
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
-            line-height: 18px;
             color: #494949;
             margin-bottom: 10px;
             /*-webkit-line-clamp: 2;
@@ -2199,7 +2156,6 @@ html {
         font-weight: normal;
         font-size: 16px;
         color: #88989D;
-        line-height: 26px;
         margin-bottom: 0;
         text-align: justify; }
   #bigBodyOfServices section.ourWorks3d {
@@ -2329,6 +2285,10 @@ html {
       margin-top: 50px; }
       #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj img {
         height: 100%; }
+        @media (max-width: 880px) {
+          #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj img {
+            height: auto;
+            width: 100%; } }
       #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts {
         padding: 50px 150px 50px 0px;
         display: -webkit-box;
@@ -2338,29 +2298,26 @@ html {
         flex-wrap: wrap;
         -ms-flex-line-pack: justify;
         align-content: space-between; }
-        @media (max-width: 600px) {
+        @media (max-width: 880px) {
           #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts {
-            padding-right: 30px; } }
+            padding: 30px; } }
         #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts h3 {
           font-family: Noto Sans;
           font-style: normal;
           font-weight: bold;
           font-size: 18px;
-          color: #494949;
-          line-height: 26px; }
+          color: #494949; }
         #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts p {
           font-family: Noto Sans;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
-          line-height: 26px;
           color: #88989D; }
         #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts .price {
           font-family: Noto Sans;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
-          line-height: 22px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -2403,7 +2360,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 48px;
-        line-height: 71px;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #494949; }
@@ -2412,7 +2368,6 @@ html {
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
-        line-height: 26px;
         color: #494949; }
       #bigBodyOfServices #haveQuestions3d > .container-fluid form {
         margin-top: 60px; }
@@ -2489,7 +2444,6 @@ html {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 26px;
         color: #88989D;
         margin-top: 25px;
         text-align: justify; }
@@ -2502,7 +2456,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 96px;
-          line-height: 142px;
           text-transform: uppercase;
           color: #E9F1F5;
           position: absolute;
@@ -2513,7 +2466,6 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 36px;
-          line-height: 26px;
           color: #5FCAEA;
           position: absolute;
           top: calc(50% - 4px);
@@ -2550,7 +2502,6 @@ html {
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
-        line-height: 36px;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #fff;
@@ -2567,14 +2518,15 @@ html {
           top: 50%;
           left: -130%; } }
   #bigBodyOfServices #acceptOrder {
-    padding: 100px 50px;
-    margin-top: 200px; }
+    padding: 100px 50px; }
+    @media (min-width: 1300px) {
+      #bigBodyOfServices #acceptOrder {
+        margin-top: 100px; } }
     #bigBodyOfServices #acceptOrder h3 {
       font-family: Oswald;
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
-      line-height: 36px;
       letter-spacing: 1.6px;
       text-transform: uppercase;
       color: #494949; }
@@ -2604,6 +2556,12 @@ html {
           #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:first-child > li:last-child {
             font-size: 36px;
             margin-bottom: 30px; }
+            @media (max-width: 600px) {
+              #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:first-child > li:last-child {
+                font-size: 20px; } }
+            @media (max-width: 400px) {
+              #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:first-child > li:last-child {
+                font-size: 16px; } }
         #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:last-child {
           font-family: Noto Sans;
           font-style: normal;
@@ -2618,24 +2576,31 @@ html {
           font-style: normal;
           font-weight: bold;
           font-size: 36px;
-          line-height: 26px;
           color: #494949; }
           @media (max-width: 600px) {
             #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 ul li:last-child {
               font-size: 28px; } }
+        #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 ul li span {
+          font-family: Noto Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          color: #88989D; }
       #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a {
         font-family: Noto Sans;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
-        line-height: 26px;
         color: #494949; }
         #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a:hover {
           color: #5FCAEA;
           text-decoration: none; }
         @media (max-width: 600px) {
           #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a {
-            font-size: 28px; } }
+            font-size: 20px; } }
+        @media (max-width: 400px) {
+          #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a {
+            font-size: 16px; } }
       #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail:hover {
         -webkit-box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09);
         box-shadow: 0px 7px 23px rgba(57, 137, 160, 0.09); }
