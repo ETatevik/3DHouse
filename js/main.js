@@ -10,7 +10,6 @@ window.onload = function (){
 
 jQuery(document).ready(function($) {
 
-	console.log($(window).width())
 	//Load Page if change Width Window
 	{
 		let startWid = $(window).width();

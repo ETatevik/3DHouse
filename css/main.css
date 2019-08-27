@@ -65,7 +65,7 @@ html {
           box-shadow: 0 0;
           outline: 0; }
       @media (max-width: 1000px) {
-        #menu3D > .container-fluid > .navbar.navbar-expand-sm {
+        #menu3D > .container-fluid > .navbar.navbar-expand-md {
           -ms-flex-wrap: wrap !important;
           flex-wrap: wrap !important; } }
       #menu3D > .container-fluid > .navbar > .container {
@@ -74,13 +74,50 @@ html {
         -webkit-box-align: stretch;
         -ms-flex-align: stretch;
         align-items: stretch; }
-        @media (min-width: 900px) {
+        @media (min-width: 1800px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: auto;
+            width: 62%;
+            max-width: 1145px; } }
+        @media (max-width: 1700px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: 0 0 0  auto;
+            width: 62%;
+            max-width: 1145px; } }
+        @media (max-width: 1600px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: 0 auto 0  auto;
+            width: 58%;
+            max-width: 1245px; } }
+        @media (max-width: 1500px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: 0 0 0 auto;
+            width: 57%;
+            max-width: 1145px; } }
+        @media (max-width: 1400px) {
           #menu3D > .container-fluid > .navbar > .container {
             margin: 0 auto;
-            max-width: 80%; } }
+            max-width: 58%; } }
+        @media (max-width: 1300px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: 0 0 0  auto;
+            max-width: 59%; } }
+        @media (max-width: 1200px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: 0 0 0  auto;
+            max-width: 60%; } }
+        @media (max-width: 1000px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 700px; } }
+        @media (max-width: 900px) {
+          #menu3D > .container-fluid > .navbar > .container {
+            margin: 0 auto;
+            max-width: 70%; } }
         @media (max-width: 880px) {
           #menu3D > .container-fluid > .navbar > .container {
-            max-width: 78%; } }
+            max-width: 65%; } }
         #menu3D > .container-fluid > .navbar > .container .row {
           margin-right: 0;
           margin-left: 0; }
@@ -165,7 +202,10 @@ html {
         width: 100%; }
         @media (min-width: 1001px) {
           #menu3D > .container-fluid > .navbar > .minMenu3D {
-            width: 380px; } }
+            max-width: 350px; } }
+        @media (max-width: 1000px) {
+          #menu3D > .container-fluid > .navbar > .minMenu3D {
+            max-width: 100%; } }
         @media (max-width: 1200px) {
           #menu3D > .container-fluid > .navbar > .minMenu3D {
             -ms-flex-wrap: wrap;
@@ -537,7 +577,7 @@ html {
           align-items: center;
           padding-left: 35px;
           margin-bottom: 12px; }
-          #filterFindHome .findBox .filterHomeBody dl > dd label > input[type="checkbox"] {
+          #filterFindHome .findBox .filterHomeBody dl > dd label > input[type="radio"] {
             position: absolute;
             opacity: 0;
             cursor: pointer;
@@ -570,7 +610,7 @@ html {
           #filterFindHome .findBox .filterHomeBody dl > dd label input:checked ~ .checkmark:after {
             display: block; }
         #filterFindHome .findBox .filterHomeBody dl > dd label,
-        #filterFindHome .findBox .filterHomeBody dl > dd label input[type="checkbox"] {
+        #filterFindHome .findBox .filterHomeBody dl > dd label input[type="radio"] {
           font-family: Noto Sans;
           font-style: normal;
           font-weight: normal;
@@ -2283,9 +2323,15 @@ html {
       background: #FFFFFF;
       border: 1px solid #DDE9EF;
       margin-top: 50px; }
+      @media (max-width: 1000px) {
+        #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj {
+          width: 85%;
+          min-width: 300px;
+          margin-left: auto;
+          margin-right: auto; } }
       #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj img {
         height: 100%; }
-        @media (max-width: 880px) {
+        @media (max-width: 1000px) {
           #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj img {
             height: auto;
             width: 100%; } }
@@ -2298,7 +2344,7 @@ html {
         flex-wrap: wrap;
         -ms-flex-line-pack: justify;
         align-content: space-between; }
-        @media (max-width: 880px) {
+        @media (max-width: 1000px) {
           #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts {
             padding: 30px; } }
         #bigBodyOfServices section#casesToOrder3d .boxCacesOrdProj .casesTexts h3 {

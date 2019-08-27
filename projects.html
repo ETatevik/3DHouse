@@ -47,7 +47,7 @@
 	<!-- Menu of page -->
 	<nav id="menu3D" class="sticky-top">
 		<div class="container-fluid">
-			<nav class="navbar navbar-expand-sm navbar-light">
+			<nav class="navbar navbar-expand-md navbar-light">
 			  	<a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
 			  		<img src="img/icons/logo.svg"  alt="">
 			  	</a>
@@ -270,10 +270,10 @@
 							</dt>
 							<dd>
 								<ul class="list-unstyled">
-									<li><label><input type="checkbox"><span class="checkmark"></span>Гостевой дом</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Дача</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Гостинница</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Шале</label></li>
+									<li><label><input type="radio" name="typeOfObjet3d"><span class="checkmark"></span>Гостевой дом</label></li>
+									<li><label><input type="radio" name="typeOfObjet3d"><span class="checkmark"></span>Дача</label></li>
+									<li><label><input type="radio" name="typeOfObjet3d"><span class="checkmark"></span>Гостинница</label></li>
+									<li><label><input type="radio" name="typeOfObjet3d"><span class="checkmark"></span>Шале</label></li>
 								</ul>
 							</dd>
 							<dt>
@@ -282,9 +282,9 @@
 							</dt>
 							<dd>
 								<ul class="list-unstyled">
-									<li><label><input type="checkbox"><span class="checkmark"></span>Деревянный</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Каменный</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Каркасный</label></li>
+									<li><label><input type="radio" name="materObject3d"><span class="checkmark"></span>Деревянный</label></li>
+									<li><label><input type="radio" name="materObject3d"><span class="checkmark"></span>Каменный</label></li>
+									<li><label><input type="radio" name="materObject3d"><span class="checkmark"></span>Каркасный</label></li>
 								</ul>
 							</dd>
 							<dt>
@@ -293,8 +293,8 @@
 							</dt>
 							<dd>
 								<ul class="list-unstyled">
-									<li><label><input type="checkbox"><span class="checkmark"></span>Деревянный</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Каменный</label></li>
+									<li><label><input type="radio" name="materFloo3d"><span class="checkmark"></span>Деревянный</label></li>
+									<li><label><input type="radio" name="materFloo3d"><span class="checkmark"></span>Каменный</label></li>
 								</ul>
 							</dd>
 							<dt>
@@ -305,15 +305,15 @@
 								<div class="table-responsive">
 									<table class="table table-borderless">
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>Одноэтажные</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>С Подвалом</label></td>
+											<td><label><input type="radio" name="floorCout3d"><span class="checkmark"></span>Одноэтажные</label></td>
+											<td><label><input type="radio" name="floorCout3d"><span class="checkmark"></span>С Подвалом</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>Двухэтажные</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>Мансардные</label></td>
+											<td><label><input type="radio" name="floorCout3d"><span class="checkmark"></span>Двухэтажные</label></td>
+											<td><label><input type="radio" name="floorCout3d"><span class="checkmark"></span>Мансардные</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>С Цоколем</label></td>
+											<td><label><input type="radio" name="floorCout3d"><span class="checkmark"></span>С Цоколем</label></td>
 										</tr>
 									</table>
 								</div>	
@@ -326,16 +326,16 @@
 								<div class="table-responsive">
 									<table class="table table-borderless">
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>С гаражом</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>На 1 машину</label></td>
+											<td><label><input type="radio" name="garage3d"><span class="checkmark"></span>С гаражом</label></td>
+											<td><label><input type="radio" name="garage3d"><span class="checkmark"></span>На 1 машину</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>Без Гаража</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>На 2 машины</label></td>
+											<td><label><input type="radio" name="garage3d"><span class="checkmark"></span>Без Гаража</label></td>
+											<td><label><input type="radio" name="garage3d"><span class="checkmark"></span>На 2 машины</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>Навес</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>На 3+ машины</label></td>
+											<td><label><input type="radio" name="garage3d"><span class="checkmark"></span>Навес</label></td>
+											<td><label><input type="radio" name="garage3d"><span class="checkmark"></span>На 3+ машины</label></td>
 										</tr>
 									</table>
 								</div>
@@ -348,15 +348,15 @@
 								<div class="table-responsive">
 									<table class="table table-borderless">
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>1 - скатная</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>Сложная</label></td>
+											<td><label><input type="radio" name="roof3d"><span class="checkmark"></span>1 - скатная</label></td>
+											<td><label><input type="radio" name="roof3d"><span class="checkmark"></span>Сложная</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>2 - скатная</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>Плоская</label></td>
+											<td><label><input type="radio" name="roof3d"><span class="checkmark"></span>2 - скатная</label></td>
+											<td><label><input type="radio" name="roof3d"><span class="checkmark"></span>Плоская</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>4 - скатная</label></td>
+											<td><label><input type="radio" name="roof3d"><span class="checkmark"></span>4 - скатная</label></td>
 										</tr>
 									</table>
 								</div>
@@ -369,15 +369,15 @@
 								<div class="table-responsive">
 									<table class="table table-borderless">
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>1</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>5</label></td>
+											<td><label><input type="radio" name="bedroom3d"><span class="checkmark"></span>1</label></td>
+											<td><label><input type="radio" name="bedroom3d"><span class="checkmark"></span>5</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>2</label></td>
-											<td><label><input type="checkbox"><span class="checkmark"></span>6+</label></td>
+											<td><label><input type="radio" name="bedroom3d"><span class="checkmark"></span>2</label></td>
+											<td><label><input type="radio" name="bedroom3d"><span class="checkmark"></span>6+</label></td>
 										</tr>
 										<tr>
-											<td><label><input type="checkbox"><span class="checkmark"></span>3</label></td>
+											<td><label><input type="radio" name="bedroom3d"><span class="checkmark"></span>3</label></td>
 										</tr>
 									</table>
 								</div>
@@ -388,15 +388,15 @@
 							</dt>
 							<dd>
 								<ul class="list-unstyled">
-									<li><label><input type="checkbox"><span class="checkmark"></span>Для большой семьи</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Бани</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Гаражи</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Для 1 семьи</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Для 2 семей</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Таун-хаусы</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Для сейсмоопасных регионов</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Для широких участков</label></li>
-									<li><label><input type="checkbox"><span class="checkmark"></span>Для узких участков</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Для большой семьи</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Бани</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Гаражи</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Для 1 семьи</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Для 2 семей</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Таун-хаусы</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Для сейсмоопасных регионов</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Для широких участков</label></li>
+									<li><label><input type="radio" name="destination3d"><span class="checkmark"></span>Для узких участков</label></li>
 								</ul>
 							</dd>
 							<dt>

@@ -76,7 +76,7 @@ html{
 				}
 			}
 			
-			&.navbar-expand-sm{
+			&.navbar-expand-md{
 				@media (max-width: 1000px) {
 					flex-wrap: wrap !important;
 				}
@@ -86,12 +86,54 @@ html{
 				padding-left: 0;
 				align-items: stretch;
 
-				@media (min-width: 900px) {
+				@media (min-width: 1800px) {
+					margin: auto;
+					width: 62%;
+					max-width: 1145px
+				}
+				@media (max-width: 1700px) {
+					margin: 0 0 0  auto;
+					width: 62%;
+					max-width: 1145px;
+				}
+				@media (max-width: 1600px) {
+					margin: 0 auto 0  auto;
+					width: 58%;
+					max-width: 1245px;
+				}
+				@media (max-width: 1500px) {
+					margin: 0 0 0 auto;
+					width: 57%;
+					max-width: 1145px;
+
+				}
+				@media (max-width: 1400px) {
 					margin: 0 auto;
-					max-width: 80%;
+					max-width: 58%;
+				}
+
+				@media (max-width: 1300px) {
+					margin: 0 0 0  auto;
+					max-width: 59%;
+				}
+
+				@media (max-width: 1200px) {
+					margin: 0 0 0  auto;
+					max-width: 60%;
+
+				}
+				@media (max-width: 1000px) {
+					margin: 0 auto;
+					width: 100%;
+					max-width: 700px;
+				}
+
+				@media (max-width: 900px) {
+					margin: 0 auto;
+					max-width: 70%;
 				}
 				@media (max-width: 880px) {
-					max-width: 78%;
+					max-width: 65%;
 				}
 
 				& .row{
@@ -198,7 +240,10 @@ html{
 			&>.minMenu3D {
 				width: 100%;
 				@media (min-width: 1001px){
-					width: 380px;
+					max-width: 350px;
+				}
+				@media (max-width: 1000px) {
+					max-width: 100%;
 				}
 				@media (max-width: 1200px) {
 					flex-wrap: wrap;
@@ -687,7 +732,7 @@ html{
 					padding-left: 35px;
  					margin-bottom: 12px;
 
-					&>input[type="checkbox"]{
+					&>input[type="radio"]{
 						position: absolute;
 						opacity: 0;
 						cursor: pointer;
@@ -728,7 +773,7 @@ html{
 				}
 
 				label,
-				label input[type="checkbox"]{
+				label input[type="radio"]{
 					font-family: Noto Sans;
 					font-style: normal;
 					font-weight: normal;
@@ -2935,9 +2980,16 @@ html{
 			border: 1px solid #DDE9EF;
 			margin-top: 50px;
 
+			@media (max-width: 1000px) {
+				width: 85%;
+				min-width: 300px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
 			img{
 				height: 100%;
-				@media (max-width: 880px) {
+				@media (max-width: 1000px) {
 					height: auto;
 					width: 100%;
 				}
@@ -2949,7 +3001,7 @@ html{
 				flex-wrap: wrap;
 				align-content: space-between;
 
-				@media (max-width: 880px) {
+				@media (max-width: 1000px) {
 					padding: 30px;
 					
 				}
