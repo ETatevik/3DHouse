@@ -1303,35 +1303,35 @@ html {
       /*style the items (options), including the selected item:*/
       /*style items (options):*/
       /*hide the items when the select box is closed:*/ }
-      #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 {
+      #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 {
         padding: 0; }
-        #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 .project3DFilterSelect {
+        #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 .project3DFilterSelect {
           margin-right: 20px; }
-        #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav {
+        #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 nav {
           padding-left: 50px; }
-          #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav ul {
+          #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 nav ul {
             margin-bottom: 0; }
-          #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li {
+          #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 nav .pagination li {
             font-family: Noto Sans;
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
             color: #494949;
             margin-left: 5px; }
-            #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li:first-child {
+            #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 nav .pagination li:first-child {
               margin: 0 10px 0 0; }
-            #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards {
+            #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards {
               padding: 0;
               margin: 0;
               background-color: transparent;
               border: 0;
               color: #5FCAEA; }
-              #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards:focus {
+              #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards:focus {
                 border: 0;
                 outline: 0;
                 -webkit-box-shadow: 0 0;
                 box-shadow: 0 0; }
-              #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards.pageActive {
+              #projecthome3D section.container #projecMain3d .projectsBtn3D > form > .row > .col-12.col-md-5.col-lg-4 nav .pagination li .projectsShowPageCards.pageActive {
                 color: #C4CED4; }
       #projecthome3D section.container #projecMain3d .projectsBtn3D .project3DFilterSelect {
         position: relative;
