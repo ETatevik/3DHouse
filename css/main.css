@@ -2556,7 +2556,7 @@ html {
           #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:first-child > li:last-child {
             font-size: 36px;
             margin-bottom: 30px; }
-            @media (max-width: 600px) {
+            @media (max-width: 700px) {
               #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row .col-12 > ul:first-child > li:last-child {
                 font-size: 20px; } }
             @media (max-width: 400px) {
@@ -2595,7 +2595,7 @@ html {
         #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a:hover {
           color: #5FCAEA;
           text-decoration: none; }
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
           #bigBodyOfServices #acceptOrder .contactBoxArea3dBlack .row #accepMail li a {
             font-size: 20px; } }
         @media (max-width: 400px) {
